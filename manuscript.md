@@ -30,7 +30,6 @@ header-includes: |-
   <meta name="citation_author" content="Ray Ausan" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
   <meta name="citation_author" content="Jane Roe" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
@@ -41,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/bd75534653f701d4e420f3e1e5eb1c7801a4b00e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/bd75534653f701d4e420f3e1e5eb1c7801a4b00e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/bd75534653f701d4e420f3e1e5eb1c7801a4b00e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2fced0cec914ee31a73ec803d52b641fdfab0bfb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2fced0cec914ee31a73ec803d52b641fdfab0bfb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2fced0cec914ee31a73ec803d52b641fdfab0bfb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/bd75534653f701d4e420f3e1e5eb1c7801a4b00e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2fced0cec914ee31a73ec803d52b641fdfab0bfb/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@bd75534](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/bd75534653f701d4e420f3e1e5eb1c7801a4b00e)
+from [uiceds/cee-492-term-project-fall-2022-team-online@2fced0c](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2fced0cec914ee31a73ec803d52b641fdfab0bfb)
 on September 7, 2022.
 </em></small>
 
@@ -79,12 +78,9 @@ on September 7, 2022.
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [rausan3](https://github.com/rausan3)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [rausan3](https://github.com/rausan3)<br>
   <small>
      Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXXX
   </small>
 
 + **Jane Roe**<br>

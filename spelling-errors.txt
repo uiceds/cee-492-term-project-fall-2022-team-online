@@ -26,7 +26,6 @@ incididunt
 ipsum
 irure
 janeroe
-johndoe
 labore
 laboris
 laborum
@@ -55,4 +54,3 @@ velit
 veniam
 voluptate
 XXXX
-XXXXXXXX
