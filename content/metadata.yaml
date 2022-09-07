@@ -1,19 +1,19 @@
 ---
-title: "Manuscript Title"
+title: "Data Science Project"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
+  - github: rausan3
+    name: Ray Ausan
+    initials: RA
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
-    email: john.doe@something.com
+    email: rausan2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders:
       - Grant XXXXXXXX
   - github: janeroe
