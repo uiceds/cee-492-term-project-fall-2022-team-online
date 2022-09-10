@@ -21,6 +21,7 @@ enim
 esse
 Excepteur
 exercitation
+FrenchToastty
 fugiat
 incididunt
 ipsum
