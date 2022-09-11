@@ -5,10 +5,11 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-10'
+date-meta: '2022-09-11'
 author-meta:
 - Ray Ausan
 - Min Win Ye
+- Papa Ibrahima Mbodj
 - Jane Roe
 header-includes: |-
   <!--
@@ -20,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Data Science Project" />
   <meta property="og:title" content="Data Science Project" />
   <meta property="twitter:title" content="Data Science Project" />
-  <meta name="dc.date" content="2022-09-10" />
-  <meta name="citation_publication_date" content="2022-09-10" />
+  <meta name="dc.date" content="2022-09-11" />
+  <meta name="citation_publication_date" content="2022-09-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,6 +35,9 @@ header-includes: |-
   <meta name="citation_author" content="Min Win Ye" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Papa Ibrahima Mbodj" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Jane Roe" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
@@ -44,9 +48,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/279c2dc0b23c44f767edee014d467e4de3c8b239/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/279c2dc0b23c44f767edee014d467e4de3c8b239/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/279c2dc0b23c44f767edee014d467e4de3c8b239/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -68,10 +72,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/279c2dc0b23c44f767edee014d467e4de3c8b239/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@279c2dc](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/279c2dc0b23c44f767edee014d467e4de3c8b239)
-on September 10, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@05a47cf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91)
+on September 11, 2022.
 </em></small>
 
 ## Authors
@@ -92,6 +96,15 @@ on September 10, 2022.
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [FrenchToastty](https://github.com/FrenchToastty)<br>
+  <small>
+     Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+  </small>
+
++ **Papa Ibrahima Mbodj**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [pimbooo](https://github.com/pimbooo)<br>
   <small>
      Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
