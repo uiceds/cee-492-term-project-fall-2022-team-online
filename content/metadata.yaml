@@ -20,6 +20,13 @@ authors:
     email: mwye2@illinois.edu
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+  - github: pimbooo
+    name: Papa Ibrahima Mbodj
+    initials: PIM
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: pmbodj2@illinois.edu
+    affiliations:
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
   - github: janeroe
     name: Jane Roe
     initials: JR
@@ -28,3 +35,4 @@ authors:
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
+  
