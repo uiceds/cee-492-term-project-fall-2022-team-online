@@ -1,5 +1,5 @@
 ---
-title: Data Science Project
+title: Predictive Model for Concrete Compressive Strength
 keywords:
 - markdown
 - publishing
@@ -17,10 +17,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Data Science Project" />
-  <meta name="citation_title" content="Data Science Project" />
-  <meta property="og:title" content="Data Science Project" />
-  <meta property="twitter:title" content="Data Science Project" />
+  <meta name="dc.title" content="Predictive Model for Concrete Compressive Strength" />
+  <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
+  <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
+  <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta name="dc.date" content="2022-09-16" />
   <meta name="citation_publication_date" content="2022-09-16" />
   <meta name="dc.language" content="en-US" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/318286664ec191682d2d49b5c994a999f53d6160/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/318286664ec191682d2d49b5c994a999f53d6160/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/318286664ec191682d2d49b5c994a999f53d6160/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/318286664ec191682d2d49b5c994a999f53d6160/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@701fccf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/701fccfeed42745b4596d06a86b8e36589071ce7)
+from [uiceds/cee-492-term-project-fall-2022-team-online@3182866](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/318286664ec191682d2d49b5c994a999f53d6160)
 on September 16, 2022.
 </em></small>
 
@@ -429,8 +429,33 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore; and it is most commonly used. According to the ASTM standard, there are five types of cement, the difference due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m3 of the concrete mixture (kg/m3 of mixture).
 
 ### Column B/ Component 2: Blast Furnace Slag
+Blast furnace Ash is a nonmetallic co-product obtained in the production of iron, iron ore, iron scrap and fluxed. It is commonly used in cement production as a substitute for clinker and in concrete production as a substitute for aggregates. The use of slag cement improves performance and durability of concrete.
+The unit used is kg of per 1 m3 of the concrete mixture (kg/m3 of mixture).
 
 ### Column C/ Component 3: Fly Ash
+Fly Ash is byproduct of burning pulverized coal in electric generation.
+It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration. 
+The unit used is kg of per 1 m3 of the concrete mixture (kg/m3 of mixture).
+
+### Column D/ Component 4: Water
+Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete. 
+The unit used is kg per 1 m3 of the concrete mixture (kg/m3 of mixture).
+
+### Column E/ Component 5: Superplasticizer
+Superplasticizers are chemical compounds used to reduce the amount of water content in the concrete mixture to produce high-strength concrete while maintaining enough workability. The used unit is kg of the superplasticizer to 1 m3 of the concrete mixture (kg/m3 of mixture).
+
+### Column F/ Component 6: Coarse Aggregate
+Coarse Aggregates are inert, granular, and inorganic material. Coarse Aggregates are aggregates that are larger or equal to the ASTM sieve size 4.75mm. Typical coarse aggregates are gravel, crushed stone or previously used concrete etc. They occupy a large volume in a concrete mix (~65-75%), as it acts as an economic filler for cement. The unit used is kg of coarse aggregate per 1 m3 of the concrete mixture (kg/m3 of mixture).
+
+### Column G/ Component 7: Fine Aggregate
+Fine Aggregates are inert, granular, and inorganic material. Fine Aggregates are aggregates that are smaller than the ASTM sieve size 4.75mm. Typical fine aggregates are sand, crushed stone or burnt clays etc. The fine aggregates fill in the voids between coarse aggregates. It also provides resistance against shrinking and cracking. The unit used is kg of fine aggregate per 1 m3 of the concrete mixture (kg/m3 of mixture).
+ 
+### Column H/ Component 8: Age
+This column represents the age of the concrete mixture after pouring. The concrete gains its strength gradually with time, and according to the ASTM, it reaches to 99% of the target compressive strength after 28 days. The strength will continue to increase after years and it can become larger than the target compressive strength (strength percent > 100%). The unit of this column data is in days. 
+ 
+### Column I/ Output 1: Concrete compressive strength
+ It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property reported at 28 days of curing time.
+
 
 
 
