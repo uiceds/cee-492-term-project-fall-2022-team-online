@@ -3,6 +3,7 @@ aliqua
 aliquip
 amet
 anim
+ASTM
 Ausan
 aute
 Champaign
@@ -12,6 +13,9 @@ consectetur
 consequat
 culpa
 cupidatat
+Dafar
+dafarno
+dataset
 deserunt
 dolore
 Duis
@@ -27,7 +31,6 @@ Ibrahima
 incididunt
 ipsum
 irure
-janeroe
 labore
 laboris
 laborum
@@ -38,8 +41,10 @@ mollit
 nisi
 nostrud
 nulla
+Obeidat
 occaecat
 officia
+OPC
 Pandoc’s
 pariatur
 pimbooo

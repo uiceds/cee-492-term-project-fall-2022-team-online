@@ -5,12 +5,12 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-11'
+date-meta: '2022-09-16'
 author-meta:
 - Ray Ausan
 - Min Win Ye
 - Papa Ibrahima Mbodj
-- Jane Roe
+- Dafar Obeidat
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Data Science Project" />
   <meta property="og:title" content="Data Science Project" />
   <meta property="twitter:title" content="Data Science Project" />
-  <meta name="dc.date" content="2022-09-11" />
-  <meta name="citation_publication_date" content="2022-09-11" />
+  <meta name="dc.date" content="2022-09-16" />
+  <meta name="citation_publication_date" content="2022-09-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,8 @@ header-includes: |-
   <meta name="citation_author" content="Papa Ibrahima Mbodj" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author" content="Dafar Obeidat" />
+  <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
@@ -48,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/701fccfeed42745b4596d06a86b8e36589071ce7/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@05a47cf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/05a47cf03a1ded80c1e4c0b6330bfe0822e49e91)
-on September 11, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@701fccf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/701fccfeed42745b4596d06a86b8e36589071ce7)
+on September 16, 2022.
 </em></small>
 
 ## Authors
@@ -109,13 +108,13 @@ on September 11, 2022.
      Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
 
-+ **Jane Roe**<br>
++ **Dafar Obeidat**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [dafarno2](https://github.com/dafarno2)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
 
 
@@ -420,6 +419,19 @@ useful for *important information* - [manubot.org](https://manubot.org/)
 <i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
 useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
+
+
+
+
+## Parameters
+
+### Column A/ Component 1: Cement 
+Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore; and it is most commonly used. According to the ASTM standard, there are five types of cement, the difference due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m3 of the concrete mixture (kg/m3 of mixture).
+
+### Column B/ Component 2: Blast Furnace Slag
+
+### Column C/ Component 3: Fly Ash
+
 
 
 ## References {.page_break_before}
