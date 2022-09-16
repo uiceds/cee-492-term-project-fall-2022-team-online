@@ -28,12 +28,15 @@ authors:
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
  - github: dafarno2
-    name: Dafar Obeidat
-    initials: DO
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: dafarno2@illinois.edu
-    affiliations:
-      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
-      '\n
+   name: Dafar Obeidat
+   initials: DO
+   orcid: XXXX-XXXX-XXXX-XXXX
+   email: dafarno2@illinois.edu
+   affiliations:
+    - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+
+  
+
+
       
 
