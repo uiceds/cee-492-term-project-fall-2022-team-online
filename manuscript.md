@@ -31,25 +31,21 @@ header-includes: |-
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Ray Ausan" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Min Win Ye" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Papa Ibrahima Mbodj" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Dafar Obeidat" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/da1ed1e7b65afd9fbdfc17954f11042156da8fc0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/da1ed1e7b65afd9fbdfc17954f11042156da8fc0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/da1ed1e7b65afd9fbdfc17954f11042156da8fc0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f87e3bb643305620868bce0bc53991a420e5f477/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f87e3bb643305620868bce0bc53991a420e5f477/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f87e3bb643305620868bce0bc53991a420e5f477/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/da1ed1e7b65afd9fbdfc17954f11042156da8fc0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f87e3bb643305620868bce0bc53991a420e5f477/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@da1ed1e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/da1ed1e7b65afd9fbdfc17954f11042156da8fc0)
+from [uiceds/cee-492-term-project-fall-2022-team-online@f87e3bb](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/f87e3bb643305620868bce0bc53991a420e5f477)
 on September 19, 2022.
 </em></small>
 
@@ -82,8 +78,6 @@ on September 19, 2022.
 
 
 + **Ray Ausan**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [rausan3](https://github.com/rausan3)<br>
   <small>
@@ -91,8 +85,6 @@ on September 19, 2022.
   </small>
 
 + **Min Win Ye**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [FrenchToastty](https://github.com/FrenchToastty)<br>
   <small>
@@ -100,8 +92,6 @@ on September 19, 2022.
   </small>
 
 + **Papa Ibrahima Mbodj**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [pimbooo](https://github.com/pimbooo)<br>
   <small>
@@ -109,8 +99,6 @@ on September 19, 2022.
   </small>
 
 + **Dafar Obeidat**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [dafarno2](https://github.com/dafarno2)<br>
   <small>
@@ -129,7 +117,10 @@ To minimize such errors, this model predicts the 28th day compressive strength i
 
 
 
-## Parameters
+## Dataset
+
+### Description
+The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable. 
 
 ### Column A/ Component 1: Cement 
 Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore; and it is most commonly used. According to the ASTM standard, there are five types of cement, the difference due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m3 of the concrete mixture (kg/m3 of mixture).
@@ -168,4 +159,5 @@ This column represents the age of the concrete mixture after pouring. The concre
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
+Yeh, I., 2007. UCI Machine Learning Repository: Concrete Compressive Strength Data Set. [online] Archive.ics.uci.edu. Available at: <https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength> [Accessed 19 September 2022].
 <div id="refs"></div>

@@ -2,10 +2,10 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 Dafar
 dafarno
-dataset
+Dataset
 FrenchToastty
 Ibrahima
 Mbodj
@@ -16,6 +16,7 @@ rausan
 strenght
 superplasticizer
 Superplasticizers
+UCI
 Urbana
 workability
-XXXX
+Yeh
