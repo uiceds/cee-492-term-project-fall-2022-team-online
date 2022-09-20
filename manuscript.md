@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-19'
+date-meta: '2022-09-20'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-09-19" />
-  <meta name="citation_publication_date" content="2022-09-19" />
+  <meta name="dc.date" content="2022-09-20" />
+  <meta name="citation_publication_date" content="2022-09-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/70fac23c18a1e19576246984439083f94b9a1ebe/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/70fac23c18a1e19576246984439083f94b9a1ebe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/70fac23c18a1e19576246984439083f94b9a1ebe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/70fac23c18a1e19576246984439083f94b9a1ebe/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@70fac23](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/70fac23c18a1e19576246984439083f94b9a1ebe)
-on September 19, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@08dda27](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/08dda27c5514b367d19db529895d14fd0f0423a0)
+on September 20, 2022.
 </em></small>
 
 ## Authors
@@ -133,6 +133,7 @@ The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</
 Fly Ash is byproduct of burning pulverized coal in electric generation.
 It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration. 
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+
 
 ### Column D/ Component 4: Water
 Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete. 
