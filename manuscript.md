@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/65e4cfe63653391e72f31db5cf477496252d80df/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/65e4cfe63653391e72f31db5cf477496252d80df/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/65e4cfe63653391e72f31db5cf477496252d80df/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/08dda27c5514b367d19db529895d14fd0f0423a0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/65e4cfe63653391e72f31db5cf477496252d80df/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@08dda27](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/08dda27c5514b367d19db529895d14fd0f0423a0)
+from [uiceds/cee-492-term-project-fall-2022-team-online@65e4cfe](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/65e4cfe63653391e72f31db5cf477496252d80df)
 on September 20, 2022.
 </em></small>
 
@@ -134,8 +134,7 @@ Fly Ash is byproduct of burning pulverized coal in electric generation.
 It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration. 
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-
-### Column D/ Component 4: Water
+### Column D/ Component 4: Water {.page_break_before}
 Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete. 
 The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
