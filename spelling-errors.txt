@@ -5,7 +5,7 @@ clays
 compressive
 Dafar
 dafarno
-Dataset
+dataset
 FrenchToastty
 Ibrahima
 Mbodj
@@ -14,7 +14,7 @@ OPC
 pimbooo
 rausan
 strenght
-Superplasticizer
+superplasticizer
 Superplasticizers
 UCI
 Urbana
