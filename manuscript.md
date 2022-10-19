@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edb10b05ba84a1194fa94a7c1426d4501138d0bb/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edb10b05ba84a1194fa94a7c1426d4501138d0bb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edb10b05ba84a1194fa94a7c1426d4501138d0bb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8c732bcf1a57cbc1fc13c946d0d4c7a73d5446c2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8c732bcf1a57cbc1fc13c946d0d4c7a73d5446c2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8c732bcf1a57cbc1fc13c946d0d4c7a73d5446c2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edb10b05ba84a1194fa94a7c1426d4501138d0bb/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8c732bcf1a57cbc1fc13c946d0d4c7a73d5446c2/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@edb10b0](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/edb10b05ba84a1194fa94a7c1426d4501138d0bb)
+from [uiceds/cee-492-term-project-fall-2022-team-online@8c732bc](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/8c732bcf1a57cbc1fc13c946d0d4c7a73d5446c2)
 on October 19, 2022.
 </em></small>
 
