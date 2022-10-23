@@ -7,12 +7,21 @@ using PrettyTables
 using StatsBase
 using Markdown
 theme(:default)
+# include(joinpath(abspath(joinpath(pwd(), "..")), "tablehelper.jl"))
+
+function tablehelper(df, filename)
+    conf = set_pt_conf(tf = tf_markdown);
+    pt = pretty_table_with_conf(conf, String, df, nosubheader=true)
+    io = open(joinpath(dirname(@__FILE__), filename), "w")
+    write(io, pt)
+    close(io)
+end
 
 df = CSV.read(joinpath(dirname(@__FILE__), "Concrete_Data.csv"), DataFrame)
 
 namedf = names(df)
 rename!(df, [:Cement, :BlastFurnaceSlag, :FlyAsh, :Water, :Superplasticizer, :CoarseAggregate, :FineAggregate, :Age, :Strength])
-stat = describe(df)
+stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 st = @df df std(:Age)
 
 sdf = stack(df, Not([:Strength, :Age]); variable_name = :Component)
@@ -31,5 +40,7 @@ pt = pretty_table_with_conf(conf, String, stat, nosubheader=true)
 io = open(joinpath(dirname(@__FILE__), "StatTable.md"), "w")
 write(io, pt)
 close(io)
+
+tablehelper(df, "dataframetest.md")
 
 # savefig(joinpath(dirname(@__FILE__), "BoxViolinDot.png"))
