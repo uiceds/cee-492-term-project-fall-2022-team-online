@@ -9,9 +9,7 @@ using Markdown
 theme(:default)
 # include(joinpath(abspath(joinpath(pwd(), "..")), "tablehelper.jl"))
 
-function tablehelper(df, filename)
-    conf = set_pt_conf(tf = tf_markdown);
-    pt = pretty_table_with_conf(conf, String, df, nosubheader=true)
+function tablehelper(pt, filename)
     io = open(joinpath(dirname(@__FILE__), filename), "w")
     write(io, pt)
     close(io)
@@ -37,10 +35,6 @@ sdf = stack(df, Not([:Strength, :Age]); variable_name = :Component)
 
 conf = set_pt_conf(tf = tf_markdown);
 pt = pretty_table_with_conf(conf, String, stat, nosubheader=true)
-io = open(joinpath(dirname(@__FILE__), "StatTable.md"), "w")
-write(io, pt)
-close(io)
-
-tablehelper(df, "dataframetest.md")
+tablehelper(pt, "StatTable.md")
 
 # savefig(joinpath(dirname(@__FILE__), "BoxViolinDot.png"))
