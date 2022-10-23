@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-10-19'
+date-meta: '2022-10-23'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-10-19" />
-  <meta name="citation_publication_date" content="2022-10-19" />
+  <meta name="dc.date" content="2022-10-23" />
+  <meta name="citation_publication_date" content="2022-10-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a84ee02f8c9451f0de0c6776def512c7b9747bba/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a84ee02f8c9451f0de0c6776def512c7b9747bba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a84ee02f8c9451f0de0c6776def512c7b9747bba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e0b97ea95930eeeb0c1d8962e56e8e7688381e3a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e0b97ea95930eeeb0c1d8962e56e8e7688381e3a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e0b97ea95930eeeb0c1d8962e56e8e7688381e3a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a84ee02f8c9451f0de0c6776def512c7b9747bba/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e0b97ea95930eeeb0c1d8962e56e8e7688381e3a/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@a84ee02](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a84ee02f8c9451f0de0c6776def512c7b9747bba)
-on October 19, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@e0b97ea](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/e0b97ea95930eeeb0c1d8962e56e8e7688381e3a)
+on October 23, 2022.
 </em></small>
 
 ## Authors
