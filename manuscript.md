@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e4066adaa93ca99a126b9e10ab86dfd4de33bb09/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e4066adaa93ca99a126b9e10ab86dfd4de33bb09/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e4066adaa93ca99a126b9e10ab86dfd4de33bb09/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1ec8783fe3bfa13a30852c16a2bf8af822f2733a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1ec8783fe3bfa13a30852c16a2bf8af822f2733a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1ec8783fe3bfa13a30852c16a2bf8af822f2733a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e4066adaa93ca99a126b9e10ab86dfd4de33bb09/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1ec8783fe3bfa13a30852c16a2bf8af822f2733a/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@e4066ad](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/e4066adaa93ca99a126b9e10ab86dfd4de33bb09)
+from [uiceds/cee-492-term-project-fall-2022-team-online@1ec8783](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/1ec8783fe3bfa13a30852c16a2bf8af822f2733a)
 on October 24, 2022.
 </em></small>
 
@@ -164,7 +164,7 @@ This section illustrates general statistics of the dataset. The purpose is to sh
 ![
 **A square image at actual size and with a bottom caption.**
 Loaded from the latest version of image on GitHub.
-](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/blob/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:square-image}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:square-image}
 
 |                   variable |    mean |     std |     min |     q25 |  median |      q75 |      max |
 |----------------------------|---------|---------|---------|---------|---------|----------|----------|
@@ -180,6 +180,13 @@ Loaded from the latest version of image on GitHub.
 
 Table: A table with a top caption and specified relative column widths.
 {#tbl:bowling-scores}
+
+![
+**A square image at actual size and with a bottom caption.**
+Loaded from the latest version of image on GitHub.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:square-image}
+
+
 
 ## References {.page_break_before}
 
