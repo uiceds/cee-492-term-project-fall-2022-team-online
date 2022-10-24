@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@9a78ca2](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/9a78ca248271172e2fffe2afb983152a6b0fe9aa)
+from [uiceds/cee-492-term-project-fall-2022-team-online@6fb7efe](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/6fb7efe2ed81b1880f5c0acca30bca64a20c1127)
 on October 24, 2022.
 </em></small>
 
@@ -154,6 +154,32 @@ This column represents the age of the concrete mixture after pouring. The concre
 
 
 
+
+## Exploratory Data Analysis
+
+### Basic Statistics
+
+This section illustrates general statistics of the dataset. The purpose is to show simple trends in the dataset.
+
+![
+**A square image at actual size and with a bottom caption.**
+Loaded from the latest version of image on GitHub.
+](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/blob/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:square-image}
+
+|                   variable |    mean |     std |     min |     q25 |  median |      q75 |      max |
+|----------------------------|---------|---------|---------|---------|---------|----------|----------|
+|             Cement (kg/m3) | 281.168 | 104.506 | 102.000 | 192.375 | 272.900 |  350.000 |  540.000 |
+|              Water (kg/m3) | 181.567 |  21.354 | 121.800 | 164.900 | 185.000 |  192.000 |  247.000 |
+|   Coarse Aggregate (kg/m3) | 972.919 |  77.754 | 801.000 | 932.000 | 968.000 | 1029.400 | 1145.000 |
+|     Fine Aggregate (kg/m3) | 773.580 |  80.176 | 594.000 | 730.950 | 779.500 |  824.000 |  992.600 |
+| Blast Furnace Slag (kg/m3) |  73.896 |  86.279 |   0.000 |   0.000 |  22.000 |  142.950 |  359.400 |
+|            Fly Ash (kg/m3) |  54.188 |  63.997 |   0.000 |   0.000 |   0.000 |  118.300 |  200.100 |
+|   Superplasticizer (kg/m3) |   6.205 |   5.974 |   0.000 |   0.000 |   6.400 |   10.200 |   32.200 |
+|                  Age (day) |  45.662 |  63.170 |   1.000 |   7.000 |  28.000 |   56.000 |  365.000 |
+| Compressive strength (MPa) |  35.818 |  16.706 |   2.330 |  23.710 |  34.445 |   46.135 |   82.600 | 
+
+Table: A table with a top caption and specified relative column widths.
+{#tbl:bowling-scores}
 
 ## References {.page_break_before}
 

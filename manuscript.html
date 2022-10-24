@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9a78ca248271172e2fffe2afb983152a6b0fe9aa/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6fb7efe2ed81b1880f5c0acca30bca64a20c1127/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/9a78ca248271172e2fffe2afb983152a6b0fe9aa">uiceds/cee-492-term-project-fall-2022-team-online@9a78ca2</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/6fb7efe2ed81b1880f5c0acca30bca64a20c1127">uiceds/cee-492-term-project-fall-2022-team-online@6fb7efe</a>
 on October 24, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -149,6 +149,135 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 <p>This column represents the age of the concrete mixture after pouring. The concrete gains its strength gradually with time, and according to the ASTM, it reaches to 99% of the target compressive strength after 28 days. The strength will continue to increase after years and it can become larger than the target compressive strength (strength percent &gt; 100%). The unit of this column data is in days.</p>
 <h3 id="column-i-output-1-concrete-compressive-strength">Column I/ Output 1: Concrete compressive strength</h3>
 <p>It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property reported at 28 days of curing time.</p>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<h3 id="basic-statistics">Basic Statistics</h3>
+<p>This section illustrates general statistics of the dataset. The purpose is to show simple trends in the dataset.</p>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/blob/main/reference/Ray/BoxViolinDot.png" alt="Figure 1: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
+Loaded from the latest version of image on GitHub.</figcaption>
+</figure>
+</div>
+<div id="tbl:bowling-scores" class="tablenos">
+<table id="tbl:bowling-scores">
+<caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
+</caption>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>variable</th>
+<th>mean</th>
+<th>std</th>
+<th>min</th>
+<th>q25</th>
+<th>median</th>
+<th>q75</th>
+<th>max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cement (kg/m3)</td>
+<td>281.168</td>
+<td>104.506</td>
+<td>102.000</td>
+<td>192.375</td>
+<td>272.900</td>
+<td>350.000</td>
+<td>540.000</td>
+</tr>
+<tr class="even">
+<td>Water (kg/m3)</td>
+<td>181.567</td>
+<td>21.354</td>
+<td>121.800</td>
+<td>164.900</td>
+<td>185.000</td>
+<td>192.000</td>
+<td>247.000</td>
+</tr>
+<tr class="odd">
+<td>Coarse Aggregate (kg/m3)</td>
+<td>972.919</td>
+<td>77.754</td>
+<td>801.000</td>
+<td>932.000</td>
+<td>968.000</td>
+<td>1029.400</td>
+<td>1145.000</td>
+</tr>
+<tr class="even">
+<td>Fine Aggregate (kg/m3)</td>
+<td>773.580</td>
+<td>80.176</td>
+<td>594.000</td>
+<td>730.950</td>
+<td>779.500</td>
+<td>824.000</td>
+<td>992.600</td>
+</tr>
+<tr class="odd">
+<td>Blast Furnace Slag (kg/m3)</td>
+<td>73.896</td>
+<td>86.279</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>22.000</td>
+<td>142.950</td>
+<td>359.400</td>
+</tr>
+<tr class="even">
+<td>Fly Ash (kg/m3)</td>
+<td>54.188</td>
+<td>63.997</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>118.300</td>
+<td>200.100</td>
+</tr>
+<tr class="odd">
+<td>Superplasticizer (kg/m3)</td>
+<td>6.205</td>
+<td>5.974</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>6.400</td>
+<td>10.200</td>
+<td>32.200</td>
+</tr>
+<tr class="even">
+<td>Age (day)</td>
+<td>45.662</td>
+<td>63.170</td>
+<td>1.000</td>
+<td>7.000</td>
+<td>28.000</td>
+<td>56.000</td>
+<td>365.000</td>
+</tr>
+<tr class="odd">
+<td>Compressive strength (MPa)</td>
+<td>35.818</td>
+<td>16.706</td>
+<td>2.330</td>
+<td>23.710</td>
+<td>34.445</td>
+<td>46.135</td>
+<td>82.600</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 Yeh, I., 2007. UCI Machine Learning Repository: Concrete Compressive Strength Data Set. [online] Archive.ics.uci.edu. Available at: <a href="https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength" class="uri">https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength</a> [Accessed 19 September 2022].

@@ -2,13 +2,14 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 Dafar
 dafarno
 dataset
 FrenchToastty
 Ibrahima
 Mbodj
+MPa
 Obeidat
 OPC
 pimbooo
