@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fe7eb47560d284024c8f66c64fef581460463c91/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fe7eb47560d284024c8f66c64fef581460463c91/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fe7eb47560d284024c8f66c64fef581460463c91/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fe7eb47560d284024c8f66c64fef581460463c91/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@fe7eb47](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/fe7eb47560d284024c8f66c64fef581460463c91)
+from [uiceds/cee-492-term-project-fall-2022-team-online@4d6861e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4d6861eb35430709734dc8653d3357878b1268f5)
 on October 24, 2022.
 </em></small>
 
@@ -155,7 +155,7 @@ This column represents the age of the concrete mixture after pouring. The concre
 
 
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis {.page_break_before}
 
 ### Basic Statistics
 
@@ -191,7 +191,15 @@ Loaded from the latest version of image on GitHub.
 Loaded from the latest version of image on GitHub.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot2.png "Square image"){#fig:square-image}
 
+![
+**A square image at actual size and with a bottom caption.**
+Loaded from the latest version of image on GitHub.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot3.png "Square image"){#fig:square-image}
 
+![
+**A square image at actual size and with a bottom caption.**
+Loaded from the latest version of image on GitHub.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot4.png "Square image"){#fig:square-image}
 
 ## References {.page_break_before}
 
