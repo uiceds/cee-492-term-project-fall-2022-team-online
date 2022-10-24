@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-Compressive
+compressive
 Dafar
 dafarno
 dataset
@@ -15,7 +15,7 @@ OPC
 pimbooo
 rausan
 strenght
-superplasticizer
+Superplasticizer
 Superplasticizers
 UCI
 Urbana
