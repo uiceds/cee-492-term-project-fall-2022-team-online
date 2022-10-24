@@ -42,7 +42,7 @@ p3 = @df df dotplot!([namedf[9]], cols(9), markersize=1, markercolor=:black, xro
 
 l = @layout [a{0.8w} [grid(2, 1)]]
 #title1 = ["($i)" for j in 1:1, i in 1:11], titleloc = :right, titlefont = font(8)
-display(plot(p1, p2, p3, layout = l, size=(1200, 800), left_margin = [5mm 0mm 0mm], bottom_margin = [5mm 0mm 20mm], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize)))
+display(plot(p1, p2, p3, layout = l, size=(700, 400), left_margin = [5mm 0mm 0mm], bottom_margin = [5mm 0mm 20mm], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize)))
 # savefig(joinpath(dirname(@__FILE__), "BoxViolinDot.png"))
 
 conf = set_pt_conf(tf = tf_markdown);
@@ -107,3 +107,16 @@ for gb in gb2
 end
 display(p7)
 savefig(joinpath(dirname(@__FILE__), "CAPlot3.png"))
+
+fsize = 9
+p8 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(700, 600), guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize))
+gb2 = groupby(df, (1:7))
+for gb in gb2
+    if size(gb)[1] > 5
+        gbt = combine(groupby(gb, (8)), (9) => mean)
+        gbs = sort!(gbt, (1))
+        plot!(gbs[!, 1], gbs[!, 2])
+    end
+end
+display(p8)
+savefig(joinpath(dirname(@__FILE__), "CAPlot4.png"))
