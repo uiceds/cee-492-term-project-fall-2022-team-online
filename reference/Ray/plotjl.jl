@@ -25,22 +25,24 @@ namedf = names(df)
 stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 tdf = copy(df)
 
+fsize = 12
+
 sdf = stack(rename!(tdf, string.((1:9))), 1:7; variable_name = :Component)
 @df sdf violin(string.(:Component), :value, linewidth=0, ylabel="kg/m3", legend=false)
 @df sdf boxplot!(string.(:Component), :value, fillalpha=0.75, linewidth=2, legend=false)
-p1 = @df sdf dotplot!(string.(:Component), :value, markersize=1, markercolor=:black, xrotation=45, guidefontsize = 7, xtickfont = font(7), ytickfont = font(7), xticks = (0.5:6.5, namedf))
+p1 = @df sdf dotplot!(string.(:Component), :value, markersize=1, markercolor=:black, xrotation=45, xticks = (0.5:6.5, namedf))
 
 @df df violin([namedf[8]], cols(8), linewidth=0, ylabel="days", legend=false)
 @df df boxplot!([namedf[8]], cols(8), fillalpha=0.75, linewidth=2, legend=false)
-p2 = @df df dotplot!([namedf[8]], cols(8), markersize=1, markercolor=:black, guidefontsize = 7, xtickfont = font(7), ytickfont = font(7), xrotation=45, xlims = (-0.4, 1.4))
+p2 = @df df dotplot!([namedf[8]], cols(8), markersize=1, markercolor=:black, xrotation=45, xlims = (-0.4, 1.4))
 
 @df df violin([namedf[9]], cols(9), linewidth=0, ylabel="MPa", legend=false)
 @df df boxplot!([namedf[9]], cols(9), fillalpha=0.75, linewidth=2, legend=false)
-p3 = @df df dotplot!([namedf[9]], cols(9), markersize=1, markercolor=:black, guidefontsize = 7, xtickfont = font(7), ytickfont = font(7), xrotation=45, xlims = (-0.4, 1.4))
+p3 = @df df dotplot!([namedf[9]], cols(9), markersize=1, markercolor=:black, xrotation=45, xlims = (-0.4, 1.4))
 
 l = @layout [a{0.8w} [grid(2, 1)]]
 #title1 = ["($i)" for j in 1:1, i in 1:11], titleloc = :right, titlefont = font(8)
-display(plot(p1, p2, p3, layout = l, size=(1200, 800), left_margin = [5mm 0mm 0mm], bottom_margin = [5mm 0mm 10mm], guidefontsize = 7, xtickfont = font(7), ytickfont = font(7)))
+display(plot(p1, p2, p3, layout = l, size=(1200, 800), left_margin = [5mm 0mm 0mm], bottom_margin = [5mm 0mm 20mm], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize)))
 # savefig(joinpath(dirname(@__FILE__), "BoxViolinDot.png"))
 
 conf = set_pt_conf(tf = tf_markdown);
@@ -70,7 +72,7 @@ plot(contdf[1][!, 8], contdf[1][!, 9], seriestype=:scatter, legend=false, size=(
 display(plot!(compvagemean[!, 1], compvagemean[!, 2]))
 # savefig(joinpath(dirname(@__FILE__), "CAPlot.png"))
 
-p5 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(800, 600), guidefontsize = 7, xtickfont = font(7), ytickfont = font(7))
+p5 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(800, 600), guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize))
 gb2 = groupby(df, (1:7))
 for gb in gb2
     if size(gb)[1] > 5
@@ -81,3 +83,15 @@ for gb in gb2
 end
 display(p5)
 savefig(joinpath(dirname(@__FILE__), "CAPlot.png"))
+
+p6 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(400, 300), guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize))
+gb2 = groupby(df, (1:7))
+for gb in gb2
+    if size(gb)[1] > 5
+        gbt = combine(groupby(gb, (8)), (9) => mean)
+        gbs = sort!(gbt, (1))
+        plot!(gbs[!, 1], gbs[!, 2])
+    end
+end
+display(p6)
+savefig(joinpath(dirname(@__FILE__), "CAPlot2.png"))
