@@ -25,7 +25,7 @@ namedf = names(df)
 stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 tdf = copy(df)
 
-fsize = 12
+fsize = 10
 
 sdf = stack(rename!(tdf, string.((1:9))), 1:7; variable_name = :Component)
 @df sdf violin(string.(:Component), :value, linewidth=0, ylabel="kg/m3", legend=false)
@@ -95,3 +95,15 @@ for gb in gb2
 end
 display(p6)
 savefig(joinpath(dirname(@__FILE__), "CAPlot2.png"))
+
+p7 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(700, 600), guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize))
+gb2 = groupby(df, (1:7))
+for gb in gb2
+    if size(gb)[1] > 5
+        gbt = combine(groupby(gb, (8)), (9) => mean)
+        gbs = sort!(gbt, (1))
+        plot!(gbs[!, 1], gbs[!, 2])
+    end
+end
+display(p7)
+savefig(joinpath(dirname(@__FILE__), "CAPlot3.png"))
