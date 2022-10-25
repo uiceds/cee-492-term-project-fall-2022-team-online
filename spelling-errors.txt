@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-Compressive
+compressive
 Dafar
 dafarno
 dataset
