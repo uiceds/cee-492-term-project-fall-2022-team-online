@@ -22,6 +22,8 @@ end
 df = CSV.read(joinpath(dirname(@__FILE__), "Concrete_Data_RA.csv"), DataFrame)
 
 namedf = names(df)
+namedfs = split.(namedf, ' ')
+display(vcat.(namedfs))
 stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 tdf = copy(df)
 
@@ -42,7 +44,7 @@ p3 = @df df dotplot!([namedf[9]], cols(9), markersize=1, markercolor=:black, xro
 
 l = @layout [a{0.8w} [grid(2, 1)]]
 title1 = ["($i)" for j in 1:1, i in 1:3]
-display(plot(p1, p2, p3, layout = l, size=(1400, 1400), left_margin = [0mm 0mm 0mm], bottom_margin = [0mm 0mm 0mm], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize), title=title1, titleloc = :right, titlefont = font(fsize)))
+display(plot(p1, p2, p3, layout = l, size=(1400, 1400), left_margin = [5mm 0mm 0mm], bottom_margin = [0mm 0mm 0mm], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize), title=title1, titleloc = :right, titlefont = font(fsize)))
 savefig(joinpath(dirname(@__FILE__), "BoxViolinDot.png"))
 
 conf = set_pt_conf(tf = tf_markdown);
@@ -64,7 +66,7 @@ groupby(df, (10))
 p4x = df[!, 2]./df[!, 1]
 p4y = df[!, 9]
 
-display(plot(p4x, p4y, seriestype=:scatter, yaxis=:log, yticks=(0:7:100), yformatter=x->@sprintf("%.0f", x), legend=false, size=(1400, 1000), xlabel="W/C Ratio", ylabel=namedf[9], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize)))
+display(plot(p4x, p4y, seriestype=:scatter, yaxis=:log, yticks=(0:7:100), yformatter=x->@sprintf("%.0f", x), legend=false, size=(1400, 1200), xlabel="W/C Ratio", ylabel=namedf[9], guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize), left_margin=7mm, bottom_margin=7mm))
 savefig(joinpath(dirname(@__FILE__), "WCPlot.png"))
 compvagemean = combine(groupby(df, 8), propertynames(df)[9] => mean)
 
@@ -72,7 +74,7 @@ plot(contdf[1][!, 8], contdf[1][!, 9], seriestype=:scatter, legend=false, size=(
 display(plot!(compvagemean[!, 1], compvagemean[!, 2]))
 # savefig(joinpath(dirname(@__FILE__), "CAPlot.png"))
 
-p5 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(1400, 1000), guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize))
+p5 = plot(legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(1400, 1000), guidefontsize = fsize, xtickfont = font(fsize), ytickfont = font(fsize), left_margin=7mm, bottom_margin=7mm)
 gb2 = groupby(df, (1:7))
 for gb in gb2
     if size(gb)[1] > 5
