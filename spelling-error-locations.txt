@@ -55,10 +55,6 @@ content/03.exploratorydataanalysis.md:47:MPa
 content/03.exploratorydataanalysis.md:47:MPa
 content/03.exploratorydataanalysis.md:50:Compressive
 content/03.exploratorydataanalysis.md:54:Compressive
-content/03.exploratorydataanalysis.md:58:Compressive
-content/03.exploratorydataanalysis.md:62:Compressive
-content/03.exploratorydataanalysis.md:66:Compressive
-content/03.exploratorydataanalysis.md:70:Compressive
 content/90.back-matter.md:4:compressive
 content/90.back-matter.md:4:Compressive
 content/90.back-matter.md:4:uci

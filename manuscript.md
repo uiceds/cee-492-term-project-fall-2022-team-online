@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b1d2c9359d82aa7d2f7539801173b06ecb9ce53d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b1d2c9359d82aa7d2f7539801173b06ecb9ce53d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b1d2c9359d82aa7d2f7539801173b06ecb9ce53d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e91fdc9085c70df63cf84c2b08ac7638948d7b95/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e91fdc9085c70df63cf84c2b08ac7638948d7b95/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e91fdc9085c70df63cf84c2b08ac7638948d7b95/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b1d2c9359d82aa7d2f7539801173b06ecb9ce53d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e91fdc9085c70df63cf84c2b08ac7638948d7b95/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@b1d2c93](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/b1d2c9359d82aa7d2f7539801173b06ecb9ce53d)
+from [uiceds/cee-492-term-project-fall-2022-team-online@e91fdc9](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/e91fdc9085c70df63cf84c2b08ac7638948d7b95)
 on October 25, 2022.
 </em></small>
 
@@ -177,7 +177,7 @@ Table: Summary Statistics in Table Form.
 
 ![
 Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig width="70px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig width="500px"}
 
 Table @tbl:summarytable shows the mean, standard deviation, minimum & maximum, first quartile, median, and third quartile. Figure @fig:summaryfig shows a visual form of Table @tbl:summarytable.
 
@@ -204,27 +204,11 @@ The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and m
 
 ![
 Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig width="70px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig width="500px"}
 
 ![
 Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="70px"}
-
-![
-Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="200px"}
-
-![
-Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="300px"}
-
-![
-Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="400px"}
-
-![
-Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="500px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="500px" align=center}
 
 ## References {.page_break_before}
 
