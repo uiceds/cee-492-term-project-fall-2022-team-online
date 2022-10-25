@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@2ae9db3](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2ae9db3f2cab739d6dac62ed3c3509e1291ef645)
+from [uiceds/cee-492-term-project-fall-2022-team-online@8537ade](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/8537ade5d38b3cd2226b48788584d8c4a4ff3abb)
 on October 25, 2022.
 </em></small>
 
@@ -116,40 +116,40 @@ The model aims to predict the 28<sup>th</sup> day compressive strength of concre
 To minimize such errors, this model predicts the 28<sup>th</sup> day compressive strength instantaneously when a batch of concrete mix is created. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model. 
 
 
-## Description
-The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable. 
-
 ## Dataset
 
-### Column A/ Component 1: Cement 
+### Description
+The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable. 
+
+#### Column A/ Component 1: Cement 
 Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore; and it is most commonly used. According to the ASTM standard, there are five types of cement, the difference due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-### Column B/ Component 2: Blast Furnace Slag
+#### Column B/ Component 2: Blast Furnace Slag
 Blast furnace Ash is a nonmetallic co-product obtained in the production of iron, iron ore, iron scrap and fluxed. It is commonly used in cement production as a substitute for clinker and in concrete production as a substitute for aggregates. The use of slag cement improves performance and durability of concrete.
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-### Column C/ Component 3: Fly Ash
+#### Column C/ Component 3: Fly Ash
 Fly Ash is byproduct of burning pulverized coal in electric generation.
 It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration. 
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-### Column D/ Component 4: Water {.page_break_before}
+#### Column D/ Component 4: Water {.page_break_before}
 Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete. 
 The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-### Column E/ Component 5: Superplasticizer
+#### Column E/ Component 5: Superplasticizer
 Superplasticizers are chemical compounds used to reduce the amount of water content in the concrete mixture to produce high-strength concrete while maintaining enough workability. The used unit is kg of the superplasticizer to 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-### Column F/ Component 6: Coarse Aggregate
+#### Column F/ Component 6: Coarse Aggregate
 Coarse Aggregates are inert, granular, and inorganic material. Coarse Aggregates are aggregates that are larger or equal to the ASTM sieve size 4.75mm. Typical coarse aggregates are gravel, crushed stone or previously used concrete etc. They occupy a large volume in a concrete mix (~65-75%), as it acts as an economic filler for cement. The unit used is kg of coarse aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-### Column G/ Component 7: Fine Aggregate
+#### Column G/ Component 7: Fine Aggregate
 Fine Aggregates are inert, granular, and inorganic material. Fine Aggregates are aggregates that are smaller than the ASTM sieve size 4.75mm. Typical fine aggregates are sand, crushed stone or burnt clays etc. The fine aggregates fill in the voids between coarse aggregates. It also provides resistance against shrinking and cracking. The unit used is kg of fine aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
  
-### Column H/ Component 8: Age
+#### Column H/ Component 8: Age
 This column represents the age of the concrete mixture after pouring. The concrete gains its strength gradually with time, and according to the ASTM, it reaches to 99% of the target compressive strength after 28 days. The strength will continue to increase after years and it can become larger than the target compressive strength (strength percent > 100%). The unit of this column data is in days. 
  
-### Column I/ Output 1: Concrete compressive strength
+#### Column I/ Output 1: Concrete compressive strength
  It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property reported at 28 days of curing time.
 
 
@@ -178,7 +178,7 @@ Table: Summary Statistics in Table Form.
 
 ![
 Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig width="700px"}
 
 Table @tbl:summarytable shows the mean, standard deviation, minimum & maximum, first quartile, median, and third quartile. Figure @fig:summaryfig shows a visual form of Table @tbl:summarytable.
 
@@ -205,11 +205,11 @@ The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and m
 
 ![
 Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig width="700px"}
 
 ![
 Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="700px"}
 
 ## References {.page_break_before}
 
