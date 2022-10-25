@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@5b9c8b6](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/5b9c8b62923fdb45192c30721ccb4a71db5f015e)
+from [uiceds/cee-492-term-project-fall-2022-team-online@2ae9db3](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2ae9db3f2cab739d6dac62ed3c3509e1291ef645)
 on October 25, 2022.
 </em></small>
 
@@ -202,6 +202,14 @@ Blast furnace slag, fly ash, and super plasticizer are not present in all observ
 The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting. 
 
 The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
+
+![
+Compressive Strength vs W/C Ratio.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig}
+
+![
+Compressive Strength vs W/C Ratio.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig}
 
 ## References {.page_break_before}
 
