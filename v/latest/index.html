@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ae9db3f2cab739d6dac62ed3c3509e1291ef645/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2ae9db3f2cab739d6dac62ed3c3509e1291ef645">uiceds/cee-492-term-project-fall-2022-team-online@2ae9db3</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/8537ade5d38b3cd2226b48788584d8c4a4ff3abb">uiceds/cee-492-term-project-fall-2022-team-online@8537ade</a>
 on October 25, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -124,30 +124,30 @@ Department of Civil and Environmental Engineering, University of Illinois at Urb
 <p>The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model will predict the interactions between the concrete mix components to the compressive strength. The outputs being considered include a table of proportions for mix design and a formula for the compressive strength.</p>
 <p>The model aims to predict the 28<sup>th</sup> day compressive strength of concrete based on the dataset. Traditionally, to compare the actual compressive strength of concrete (Ca) against designed for strength (Cd), 28 days would need to be passed before a cube sample can be crushed to check the compressive strength. This is usually not a problem, if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additionally structures put in place to further enhance the strength.</p>
 <p>To minimize such errors, this model predicts the 28<sup>th</sup> day compressive strength instantaneously when a batch of concrete mix is created. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model.</p>
-<h2 id="description">Description</h2>
-<p>The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable.</p>
 <h2 id="dataset">Dataset</h2>
-<h3 id="column-a-component-1-cement">Column A/ Component 1: Cement</h3>
+<h3 id="description">Description</h3>
+<p>The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable.</p>
+<h4 id="column-a-component-1-cement">Column A/ Component 1: Cement</h4>
 <p>Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore; and it is most commonly used. According to the ASTM standard, there are five types of cement, the difference due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 id="column-b-component-2-blast-furnace-slag">Column B/ Component 2: Blast Furnace Slag</h3>
+<h4 id="column-b-component-2-blast-furnace-slag">Column B/ Component 2: Blast Furnace Slag</h4>
 <p>Blast furnace Ash is a nonmetallic co-product obtained in the production of iron, iron ore, iron scrap and fluxed. It is commonly used in cement production as a substitute for clinker and in concrete production as a substitute for aggregates. The use of slag cement improves performance and durability of concrete.
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 id="column-c-component-3-fly-ash">Column C/ Component 3: Fly Ash</h3>
+<h4 id="column-c-component-3-fly-ash">Column C/ Component 3: Fly Ash</h4>
 <p>Fly Ash is byproduct of burning pulverized coal in electric generation.
 It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration.
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 class="page_break_before" id="column-d-component-4-water">Column D/ Component 4: Water</h3>
+<h4 class="page_break_before" id="column-d-component-4-water">Column D/ Component 4: Water</h4>
 <p>Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete.
 The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 id="column-e-component-5-superplasticizer">Column E/ Component 5: Superplasticizer</h3>
+<h4 id="column-e-component-5-superplasticizer">Column E/ Component 5: Superplasticizer</h4>
 <p>Superplasticizers are chemical compounds used to reduce the amount of water content in the concrete mixture to produce high-strength concrete while maintaining enough workability. The used unit is kg of the superplasticizer to 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 id="column-f-component-6-coarse-aggregate">Column F/ Component 6: Coarse Aggregate</h3>
+<h4 id="column-f-component-6-coarse-aggregate">Column F/ Component 6: Coarse Aggregate</h4>
 <p>Coarse Aggregates are inert, granular, and inorganic material. Coarse Aggregates are aggregates that are larger or equal to the ASTM sieve size 4.75mm. Typical coarse aggregates are gravel, crushed stone or previously used concrete etc. They occupy a large volume in a concrete mix (~65-75%), as it acts as an economic filler for cement. The unit used is kg of coarse aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 id="column-g-component-7-fine-aggregate">Column G/ Component 7: Fine Aggregate</h3>
+<h4 id="column-g-component-7-fine-aggregate">Column G/ Component 7: Fine Aggregate</h4>
 <p>Fine Aggregates are inert, granular, and inorganic material. Fine Aggregates are aggregates that are smaller than the ASTM sieve size 4.75mm. Typical fine aggregates are sand, crushed stone or burnt clays etc. The fine aggregates fill in the voids between coarse aggregates. It also provides resistance against shrinking and cracking. The unit used is kg of fine aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).</p>
-<h3 id="column-h-component-8-age">Column H/ Component 8: Age</h3>
+<h4 id="column-h-component-8-age">Column H/ Component 8: Age</h4>
 <p>This column represents the age of the concrete mixture after pouring. The concrete gains its strength gradually with time, and according to the ASTM, it reaches to 99% of the target compressive strength after 28 days. The strength will continue to increase after years and it can become larger than the target compressive strength (strength percent &gt; 100%). The unit of this column data is in days.</p>
-<h3 id="column-i-output-1-concrete-compressive-strength">Column I/ Output 1: Concrete compressive strength</h3>
+<h4 id="column-i-output-1-concrete-compressive-strength">Column I/ Output 1: Concrete compressive strength</h4>
 <p>It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property reported at 28 days of curing time.</p>
 <h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <h3 id="summary-statistics">Summary Statistics</h3>
@@ -274,7 +274,7 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 </div>
 <div id="fig:summaryfig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png" alt="Figure 1: Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis" /><figcaption aria-hidden="true"><span>Figure 1:</span> Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png" width="700" alt="Figure 1: Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis" /><figcaption aria-hidden="true"><span>Figure 1:</span> Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis</figcaption>
 </figure>
 </div>
 <p>Table <a href="#tbl:summarytable">1</a> shows the mean, standard deviation, minimum &amp; maximum, first quartile, median, and third quartile. Figure <a href="#fig:summaryfig">1</a> shows a visual form of Table <a href="#tbl:summarytable">1</a>.</p>
@@ -342,12 +342,12 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 <p>The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.</p>
 <div id="fig:wcfig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png" alt="Figure 2: Compressive Strength vs W/C Ratio." /><figcaption aria-hidden="true"><span>Figure 2:</span> Compressive Strength vs W/C Ratio.</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png" width="700" alt="Figure 2: Compressive Strength vs W/C Ratio." /><figcaption aria-hidden="true"><span>Figure 2:</span> Compressive Strength vs W/C Ratio.</figcaption>
 </figure>
 </div>
 <div id="fig:cafig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" alt="Figure 3: Compressive Strength vs W/C Ratio." /><figcaption aria-hidden="true"><span>Figure 3:</span> Compressive Strength vs W/C Ratio.</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" width="700" alt="Figure 3: Compressive Strength vs W/C Ratio." /><figcaption aria-hidden="true"><span>Figure 3:</span> Compressive Strength vs W/C Ratio.</figcaption>
 </figure>
 </div>
 <h2 class="page_break_before" id="references">References</h2>
