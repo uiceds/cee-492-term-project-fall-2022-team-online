@@ -27,7 +27,7 @@ display(vcat.(namedfs))
 stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 tdf = copy(df)
 
-fsize = 18
+fsize = 24
 
 sdf = stack(rename!(tdf, string.((1:9))), 1:7; variable_name = :Component)
 @df sdf violin(string.(:Component), :value, linewidth=0, ylabel="kg/m3", legend=false)
