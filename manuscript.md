@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-10-24'
+date-meta: '2022-10-25'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-10-24" />
-  <meta name="citation_publication_date" content="2022-10-24" />
+  <meta name="dc.date" content="2022-10-25" />
+  <meta name="citation_publication_date" content="2022-10-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4d6861eb35430709734dc8653d3357878b1268f5/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5b9c8b62923fdb45192c30721ccb4a71db5f015e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@4d6861e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4d6861eb35430709734dc8653d3357878b1268f5)
-on October 24, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@5b9c8b6](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/5b9c8b62923fdb45192c30721ccb4a71db5f015e)
+on October 25, 2022.
 </em></small>
 
 ## Authors
@@ -157,14 +157,9 @@ This column represents the age of the concrete mixture after pouring. The concre
 
 ## Exploratory Data Analysis {.page_break_before}
 
-### Basic Statistics
+### Summary Statistics
 
-This section illustrates general statistics of the dataset. The purpose is to show simple trends in the dataset.
-
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:square-image}
+This section illustrates the general statistics of the dataset. The purpose is to show simple trends in the dataset.
 
 |                   variable |    mean |     std |     min |     q25 |  median |      q75 |      max |
 |----------------------------|---------|---------|---------|---------|---------|----------|----------|
@@ -178,28 +173,35 @@ Loaded from the latest version of image on GitHub.
 |                  Age (day) |  45.662 |  63.170 |   1.000 |   7.000 |  28.000 |   56.000 |  365.000 |
 | Compressive strength (MPa) |  35.818 |  16.706 |   2.330 |  23.710 |  34.445 |   46.135 |   82.600 | 
 
-Table: A table with a top caption and specified relative column widths.
-{#tbl:bowling-scores}
+Table: Summary Statistics in Table Form.
+{#tbl:summarytable}
 
 ![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:square-image}
+Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig}
 
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot2.png "Square image"){#fig:square-image}
+Table @tbl:summarytable shows the mean, standard deviation, minimum & maximum, first quartile, median, and third quartile. Figure @fig:summaryfig shows a visual form of Table @tbl:summarytable.
 
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot3.png "Square image"){#fig:square-image}
+The main components, cement, water, and aggregates are present in all concrete mixes. The aggregates make a major portion of the concrete mix. The portion of water in the observations do not vary as much as the other main components. 
 
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot4.png "Square image"){#fig:square-image}
+| With Blast Furnace Slag | With Fly Ash | With Superplasticizer | Observations |
+|-------------------------|--------------|-----------------------|--------------|
+|                   false |        false |                 false |          209 |
+|                   false |        false |                  true |           23 |
+|                   false |         true |                 false |            6 |
+|                   false |         true |                  true |          233 |
+|                    true |        false |                 false |          164 |
+|                    true |        false |                  true |          170 |
+|                    true |         true |                  true |          225 |
+
+Table: Secondary Component Observation Count.
+{#tbl:seccompobstable}
+
+Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table @tbl:seccompobstable shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash. 
+
+The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting. 
+
+The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
 
 ## References {.page_break_before}
 
