@@ -10,6 +10,7 @@ using Markdown
 using Plots.PlotMeasures
 using Printf
 using GLM
+using LaTeXStrings
 theme(:default)
 # include(joinpath(abspath(joinpath(pwd(), "..")), "tablehelper.jl"))
 
@@ -22,25 +23,26 @@ end
 df = CSV.read(joinpath(dirname(@__FILE__), "Concrete_Data_RA.csv"), DataFrame)
 
 namedf = names(df)
-namedfs = split.(namedf, ' ')
-display(vcat.(namedfs))
+namedfs = hcat(rsplit.(namedf, ' ', limit=2)...)
+nameonly = namedfs[1, :]
+unitonly = namedfs[2, :]
 stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 tdf = copy(df)
 
-fsize = 24
+fsize = 20
 
 sdf = stack(rename!(tdf, string.((1:9))), 1:7; variable_name = :Component)
-@df sdf violin(string.(:Component), :value, linewidth=0, ylabel="kg/m3", legend=false)
+@df sdf violin(string.(:Component), :value, linewidth=0, ylabel="kg/m³", legend=false)
 @df sdf boxplot!(string.(:Component), :value, fillalpha=0.75, linewidth=2, legend=false)
-p1 = @df sdf dotplot!(string.(:Component), :value, markersize=1, markercolor=:black, xrotation=45, xticks = (0.5:6.5, namedf))
+p1 = @df sdf dotplot!(string.(:Component), :value, markersize=1, markercolor=:black, xrotation=45, xticks = (0.5:6.5, nameonly[1:7]))
 
 @df df violin([namedf[8]], cols(8), linewidth=0, ylabel="days", legend=false)
 @df df boxplot!([namedf[8]], cols(8), fillalpha=0.75, linewidth=2, legend=false)
-p2 = @df df dotplot!([namedf[8]], cols(8), markersize=1, markercolor=:black, xrotation=45, xlims = (-0.4, 1.4))
+p2 = @df df dotplot!([namedf[8]], cols(8), markersize=1, markercolor=:black, xrotation=45, xlims = (-0.4, 1.4), xticks=((0.5), nameonly[8:8]))
 
 @df df violin([namedf[9]], cols(9), linewidth=0, ylabel="MPa", legend=false)
 @df df boxplot!([namedf[9]], cols(9), fillalpha=0.75, linewidth=2, legend=false)
-p3 = @df df dotplot!([namedf[9]], cols(9), markersize=1, markercolor=:black, xrotation=45, xlims = (-0.4, 1.4))
+p3 = @df df dotplot!([namedf[9]], cols(9), markersize=1, markercolor=:black, xrotation=45, xlims = (-0.4, 1.4), xticks=((0.5), nameonly[9:9]))
 
 l = @layout [a{0.8w} [grid(2, 1)]]
 title1 = ["($i)" for j in 1:1, i in 1:3]
