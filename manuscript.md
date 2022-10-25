@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f93d762c310ec2ee684187883903f878eb95d33b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f93d762c310ec2ee684187883903f878eb95d33b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f93d762c310ec2ee684187883903f878eb95d33b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8537ade5d38b3cd2226b48788584d8c4a4ff3abb/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f93d762c310ec2ee684187883903f878eb95d33b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@8537ade](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/8537ade5d38b3cd2226b48788584d8c4a4ff3abb)
+from [uiceds/cee-492-term-project-fall-2022-team-online@f93d762](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/f93d762c310ec2ee684187883903f878eb95d33b)
 on October 25, 2022.
 </em></small>
 
@@ -178,7 +178,7 @@ Table: Summary Statistics in Table Form.
 
 ![
 Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength Axis
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/BoxViolinDot.png "Square image"){#fig:summaryfig width="70px"}
 
 Table @tbl:summarytable shows the mean, standard deviation, minimum & maximum, first quartile, median, and third quartile. Figure @fig:summaryfig shows a visual form of Table @tbl:summarytable.
 
@@ -205,11 +205,11 @@ The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and m
 
 ![
 Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlot.png "Square image"){#fig:wcfig width="70px"}
 
 ![
 Compressive Strength vs W/C Ratio.
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Square image"){#fig:cafig width="70px"}
 
 ## References {.page_break_before}
 
