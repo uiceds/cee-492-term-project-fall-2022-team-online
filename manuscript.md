@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e3a8ffd4d7fb8644651ace7da9f91eae85dcb1f5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e3a8ffd4d7fb8644651ace7da9f91eae85dcb1f5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e3a8ffd4d7fb8644651ace7da9f91eae85dcb1f5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/801d1f4e035fc9c9ba5c94364b646dec1baa5e9c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/801d1f4e035fc9c9ba5c94364b646dec1baa5e9c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/801d1f4e035fc9c9ba5c94364b646dec1baa5e9c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e3a8ffd4d7fb8644651ace7da9f91eae85dcb1f5/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/801d1f4e035fc9c9ba5c94364b646dec1baa5e9c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@e3a8ffd](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/e3a8ffd4d7fb8644651ace7da9f91eae85dcb1f5)
+from [uiceds/cee-492-term-project-fall-2022-team-online@801d1f4](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/801d1f4e035fc9c9ba5c94364b646dec1baa5e9c)
 on October 25, 2022.
 </em></small>
 
@@ -201,6 +201,30 @@ Blast furnace slag, fly ash, and super plasticizer are not present in all observ
 The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting. 
 
 The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
+
+### Correlation
+
+MinWin
+
+Ibrahim
+
+### Specific Correlation
+
+In this section, the specific interactions between variables will be further discussed.
+
+Dafar
+
+Ray
+
+## Predictive Modelling {.page_break_before}
+
+### Plan
+
+The predictive model for this project will be a supervised regression predictive model. The goal is to predict the 28th day concrete compressive strength, given cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate. 
+The dataset is a labelled dataset as such supervised learning method will be used train the model. The dataset will be split into training, testing and validation set using cross validation method. The training set will be used to train the model, the testing set will be used to optimize the model, and the validation set will be used to evaluate the performance of the model based on unseen data. The dataset will also be standardized to ensure there is no mismatch of the different scales for the variables.
+The preliminary model will be a linear or polynomial model, using gradient descent and an error function such as MSE to train model. To ensure that the model does not overfit the training model, a regularization term either L1 or L2 will be used to optimize the model. L1 in the case of feature selection by reducing non-essential variables to zero, and L2 for the case of lowering the influence of non- essential variables.
+Another preliminary predictive model is to use PCA for regression. By transforming the standardized training data into PCA coordinate systems, key variables can be selected while retraining confounding variables.
+The output of the model will be able to predict the 28th day concrete compressive strength.  The purpose is to use the model to achieve the instantaneous 28th day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28th day strength, a cube sample will be crushed on the 28th day to find out the strength. By having instantaneous 28th day strength, faulty batches that do not meet the 28th day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.
 
 ## References {.page_break_before}
 
