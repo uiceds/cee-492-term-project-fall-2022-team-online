@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@d322c94](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d322c94703dd972e4d847324731e2da9cf6762cd)
+from [uiceds/cee-492-term-project-fall-2022-team-online@398acdf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/398acdf49b3bf6c0eb8f841077348e83b553549d)
 on October 26, 2022.
 </em></small>
 
@@ -201,13 +201,14 @@ Blast furnace slag, fly ash, and super plasticizer are not present in all observ
 The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting. 
 
 The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
+<div style="page-break-after: always;"></div>
 
 ### Correlation
 In this section, the general correlation between various variables has been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete. 
 
 ![
 Correlation plot of Water, Superplasticizer & Compressive Strength 
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Min Win/plot_1to3.png "Plot_1to3"){#fig:wTOcfig1 width="500px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Min Win/plot_1to3.png "Plot_1to3"){#fig:Plot_1to3 width="500px"}
 
 |                            | Cement (kg/m3) | Blast Furnace Slag (kg/m3) | Fly Ash (kg/m3) | Compressive strength (MPa) |
 |----------------------------|----------------|----------------------------|-----------------|----------------------------|
@@ -216,9 +217,9 @@ Correlation plot of Water, Superplasticizer & Compressive Strength
 |            Fly Ash (kg/m3) |          -0.40 |                      -0.32 |            1.00 |                      -0.11 |
 | Compressive strength (MPa) |           0.50 |                       0.13 |           -0.11 |                       1.00 |
 Table: Correlation table of Cement, Blast Furnace Slag, Fly Ash, Compressive Strength
-{#tbl:seccompobstable}
+{#tbl:corr13}
 
-From figure 1 and table 1, is can be seen that apart from the positive correlation of compressive strength to cement, most other correlations have a neutral to negative correlation.  
+From Figure @fig:Plot_1to3 and Table @tbl:corr13, is can be seen that apart from the positive correlation of compressive strength to cement, most other correlations have a neutral to negative correlation.  
 
 For the comparison of Compressive Strength against Cement, it is seen to have a moderate positive correlation of 0.50.  This tells us that as cement content increases, the compressive strength of concrete also increases. 
 
@@ -228,7 +229,45 @@ For the correlation plots comparing Fly Ash against Cement, Fly Ash against Blas
 
 From the histogram plots, it can be seen that Blast Furnace Slag and Fly Ash there is a high count of zero, showing that not all concrete mix designs require them. As such, it might be important to take into consideration the effects of the large amounts of zeros during preliminary modelling.  
 
-Ibrahim
+
+![
+Correlation plot of water , superplasticizer and compressive strength
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Pim/plot_4to5-2.png "plot_4to5-2"){#fig:plot4to5 width="500px"}
+
+
+|                            | Water (kg/m3) | Superplasticizer (kg/m3) | Compressive strength (MPa) |
+|----------------------------|---------------|--------------------------|----------------------------|
+|              Water (kg/m3) |          1.00 |                    -0.66 |                      -0.29 |
+|   Superplasticizer (kg/m3) |         -0.66 |                     1.00 |                       0.37 |
+| Compressive strength (MPa) |         -0.29 |                     0.37 |                       1.00 |
+
+Table: Correlation coefficients of water , superplasticizer and compressive strength
+{#tbl:corr4to5}
+
+From Table @tbl:corr4to5, we see a weak positive correlation of 0.36 between the amount of superplasticizer in the mix and compressive strength. 
+
+Table @tb3:corr4to5 also shows a weak negative correlation of -0.29 between Water content and compressive strength. 
+
+As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete.   
+
+We can also observe that Water content and superplasticizer amount have a strong negative correlation of -0.65. Overall the more superplasticizer we have, the less water there is in these concrete mixes. 
+
+![
+Correlation plot of Fine Aggregates , Coarse Aggregates and compressive strength
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Pim/plot_6to7.png "plot_6to7"){#fig:plot6to7 width="500px"}
+
+|                            | Coarse Aggregate (kg/m3) | Fine Aggregate (kg/m3) | Compressive strength (MPa) |
+|----------------------------|--------------------------|------------------------|----------------------------|
+|   Coarse Aggregate (kg/m3) |                     1.00 |                  -0.66 |                      -0.29 |
+|     Fine Aggregate (kg/m3) |                    -0.66 |                   1.00 |                       0.37 |
+| Compressive strength (MPa) |                    -0.29 |                   0.37 |                       1.00 |
+
+Table: Correlation coefficients of water , superplasticizer and compressive strength
+{#tbl:corr6to7}
+
+In Table @tbl:corr6to7, we can see the correlations between fine aggregates, coarse aggregates and compressive strength.  We have a weak negative correlation of   -0.16 between Fine aggregates and compressive strength and a weak negative correlation coefficient of -0.16 between coarse aggregates and compressive strength. We might gain more insight by taking these two elements together and comparing them to the compressive strength.  
+
+These correlations are in line with what is expected for a concrete mix. 
 
 ### Specific Correlation
 
