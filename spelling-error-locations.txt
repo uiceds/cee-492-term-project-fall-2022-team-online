@@ -55,7 +55,15 @@ content/03.exploratorydataanalysis.md:47:MPa
 content/03.exploratorydataanalysis.md:47:MPa
 content/03.exploratorydataanalysis.md:51:MinWin
 content/03.exploratorydataanalysis.md:53:Ibrahim
-content/03.exploratorydataanalysis.md:59:Dafar
+content/03.exploratorydataanalysis.md:60:compressive
+content/03.exploratorydataanalysis.md:61:Dafar
+content/03.exploratorydataanalysis.md:63:compressive
+content/03.exploratorydataanalysis.md:63:compressive
+content/03.exploratorydataanalysis.md:63:compressive
+content/03.exploratorydataanalysis.md:63:compressive
+content/03.exploratorydataanalysis.md:66:compressive
+content/03.exploratorydataanalysis.md:67:Dafar
+content/03.exploratorydataanalysis.md:69:compressive
 content/04.predictivemodelling.md:1:Modelling
 content/04.predictivemodelling.md:5:compressive
 content/04.predictivemodelling.md:5:superplasticizer
