@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/930e00da93cf551b83c5903be46d9a7a935a0b00/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/930e00da93cf551b83c5903be46d9a7a935a0b00/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/930e00da93cf551b83c5903be46d9a7a935a0b00/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/57438bfd89ef182ff018962dd308ab9da79a4192/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/57438bfd89ef182ff018962dd308ab9da79a4192/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/57438bfd89ef182ff018962dd308ab9da79a4192/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/930e00da93cf551b83c5903be46d9a7a935a0b00/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/57438bfd89ef182ff018962dd308ab9da79a4192/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@930e00d](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/930e00da93cf551b83c5903be46d9a7a935a0b00)
+from [uiceds/cee-492-term-project-fall-2022-team-online@57438bf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/57438bfd89ef182ff018962dd308ab9da79a4192)
 on October 26, 2022.
 </em></small>
 
@@ -315,28 +315,10 @@ Another preliminary predictive model is to use PCA for regression. By transformi
 
 The output of the model will be able to predict the 28th day concrete compressive strength.  The purpose is to use the model to achieve the instantaneous 28th day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28th day strength, a cube sample will be crushed on the 28th day to find out the strength. By having instantaneous 28th day strength, faulty batches that do not meet the 28th day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.
 
-![
-Original
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png "Original"){#fig:cafig width="500px"}
-
-![
-96
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png "96"){#fig:ca96fig}
-
-![
-300
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png "300"){#fig:ca300fig}
-
-![
-96 500
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png "96"){#fig:ca96500fig width="500px"}
-
-![
-300 500
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png "300"){#fig:ca300500fig width="500px"}
-
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
-Yeh, I., 2007. UCI Machine Learning Repository: Concrete Compressive Strength Data Set. [online] Archive.ics.uci.edu. Available at: <https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength> [Accessed 19 September 2022].
+Concrete manual - A water resources technical publication. (8th ed.). (1975). 
+Merritt, F. S. (1983). Standard Handbook for Civil Engineers, 3 Ed. McGraw-Hill.
+Yeh, I.-C. (2007). UCI Machine Learning Repository: Concrete Compressive Strength Data Set. Retrieved September 19, 2022, from https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength. 
 <div id="refs"></div>
