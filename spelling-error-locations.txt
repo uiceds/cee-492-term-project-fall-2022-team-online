@@ -64,6 +64,13 @@ content/03.exploratorydataanalysis.md:63:compressive
 content/03.exploratorydataanalysis.md:66:compressive
 content/03.exploratorydataanalysis.md:67:Dafar
 content/03.exploratorydataanalysis.md:69:compressive
+content/03.exploratorydataanalysis.md:74:Compressive
+content/03.exploratorydataanalysis.md:78:compressive
+content/03.exploratorydataanalysis.md:81:compressive
+content/03.exploratorydataanalysis.md:84:Compressive
+content/03.exploratorydataanalysis.md:84:Merrit
+content/03.exploratorydataanalysis.md:87:compressive
+content/03.exploratorydataanalysis.md:87:compressive
 content/04.predictivemodelling.md:1:Modelling
 content/04.predictivemodelling.md:5:compressive
 content/04.predictivemodelling.md:5:superplasticizer

@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/c93b6e5dab108203069fe72f27d8d47c1b80b65c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/c93b6e5dab108203069fe72f27d8d47c1b80b65c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/c93b6e5dab108203069fe72f27d8d47c1b80b65c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/89a17abf371430d97492d7c8e27a44eb5d22a3f6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/89a17abf371430d97492d7c8e27a44eb5d22a3f6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/89a17abf371430d97492d7c8e27a44eb5d22a3f6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/c93b6e5dab108203069fe72f27d8d47c1b80b65c/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/89a17abf371430d97492d7c8e27a44eb5d22a3f6/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@c93b6e5](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/c93b6e5dab108203069fe72f27d8d47c1b80b65c)
+from [uiceds/cee-492-term-project-fall-2022-team-online@89a17ab](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/89a17abf371430d97492d7c8e27a44eb5d22a3f6)
 on October 26, 2022.
 </em></small>
 
@@ -214,17 +214,33 @@ In this section, the specific interactions between variables will be further dis
 
 ![
 Correlation plot of Water/cement ratio against the concrete compressive strength
-](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/blob/main/reference/Dafar/plot_5.png "Plot_5"){#fig:wTOcfig1 width="500px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5.png "Plot_5"){#fig:wTOcfig1 width="500px"}
 
 @fig:wTOcfig1 shows the relationship between the water to cement ratio (w/c) and concrete compressive strength. This ratio is considered the most significant influence on the final compressive strength of the concrete mixture. As we can see from @fig:wTOcfig1, the strength of concrete increases as the w/c decreases.  The reason for that is as the amount of water increases in the mixture (for a specific amount of cement), the distance between the cement particles increases which leads to a more diluted and weaker paste. In practice, the w/c ranges from about 0.3 to over 0.8, which is the range where have the largest number of data as seen in the histogram in @fig:wTOcfig1. It is noticeable that there are significant amount of scatter in this relationship which can be attributed to two main reasons. First, this figure includes all the available concrete compressive strength data that have been measured at different concrete ages. The second, there are other factors that play a role in the final concrete compressive strength like the amount of fine and coarse aggregates, and these factors are not filtered within the data used to plot this figure.   
 
 ![
 Correlation plot of Water/cement ratio against the concrete compressive strength at 28 days
-](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/blob/main/reference/Dafar/plot_5b.png "Plot_5b"){#fig:wTOcfig2 width="500px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5b.png "Plot_5b"){#fig:wTOcfig2 width="500px"}
 
 To see how better the relationship can be, the factor of the concrete age was eliminated. In @fig:wTOcfig2, we are plotting the same relationship as in @fig:wTOcfig1 but just using the concrete compressive strength data at 28 days. It is clear that the scatter has been reduced and the effect of the w/c became more apparent.  
 
-Ray
+The same trend can also be observed in the work that has been done by US Bureau of Reclamation (1975) as shown in @fig:wTOcfig3 below.  
+
+![
+Compressive strength versus w/c (US Bureau of Reclamation, 1975)
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlotRef.png  "WCPlotRef"){#fig:wTOcfig3 width="500px"}
+
+![
+Average compressive strength versus age of observations without secondary components
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png  "CAPlot"){#fig:wTOcfig4 width="500px"}
+
+@fig:wTOcfig4 shows averaged compressive strength from observations with the same primary components and more than five instances of measurement in time. 
+
+![
+Compressive strength versus age (Merrit, 1983)
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlotRef.png   "CAPlotRef"){#fig:wTOcfig5 width="500px"}
+
+In addition to the w/c, the compressive strength against age can also be referenced to established standards. @fig:wTOcfig5 shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in @fig:wTOcfig4 can be seen in @fig:wTOcfig5. 
 
 ## Predictive Modelling {.page_break_before}
 

@@ -5,12 +5,13 @@ clays
 compressive
 Dafar
 dafarno
-dataset
+Dataset
 FrenchToastty
 Ibrahim
 Ibrahima
 labelled
 Mbodj
+Merrit
 MinWin
 Modelling
 MPa
