@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/325646079f4bffd78f400e9b4e699068bd3fd073/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/325646079f4bffd78f400e9b4e699068bd3fd073/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/325646079f4bffd78f400e9b4e699068bd3fd073/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/11afe0abc084b4840649821fd292c4d247e96d07/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/11afe0abc084b4840649821fd292c4d247e96d07/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/11afe0abc084b4840649821fd292c4d247e96d07/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/325646079f4bffd78f400e9b4e699068bd3fd073/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/11afe0abc084b4840649821fd292c4d247e96d07/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@3256460](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/325646079f4bffd78f400e9b4e699068bd3fd073)
+from [uiceds/cee-492-term-project-fall-2022-team-online@11afe0a](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/11afe0abc084b4840649821fd292c4d247e96d07)
 on October 26, 2022.
 </em></small>
 
@@ -158,7 +158,7 @@ This column represents the age of the concrete mixture after pouring. The concre
 
 ### Summary Statistics
 
-This section illustrates the general statistics of the dataset. The purpose is to show simple trends in the dataset.
+This section illustrates the general statistics of the dataset to show simple trends in the dataset.
 
 |                   variable |    mean |     std |     min |     q25 |  median |      q75 |      max |
 |----------------------------|---------|---------|---------|---------|---------|----------|----------|
@@ -172,7 +172,7 @@ This section illustrates the general statistics of the dataset. The purpose is t
 |                  Age (day) |  45.662 |  63.170 |   1.000 |   7.000 |  28.000 |   56.000 |  365.000 |
 | Compressive strength (MPa) |  35.818 |  16.706 |   2.330 |  23.710 |  34.445 |   46.135 |   82.600 | 
 
-Table: Summary Statistics in Table Form.
+Table: Summary Statistics
 {#tbl:summarytable}
 
 ![
@@ -193,7 +193,7 @@ The main components, cement, water, and aggregates are present in all concrete m
 |                    true |        false |                  true |          170 |
 |                    true |         true |                  true |          225 |
 
-Table: Secondary Component Observation Count.
+Table: Secondary Component Observation Count
 {#tbl:seccompobstable}
 
 Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table @tbl:seccompobstable shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash. 
@@ -242,9 +242,7 @@ Compressive strength versus age (Merrit, 1983)
 
 In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure @fig:wTOcfig5 shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in Figure @fig:wTOcfig4 can be seen in Figure @fig:wTOcfig5. 
 
-## Predictive Modelling {.page_break_before}
-
-### Plan
+## Predictive Modeling Plan {.page_break_before}
 
 The predictive model for this project will be a supervised regression predictive model. The goal is to predict the 28th day concrete compressive strength, given cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate. 
 
