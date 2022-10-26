@@ -2,10 +2,10 @@ ASTM
 Ausan
 Champaign
 clays
-Compressive
+compressive
 Dafar
 dafarno
-dataset
+Dataset
 FrenchToastty
 Ibrahim
 Ibrahima
