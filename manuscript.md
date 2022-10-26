@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@4939c6a](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4939c6a639c86e3716453657ffe9483dcee5b811)
+from [uiceds/cee-492-term-project-fall-2022-team-online@d322c94](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d322c94703dd972e4d847324731e2da9cf6762cd)
 on October 26, 2022.
 </em></small>
 
@@ -203,8 +203,30 @@ The median age of concrete strength measurement is at 28 days. Typical concrete 
 The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
 
 ### Correlation
+In this section, the general correlation between various variables has been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete. 
 
-MinWin
+![
+Correlation plot of Water, Superplasticizer & Compressive Strength 
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Min Win/plot_1to3.png "Plot_1to3"){#fig:wTOcfig1 width="500px"}
+
+|                            | Cement (kg/m3) | Blast Furnace Slag (kg/m3) | Fly Ash (kg/m3) | Compressive strength (MPa) |
+|----------------------------|----------------|----------------------------|-----------------|----------------------------|
+|             Cement (kg/m3) |           1.00 |                      -0.28 |           -0.40 |                       0.50 |
+| Blast Furnace Slag (kg/m3) |          -0.28 |                       1.00 |           -0.32 |                       0.13 |
+|            Fly Ash (kg/m3) |          -0.40 |                      -0.32 |            1.00 |                      -0.11 |
+| Compressive strength (MPa) |           0.50 |                       0.13 |           -0.11 |                       1.00 |
+Table: Correlation table of Cement, Blast Furnace Slag, Fly Ash, Compressive Strength
+{#tbl:seccompobstable}
+
+From figure 1 and table 1, is can be seen that apart from the positive correlation of compressive strength to cement, most other correlations have a neutral to negative correlation.  
+
+For the comparison of Compressive Strength against Cement, it is seen to have a moderate positive correlation of 0.50.  This tells us that as cement content increases, the compressive strength of concrete also increases. 
+
+For Compressive Strength against Blast Furnace Slag and Fly Ash, which are commonly used as fillers for cement, it can be seen that they have a very weak correlation of 0.13 and -0.11. As such, it can be taken that Blast Furnace Slag and Fly Ash does not affect Compressive Strength when used as fillers for Cement. 
+
+For the correlation plots comparing Fly Ash against Cement, Fly Ash against Blast Furnace Slag, and Blast Furnace Slag against Cement, it can be seen that they have a weak correlation of -0.40, -0.32, -0.28. The negative correlations corelease with existing domain knowledge that Blast Furnace Slag and Fly Ash are substitutes of Cement. As when either the content of Blast Furnace Slag or Fly Ash goes up, the Cement content goes down.  
+
+From the histogram plots, it can be seen that Blast Furnace Slag and Fly Ash there is a high count of zero, showing that not all concrete mix designs require them. As such, it might be important to take into consideration the effects of the large amounts of zeros during preliminary modelling.  
 
 Ibrahim
 

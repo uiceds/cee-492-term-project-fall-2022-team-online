@@ -3,6 +3,7 @@ Ausan
 Champaign
 clays
 compressive
+corelease
 Dafar
 dafarno
 dataset
@@ -12,7 +13,7 @@ Ibrahima
 labelled
 Mbodj
 Merrit
-MinWin
+modelling
 MPa
 MSE
 Obeidat
@@ -27,7 +28,7 @@ seccompobstable
 strenght
 summaryfig
 summarytable
-superplasticizer
+Superplasticizer
 Superplasticizers
 UCI
 Urbana
