@@ -29,8 +29,8 @@ unitonly = namedfs[2, :]
 stat = describe(df, :mean, :std, :min, :q25, :median, :q75, :max)
 tdf = copy(df)
 
-fsize = 7
-ftsize = 7
+fsize = 5
+ftsize = 5
 
 sdf = stack(rename!(tdf, string.((1:9))), 1:7; variable_name = :Component)
 @df sdf violin(string.(:Component), :value, linewidth=0, ylabel="kg/m³", legend=false)
@@ -94,7 +94,7 @@ compvagemean = combine(groupby(df, 8), propertynames(df)[9] => mean)
 # display(plot!(compvagemean[!, 1], compvagemean[!, 2]))
 # savefig(joinpath(dirname(@__FILE__), "CAPlot.png"))
 
-p5 = plot(dpi=300, legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(500, 350), guidefontsize = fsize, xtickfont = font(ftsize), ytickfont = font(ftsize), left_margin=0px, bottom_margin=0mm, xticks=([7, 14, 28, 90, 180, 360]), yticks=(0:7:84), xlim=(0, 365), ylim=(0, 84))
+p5 = plot(dpi=300, legend=false, xlabel=namedf[8], ylabel=namedf[9], size=(500, 350), guidefontsize = fsize, xtickfont = font(ftsize), ytickfont = font(ftsize), left_margin=0px, bottom_margin=0mm, xticks=([0, 7, 14, 28, 90, 180, 360]), yticks=(0:7:84), xlim=(0, 365), ylim=(0, 84))
 gb2 = groupby(df, (1:7))
 for gb in gb2
     if size(gb)[1] > 5
