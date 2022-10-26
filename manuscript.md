@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/38fb54cd23ab55cbf29c75e6339f6b3656b46751/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/38fb54cd23ab55cbf29c75e6339f6b3656b46751/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/38fb54cd23ab55cbf29c75e6339f6b3656b46751/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/398acdf49b3bf6c0eb8f841077348e83b553549d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/38fb54cd23ab55cbf29c75e6339f6b3656b46751/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@398acdf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/398acdf49b3bf6c0eb8f841077348e83b553549d)
+from [uiceds/cee-492-term-project-fall-2022-team-online@38fb54c](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/38fb54cd23ab55cbf29c75e6339f6b3656b46751)
 on October 26, 2022.
 </em></small>
 
@@ -246,7 +246,7 @@ Table: Correlation coefficients of water , superplasticizer and compressive stre
 
 From Table @tbl:corr4to5, we see a weak positive correlation of 0.36 between the amount of superplasticizer in the mix and compressive strength. 
 
-Table @tb3:corr4to5 also shows a weak negative correlation of -0.29 between Water content and compressive strength. 
+Table @tbl:corr4to5 also shows a weak negative correlation of -0.29 between Water content and compressive strength. 
 
 As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete.   
 
