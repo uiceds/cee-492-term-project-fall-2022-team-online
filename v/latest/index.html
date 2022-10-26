@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4939c6a639c86e3716453657ffe9483dcee5b811/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d322c94703dd972e4d847324731e2da9cf6762cd/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4939c6a639c86e3716453657ffe9483dcee5b811">uiceds/cee-492-term-project-fall-2022-team-online@4939c6a</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d322c94703dd972e4d847324731e2da9cf6762cd">uiceds/cee-492-term-project-fall-2022-team-online@d322c94</a>
 on October 26, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -337,44 +337,106 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 </tbody>
 </table>
 </div>
-<p>Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table <a href="#tbl:seccompobstable">2</a> shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash.</p>
+<p>Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table <a href="#tbl:seccompobstable">3</a> shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash.</p>
 <p>The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting.</p>
 <p>The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.</p>
 <h3 id="correlation">Correlation</h3>
-<p>MinWin</p>
+<p>In this section, the general correlation between various variables has been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete.</p>
+<div id="fig:wTOcfig1" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Min%20Win/plot_1to3.png" width="500" alt="Figure 2: Correlation plot of Water, Superplasticizer &amp; Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 2:</span> Correlation plot of Water, Superplasticizer &amp; Compressive Strength</figcaption>
+</figure>
+</div>
+<div id="tbl:seccompobstable" class="tablenos">
+<table id="tbl:seccompobstable">
+<caption><span>Table 3:</span> Correlation table of Cement, Blast Furnace Slag, Fly Ash, Compressive Strength
+</caption>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 14%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Cement (kg/m3)</th>
+<th>Blast Furnace Slag (kg/m3)</th>
+<th>Fly Ash (kg/m3)</th>
+<th>Compressive strength (MPa)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cement (kg/m3)</td>
+<td>1.00</td>
+<td>-0.28</td>
+<td>-0.40</td>
+<td>0.50</td>
+</tr>
+<tr class="even">
+<td>Blast Furnace Slag (kg/m3)</td>
+<td>-0.28</td>
+<td>1.00</td>
+<td>-0.32</td>
+<td>0.13</td>
+</tr>
+<tr class="odd">
+<td>Fly Ash (kg/m3)</td>
+<td>-0.40</td>
+<td>-0.32</td>
+<td>1.00</td>
+<td>-0.11</td>
+</tr>
+<tr class="even">
+<td>Compressive strength (MPa)</td>
+<td>0.50</td>
+<td>0.13</td>
+<td>-0.11</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>From figure 1 and table 1, is can be seen that apart from the positive correlation of compressive strength to cement, most other correlations have a neutral to negative correlation.</p>
+<p>For the comparison of Compressive Strength against Cement, it is seen to have a moderate positive correlation of 0.50. This tells us that as cement content increases, the compressive strength of concrete also increases.</p>
+<p>For Compressive Strength against Blast Furnace Slag and Fly Ash, which are commonly used as fillers for cement, it can be seen that they have a very weak correlation of 0.13 and -0.11. As such, it can be taken that Blast Furnace Slag and Fly Ash does not affect Compressive Strength when used as fillers for Cement.</p>
+<p>For the correlation plots comparing Fly Ash against Cement, Fly Ash against Blast Furnace Slag, and Blast Furnace Slag against Cement, it can be seen that they have a weak correlation of -0.40, -0.32, -0.28. The negative correlations corelease with existing domain knowledge that Blast Furnace Slag and Fly Ash are substitutes of Cement. As when either the content of Blast Furnace Slag or Fly Ash goes up, the Cement content goes down.</p>
+<p>From the histogram plots, it can be seen that Blast Furnace Slag and Fly Ash there is a high count of zero, showing that not all concrete mix designs require them. As such, it might be important to take into consideration the effects of the large amounts of zeros during preliminary modelling.</p>
 <p>Ibrahim</p>
 <h3 id="specific-correlation">Specific Correlation</h3>
 <p>In this section, the specific interactions between variables will be further discussed.</p>
 <div id="fig:wTOcfig1" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5.png" width="500" alt="Figure 2: Correlation plot of Water/cement ratio against the concrete compressive strength" /><figcaption aria-hidden="true"><span>Figure 2:</span> Correlation plot of Water/cement ratio against the concrete compressive strength</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5.png" width="500" alt="Figure 3: Correlation plot of Water/cement ratio against the concrete compressive strength" /><figcaption aria-hidden="true"><span>Figure 3:</span> Correlation plot of Water/cement ratio against the concrete compressive strength</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:wTOcfig1">2</a> shows the relationship between the water to cement ratio (w/c) and concrete compressive strength. This ratio is considered the most significant influence on the final compressive strength of the concrete mixture. As we can see from Figure <a href="#fig:wTOcfig1">2</a>, the strength of concrete increases as the w/c decreases. The reason for that is as the amount of water increases in the mixture (for a specific amount of cement), the distance between the cement particles increases which leads to a more diluted and weaker paste. In practice, the w/c ranges from about 0.3 to over 0.8, which is the range where have the largest number of data as seen in the histogram in Figure <a href="#fig:wTOcfig1">2</a>. It is noticeable that there are significant amount of scatter in this relationship which can be attributed to two main reasons. First, this figure includes all the available concrete compressive strength data that have been measured at different concrete ages. The second, there are other factors that play a role in the final concrete compressive strength like the amount of fine and coarse aggregates, and these factors are not filtered within the data used to plot this figure.</p>
+<p>Figure <a href="#fig:wTOcfig1">3</a> shows the relationship between the water to cement ratio (w/c) and concrete compressive strength. This ratio is considered the most significant influence on the final compressive strength of the concrete mixture. As we can see from Figure <a href="#fig:wTOcfig1">3</a>, the strength of concrete increases as the w/c decreases. The reason for that is as the amount of water increases in the mixture (for a specific amount of cement), the distance between the cement particles increases which leads to a more diluted and weaker paste. In practice, the w/c ranges from about 0.3 to over 0.8, which is the range where have the largest number of data as seen in the histogram in Figure <a href="#fig:wTOcfig1">3</a>. It is noticeable that there are significant amount of scatter in this relationship which can be attributed to two main reasons. First, this figure includes all the available concrete compressive strength data that have been measured at different concrete ages. The second, there are other factors that play a role in the final concrete compressive strength like the amount of fine and coarse aggregates, and these factors are not filtered within the data used to plot this figure.</p>
 <div id="fig:wTOcfig2" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5b.png" width="500" alt="Figure 3: Correlation plot of Water/cement ratio against the concrete compressive strength at 28 days" /><figcaption aria-hidden="true"><span>Figure 3:</span> Correlation plot of Water/cement ratio against the concrete compressive strength at 28 days</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5b.png" width="500" alt="Figure 4: Correlation plot of Water/cement ratio against the concrete compressive strength at 28 days" /><figcaption aria-hidden="true"><span>Figure 4:</span> Correlation plot of Water/cement ratio against the concrete compressive strength at 28 days</figcaption>
 </figure>
 </div>
-<p>To see how better the relationship can be, the factor of the concrete age was eliminated. In Figure <a href="#fig:wTOcfig2">3</a>, we are plotting the same relationship as in Figure <a href="#fig:wTOcfig1">2</a> but just using the concrete compressive strength data at 28 days. It is clear that the scatter has been reduced and the effect of the w/c became more apparent.</p>
-<p>The same trend can also be observed in the work that has been done by US Bureau of Reclamation (1975) as shown in Figure <a href="#fig:wTOcfig3">4</a> below.</p>
+<p>To see how better the relationship can be, the factor of the concrete age was eliminated. In Figure <a href="#fig:wTOcfig2">4</a>, we are plotting the same relationship as in Figure <a href="#fig:wTOcfig1">3</a> but just using the concrete compressive strength data at 28 days. It is clear that the scatter has been reduced and the effect of the w/c became more apparent.</p>
+<p>The same trend can also be observed in the work that has been done by US Bureau of Reclamation (1975) as shown in Figure <a href="#fig:wTOcfig3">5</a> below.</p>
 <div id="fig:wTOcfig3" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlotRef.png" width="500" alt="Figure 4: Compressive strength versus w/c (US Bureau of Reclamation, 1975)" /><figcaption aria-hidden="true"><span>Figure 4:</span> Compressive strength versus w/c (US Bureau of Reclamation, 1975)</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/WCPlotRef.png" width="500" alt="Figure 5: Compressive strength versus w/c (US Bureau of Reclamation, 1975)" /><figcaption aria-hidden="true"><span>Figure 5:</span> Compressive strength versus w/c (US Bureau of Reclamation, 1975)</figcaption>
 </figure>
 </div>
 <div id="fig:wTOcfig4" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" width="500" alt="Figure 5: Average compressive strength versus age of observations without secondary components" /><figcaption aria-hidden="true"><span>Figure 5:</span> Average compressive strength versus age of observations without secondary components</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" width="500" alt="Figure 6: Average compressive strength versus age of observations without secondary components" /><figcaption aria-hidden="true"><span>Figure 6:</span> Average compressive strength versus age of observations without secondary components</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:wTOcfig4">5</a> shows averaged compressive strength from observations with the same primary components and more than five instances of measurement in time.</p>
+<p>Figure <a href="#fig:wTOcfig4">6</a> shows averaged compressive strength from observations with the same primary components and more than five instances of measurement in time.</p>
 <div id="fig:wTOcfig5" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlotRef.png" width="500" alt="Figure 6: Compressive strength versus age (Merrit, 1983)" /><figcaption aria-hidden="true"><span>Figure 6:</span> Compressive strength versus age (Merrit, 1983)</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlotRef.png" width="500" alt="Figure 7: Compressive strength versus age (Merrit, 1983)" /><figcaption aria-hidden="true"><span>Figure 7:</span> Compressive strength versus age (Merrit, 1983)</figcaption>
 </figure>
 </div>
-<p>In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure <a href="#fig:wTOcfig5">6</a> shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in Figure <a href="#fig:wTOcfig4">5</a> can be seen in Figure <a href="#fig:wTOcfig5">6</a>.</p>
+<p>In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure <a href="#fig:wTOcfig5">7</a> shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in Figure <a href="#fig:wTOcfig4">6</a> can be seen in Figure <a href="#fig:wTOcfig5">7</a>.</p>
 <h2 class="page_break_before" id="predictive-modeling-plan">Predictive Modeling Plan</h2>
 <p>The predictive model for this project will be a supervised regression predictive model. The goal is to predict the 28th day concrete compressive strength, given cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate.</p>
 <p>The dataset is a labelled dataset as such supervised learning method will be used train the model. The dataset will be split into training, testing and validation set using cross validation method. The training set will be used to train the model, the testing set will be used to optimize the model, and the validation set will be used to evaluate the performance of the model based on unseen data. The dataset will also be standardized to ensure there is no mismatch of the different scales for the variables.</p>
@@ -383,27 +445,27 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 <p>The output of the model will be able to predict the 28th day concrete compressive strength. The purpose is to use the model to achieve the instantaneous 28th day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28th day strength, a cube sample will be crushed on the 28th day to find out the strength. By having instantaneous 28th day strength, faulty batches that do not meet the 28th day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.</p>
 <div id="fig:cafig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" width="500" alt="Figure 7: Original" /><figcaption aria-hidden="true"><span>Figure 7:</span> Original</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" width="500" alt="Figure 8: Original" /><figcaption aria-hidden="true"><span>Figure 8:</span> Original</figcaption>
 </figure>
 </div>
 <div id="fig:ca96fig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png" alt="Figure 8: 96" /><figcaption aria-hidden="true"><span>Figure 8:</span> 96</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png" alt="Figure 9: 96" /><figcaption aria-hidden="true"><span>Figure 9:</span> 96</figcaption>
 </figure>
 </div>
 <div id="fig:ca300fig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png" alt="Figure 9: 300" /><figcaption aria-hidden="true"><span>Figure 9:</span> 300</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png" alt="Figure 10: 300" /><figcaption aria-hidden="true"><span>Figure 10:</span> 300</figcaption>
 </figure>
 </div>
 <div id="fig:ca96500fig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png" width="500" alt="Figure 10: 96 500" /><figcaption aria-hidden="true"><span>Figure 10:</span> 96 500</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png" width="500" alt="Figure 11: 96 500" /><figcaption aria-hidden="true"><span>Figure 11:</span> 96 500</figcaption>
 </figure>
 </div>
 <div id="fig:ca300500fig" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png" width="500" alt="Figure 11: 300 500" /><figcaption aria-hidden="true"><span>Figure 11:</span> 300 500</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png" width="500" alt="Figure 12: 300 500" /><figcaption aria-hidden="true"><span>Figure 12:</span> 300 500</figcaption>
 </figure>
 </div>
 <h2 class="page_break_before" id="references">References</h2>
