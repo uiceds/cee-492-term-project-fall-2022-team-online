@@ -8,7 +8,7 @@
   <meta name="author" content="Min Win Ye" />
   <meta name="author" content="Papa Ibrahima Mbodj" />
   <meta name="author" content="Dafar Obeidat" />
-  <meta name="dcterms.date" content="2022-10-25" />
+  <meta name="dcterms.date" content="2022-10-26" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Predictive Model for Concrete Compressive Strength</title>
   <style>
@@ -50,8 +50,8 @@
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-10-25" />
-  <meta name="citation_publication_date" content="2022-10-25" />
+  <meta name="dc.date" content="2022-10-26" />
+  <meta name="citation_publication_date" content="2022-10-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/157b41ee5358b4c817e36a6a244060a4cc3673c8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/157b41ee5358b4c817e36a6a244060a4cc3673c8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/157b41ee5358b4c817e36a6a244060a4cc3673c8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/29eaa71f9bb443f970f7a938aa1becdc35d4ade5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/29eaa71f9bb443f970f7a938aa1becdc35d4ade5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/29eaa71f9bb443f970f7a938aa1becdc35d4ade5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,10 +88,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/157b41ee5358b4c817e36a6a244060a4cc3673c8/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/29eaa71f9bb443f970f7a938aa1becdc35d4ade5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/157b41ee5358b4c817e36a6a244060a4cc3673c8">uiceds/cee-492-term-project-fall-2022-team-online@157b41e</a>
-on October 25, 2022.
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/29eaa71f9bb443f970f7a938aa1becdc35d4ade5">uiceds/cee-492-term-project-fall-2022-team-online@29eaa71</a>
+on October 26, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -354,6 +354,31 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 <p>The preliminary model will be a linear or polynomial model, using gradient descent and an error function such as MSE to train model. To ensure that the model does not overfit the training model, a regularization term either L1 or L2 will be used to optimize the model. L1 in the case of feature selection by reducing non-essential variables to zero, and L2 for the case of lowering the influence of non- essential variables.</p>
 <p>Another preliminary predictive model is to use PCA for regression. By transforming the standardized training data into PCA coordinate systems, key variables can be selected while retraining confounding variables.</p>
 <p>The output of the model will be able to predict the 28th day concrete compressive strength. The purpose is to use the model to achieve the instantaneous 28th day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28th day strength, a cube sample will be crushed on the 28th day to find out the strength. By having instantaneous 28th day strength, faulty batches that do not meet the 28th day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.</p>
+<div id="fig:cafig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot.png" width="500" alt="Figure 2: Original" /><figcaption aria-hidden="true"><span>Figure 2:</span> Original</figcaption>
+</figure>
+</div>
+<div id="fig:ca96fig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png" alt="Figure 3: 96" /><figcaption aria-hidden="true"><span>Figure 3:</span> 96</figcaption>
+</figure>
+</div>
+<div id="fig:ca300fig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png" alt="Figure 4: 300" /><figcaption aria-hidden="true"><span>Figure 4:</span> 300</figcaption>
+</figure>
+</div>
+<div id="fig:ca96500fig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot96.png" width="500" alt="Figure 5: 96 500" /><figcaption aria-hidden="true"><span>Figure 5:</span> 96 500</figcaption>
+</figure>
+</div>
+<div id="fig:ca300500fig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlot300.png" width="500" alt="Figure 6: 300 500" /><figcaption aria-hidden="true"><span>Figure 6:</span> 300 500</figcaption>
+</figure>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 Yeh, I., 2007. UCI Machine Learning Repository: Concrete Compressive Strength Data Set. [online] Archive.ics.uci.edu. Available at: <a href="https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength" class="uri">https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength</a> [Accessed 19 September 2022].
