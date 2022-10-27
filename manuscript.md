@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-10-26'
+date-meta: '2022-10-27'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-10-26" />
-  <meta name="citation_publication_date" content="2022-10-26" />
+  <meta name="dc.date" content="2022-10-27" />
+  <meta name="citation_publication_date" content="2022-10-27" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2e8ae3faf50c1b0c5e5ea79da3313538ea3f69ee/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2e8ae3faf50c1b0c5e5ea79da3313538ea3f69ee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2e8ae3faf50c1b0c5e5ea79da3313538ea3f69ee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d394181f679412299586791f9a36a51d874a2266/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d394181f679412299586791f9a36a51d874a2266/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d394181f679412299586791f9a36a51d874a2266/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2e8ae3faf50c1b0c5e5ea79da3313538ea3f69ee/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d394181f679412299586791f9a36a51d874a2266/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@2e8ae3f](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2e8ae3faf50c1b0c5e5ea79da3313538ea3f69ee)
-on October 26, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@d394181](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d394181f679412299586791f9a36a51d874a2266)
+on October 27, 2022.
 </em></small>
 
 ## Authors
@@ -315,6 +315,8 @@ The output of the model will be able to predict the 28th day concrete compressiv
 
 <!-- Explicitly insert bibliography here -->
 Concrete manual - A water resources technical publication. (8th ed.). (1975). 
+
 Merritt, F. S. (1983). Standard Handbook for Civil Engineers, 3 Ed. McGraw-Hill.
+
 Yeh, I.-C. (2007). UCI Machine Learning Repository: Concrete Compressive Strength Data Set. Retrieved September 19, 2022, from https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength. 
 <div id="refs"></div>
