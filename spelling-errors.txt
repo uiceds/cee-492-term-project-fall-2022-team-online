@@ -6,7 +6,7 @@ Compressive
 corelease
 Dafar
 dafarno
-Dataset
+dataset
 FrenchToastty
 Ibrahima
 labelled
@@ -28,7 +28,7 @@ seccompobstable
 strenght
 summaryfig
 summarytable
-superplasticizer
+Superplasticizer
 Superplasticizers
 UCI
 Urbana

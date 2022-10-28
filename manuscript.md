@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-10-27'
+date-meta: '2022-10-28'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-10-27" />
-  <meta name="citation_publication_date" content="2022-10-27" />
+  <meta name="dc.date" content="2022-10-28" />
+  <meta name="citation_publication_date" content="2022-10-28" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3c67df9cc50a7b0e84ac82473e9734254c603e0e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3c67df9cc50a7b0e84ac82473e9734254c603e0e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3c67df9cc50a7b0e84ac82473e9734254c603e0e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d644cda1110901d3c3322e28a331a3b79074103c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d644cda1110901d3c3322e28a331a3b79074103c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d644cda1110901d3c3322e28a331a3b79074103c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3c67df9cc50a7b0e84ac82473e9734254c603e0e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d644cda1110901d3c3322e28a331a3b79074103c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@3c67df9](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3c67df9cc50a7b0e84ac82473e9734254c603e0e)
-on October 27, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@d644cda](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d644cda1110901d3c3322e28a331a3b79074103c)
+on October 28, 2022.
 </em></small>
 
 ## Authors
@@ -232,7 +232,7 @@ From the histogram plots, it can be seen that Blast Furnace Slag and Fly Ash the
 
 ![
 Correlation plot of water , superplasticizer and compressive strength
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Pim/plot_4to5-2.png "plot_4to5-2"){#fig:plot4to5 width="500px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Pim/plot_4to5.png "plot_4to5-2"){#fig:plot4to5 width="500px"}
 
 
 |                            | Water (kg/m3) | Superplasticizer (kg/m3) | Compressive strength (MPa) |
