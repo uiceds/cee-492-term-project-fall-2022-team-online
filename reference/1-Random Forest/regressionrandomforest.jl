@@ -21,7 +21,7 @@ display(labels)
 # averaging of 5 samples per leaf, and 0.7 portion of samples per tree
 model = build_forest(labels, features, 2, 10, 0.7, 5)
 # apply learned model
-apply_forest(model, [-0.9,3.0,5.1,1.9,0.0,0.3,0.4,-0.2])
+apply_forest(model, [1.0,1,1,1,1,1,1,1])
 # run 3-fold cross validation on regression forest, using 2 random features per split
 n_subfeatures=2; n_folds=3
 r2 = nfoldCV_forest(labels, features, n_folds, n_subfeatures)
