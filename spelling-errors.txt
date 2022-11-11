@@ -2,11 +2,11 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
-Dataset
+dataset
 FrenchToastty
 Ibrahima
 labelled
