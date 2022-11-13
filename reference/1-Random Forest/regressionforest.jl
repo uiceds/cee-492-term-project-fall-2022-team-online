@@ -20,7 +20,8 @@ display(labels)
 # train regression tree
 model = build_tree(labels, features)
 # apply learned model
-apply_tree(model, [-0.9,3.0,5.1,1.9,0.0,0.3,0.4,-0.2])
+# [-0.9,3.0,5.1,1.9,0.0,0.3,0.4,-0.2]
+apply_tree(model, [1.0,1,1,1,1,1,1,1])
 # run 3-fold cross validation, returns array of coefficients of determination (R^2)
 n_folds = 3
 r2 = nfoldCV_tree(labels, features, n_folds)
