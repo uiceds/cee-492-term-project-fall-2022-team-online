@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
@@ -30,6 +30,7 @@ summaryfig
 summarytable
 superplasticizer
 Superplasticizers
+SVR
 UCI
 Urbana
 workability

@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/724b454cb8c03a25c1276829eaacfb6b4ed3d33f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/724b454cb8c03a25c1276829eaacfb6b4ed3d33f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/724b454cb8c03a25c1276829eaacfb6b4ed3d33f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/724b454cb8c03a25c1276829eaacfb6b4ed3d33f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@724b454](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/724b454cb8c03a25c1276829eaacfb6b4ed3d33f)
+from [uiceds/cee-492-term-project-fall-2022-team-online@7c96485](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/7c96485325980b3445c28ee3452bf161218f56a0)
 on November 14, 2022.
 </em></small>
 
@@ -310,6 +310,24 @@ The preliminary model will be a linear or polynomial model, using gradient desce
 Another preliminary predictive model is to use PCA for regression. By transforming the standardized training data into PCA coordinate systems, key variables can be selected while retraining confounding variables.
 
 The output of the model will be able to predict the 28th day concrete compressive strength.  The purpose is to use the model to achieve the instantaneous 28th day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28th day strength, a cube sample will be crushed on the 28th day to find out the strength. By having instantaneous 28th day strength, faulty batches that do not meet the 28th day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.
+
+## Preliminary Models {.page_break_before}
+
+### Random Forest
+
+![
+Predictive Model using Decision Tree. (1) Training Data (2) Testing Data
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Tree.png "DecisionTree"){#fig:treefig width="700px"}
+
+![
+Predictive Model using Random Forest. (1) Training Data (2) Testing Data
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Forest.png "RandomForest"){#fig:forestfig width="700px"}
+
+### SVR
+
+### Linear Regression
+
+### Neural Network
 
 ## References {.page_break_before}
 

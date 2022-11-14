@@ -123,6 +123,7 @@ content/04.predictivemodelling.md:7:overfit
 content/04.predictivemodelling.md:9:PCA
 content/04.predictivemodelling.md:9:PCA
 content/04.predictivemodelling.md:11:compressive
+content/05.preliminarymodelling.md:13:SVR
 content/90.back-matter.md:6:McGraw
 content/90.back-matter.md:8:compressive
 content/90.back-matter.md:8:Compressive
