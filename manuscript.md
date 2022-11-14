@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d206f97fecf61f470cc946467ecc6897629d233c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d206f97fecf61f470cc946467ecc6897629d233c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d206f97fecf61f470cc946467ecc6897629d233c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c96485325980b3445c28ee3452bf161218f56a0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d206f97fecf61f470cc946467ecc6897629d233c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@7c96485](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/7c96485325980b3445c28ee3452bf161218f56a0)
+from [uiceds/cee-492-term-project-fall-2022-team-online@d206f97](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d206f97fecf61f470cc946467ecc6897629d233c)
 on November 14, 2022.
 </em></small>
 
@@ -313,21 +313,37 @@ The output of the model will be able to predict the 28th day concrete compressiv
 
 ## Preliminary Models {.page_break_before}
 
+This section covers four different models to predict the compressive strength of concrete. The root mean square error (rmse) was used to evaluate the performance of the models
+
 ### Random Forest
+
+The data was split into three datasets. 60% of the dataset was used for training and 30% of the dataset was used for testing.
+
+No normalization was applied since it is a monotonic transformation that will not affect the decision trees.
 
 ![
 Predictive Model using Decision Tree. (1) Training Data (2) Testing Data
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Tree.png "DecisionTree"){#fig:treefig width="700px"}
 
+Figure @fig:treefig shows the performance of the preliminary decision tree model against the training and testing data. The preliminary model is overfitting to the testing data since the rmse for the testing data is smaller than the training data. 
+
 ![
 Predictive Model using Random Forest. (1) Training Data (2) Testing Data
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Forest.png "RandomForest"){#fig:forestfig width="700px"}
+
+Figure @fig:treefig shows the performance of the preliminary random forest model against the training and testing data. Like the decision tree model, the random forest model is overfitting to the test data.
+
+Although the decision tree model performs better on the testing data, the random forest model is overfitting less. The next step is to optimize hyperparameters to reduce the difference in rmse of the predicted training and predicted test data. This in turn should also improve the performance of the models on the last 10% of validation data.
 
 ### SVR
 
 ### Linear Regression
 
 ### Neural Network
+
+### Model Comparison
+
+Table of rmse, pros and cons of each model
 
 ## References {.page_break_before}
 
