@@ -6,7 +6,7 @@ compressive
 corelease
 Dafar
 dafarno
-Dataset
+dataset
 datasets
 forestfig
 FrenchToastty
