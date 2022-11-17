@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-Compressive
+compressive
 corelease
 Dafar
 dafarno
@@ -12,7 +12,7 @@ Fonseca
 forestfig
 FrenchToastty
 GridSearchCV
-hyperparameter
+Hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -39,7 +39,7 @@ quartile
 rausan
 RBF
 relu
-rmse
+RMSE
 scikit
 seccompobstable
 strenght
