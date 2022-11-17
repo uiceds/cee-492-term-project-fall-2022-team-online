@@ -6,7 +6,7 @@ Compressive
 corelease
 Dafar
 dafarno
-dataset
+Dataset
 datasets
 Fonseca
 forestfig
@@ -41,7 +41,7 @@ seccompobstable
 strenght
 summaryfig
 summarytable
-Superplasticizer
+superplasticizer
 Superplasticizers
 SVM
 SVR

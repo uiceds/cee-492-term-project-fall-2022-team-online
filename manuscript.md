@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@3d1d1e6](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3d1d1e603a60071db9cb33db3bbe03bc8256223c)
+from [uiceds/cee-492-term-project-fall-2022-team-online@f0e2165](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/f0e21650b4a64b3fae54098e7b51ff82748dc71f)
 on November 17, 2022.
 </em></small>
 
@@ -335,6 +335,8 @@ Figure @fig:forestfig shows the performance of the preliminary random forest mod
 
 Although the decision tree model performs better on the testing data, the random forest model is overfitting less. The next step is to optimize hyperparameters to reduce the difference in rmse of the predicted training and predicted test data. This in turn should also improve the performance of the models on the last 10% of validation data.
 
+<div style="page-break-after: always;"></div>
+
 ### Support Vectore Regression (SVR)
 
 In this section, Support Vector Regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases.
@@ -363,7 +365,7 @@ In Support Vector Regression using RBF kernel, there are two hyperparameters C a
 
 To tune these parameters, GridSearchCV from scikit learn will be used to perform a Grid Search. Grid Search uses different combinations of different values of the hyperparameters and evaluates the performance of a combination of these values, to find out the best value of the hyperparameter (Wainer & Fonseca, 2021).
 
-Figure @fig:SVR_optimized below shows the optimized SVR model with the training and testing data; after tuned hyperparameters.
+Figure @fig:SVR_Optimized below shows the optimized SVR model with the training and testing data; after tuned hyperparameters.
 
 ![
 Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data 
