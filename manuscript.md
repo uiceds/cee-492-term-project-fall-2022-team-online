@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@b78b427](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/b78b4276ca742161be8596816133bada5cac707b)
+from [uiceds/cee-492-term-project-fall-2022-team-online@3e04c8f](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3)
 on November 17, 2022.
 </em></small>
 
@@ -362,7 +362,7 @@ Figure @fig:SVR_initial below shows the preliminary SVR model with the training 
 
 ![
 Initial Model using SVR, with default hyperparameters. (1) Training Data (2) Testing Data 
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_initial_2.png "Initial SVR Model"){#fig:SVR_initial width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_initial_2.png "Initial SVR Model"){#fig:SVR_initial width="500px"}
 
 From @fig:SVR_initial, it can be seen that the rmse of both training and testing data yielded a bad result of ~15 MPa. This is because the default hyperparameters C = 1.0, gamma = 1 / (n_features * X.var()) were used. To improve the performance of the model, the hyperparameters will be tuned.
 
@@ -375,7 +375,7 @@ Figure @fig:SVR_Optimized below shows the optimized SVR model with the training 
 
 ![
 Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data 
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_2.png "Optimized SVR Model"){#fig:SVR_Optimized width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_2.png "Optimized SVR Model"){#fig:SVR_Optimized width="500px"}
 
 The model is trained with the focus of getting the lowest rmse, while ensuring the rmse of training and testing data is consistent. This is to prevent the case of overfitting where the model cannot generalize and fits too closely to the training dataset. From figure @fig:SVR_optimized, it can be seen that after hyperparameter tuning, the model is optimized to yield a rmse of ~8.5 MPa. The hyperparameters used for this model are C=10, gamma = 1.1e-5.
 
@@ -386,7 +386,7 @@ Figure @fig:SVR_Normalized below shows the SVR model based on normalized input v
 
 ![
 Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_normed_2.png "Normalized SVR Model"){#fig:SVR_Normalized width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_normed_2.png "Normalized SVR Model"){#fig:SVR_Normalized width="500px"}
 
 From figure @fig:SVR_Normalized, it can be seen that after normalizing the input variables (with tuned hyperparameters), the model did not yield a better rmse. It has a rmse of ~8 to 8.5 MPa which his comparable to the rmse without normalization of ~8.5 MPa. 
 
@@ -397,7 +397,7 @@ Figure @fig:SVR_Val below shows the comparison of the optimized SVR model withou
 
 ![
 Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_val_2.png "Val Set SVR Performance Comparison"){#fig:SVR_Val width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_val_2.png "Val Set SVR Performance Comparison"){#fig:SVR_Val width="500px"}
 
 From figure @fig:SVR_Val, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 12.0 MPa 
 
@@ -459,7 +459,13 @@ Table of rmse, mention linear regression takes longer
 <!-- Explicitly insert bibliography here -->
 Concrete manual - A water resources technical publication. (8th ed.). (1975). 
 
+Hardy, R. (1971). Multiquadric equations of topography and other irregular surfaces. Journal Of Geophysical Research, 76(8), 1905-1915. https://doi.org/10.1029/jb076i008p01905
+
 Merritt, F. S. (1983). Standard Handbook for Civil Engineers, 3 Ed. McGraw-Hill.
+
+Theodoridis, S., & Koutroumbas, K. (2009). Pattern Recognition, 4th Edition. Academic Press.
+
+Wainer, J., & Fonseca, P. (2021). How to tune the RBF SVM hyperparameters? An empirical evaluation of 18 search algorithms. Artificial Intelligence Review, 54(6), 4771-4797. https://doi.org/10.1007/s10462-021-10011-5
 
 Yeh, I.-C. (2007). UCI Machine Learning Repository: Concrete Compressive Strength Data Set. Retrieved September 19, 2022, from https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength. 
 <div id="refs"></div>
