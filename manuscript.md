@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9de4026319f0794fa39c47164a749a4508ce5868/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9de4026319f0794fa39c47164a749a4508ce5868/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9de4026319f0794fa39c47164a749a4508ce5868/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9de4026319f0794fa39c47164a749a4508ce5868/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/b78b4276ca742161be8596816133bada5cac707b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@9de4026](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/9de4026319f0794fa39c47164a749a4508ce5868)
+from [uiceds/cee-492-term-project-fall-2022-team-online@b78b427](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/b78b4276ca742161be8596816133bada5cac707b)
 on November 17, 2022.
 </em></small>
 
@@ -354,13 +354,16 @@ The data will also be split into three datasets. 60% of the data was used for tr
 
 <u> SVR & RBF </u><br/>
 Support Vector Regression (SVR) is a supervised learning model that is used to predict discrete values. Support Vector Regression uses the same principle as the Support Vector Machine (SVM). The idea behind SVR is to find the best fit line. In SVR, the best fit is the hyperplane that has the maximum number of points. SVR tries to fit the best line within a threshold value. The threshold value epsilon (ε) is the distance between the hyperplane and boundary line. <br/>
+
 Radial Basis Function (RBF) in its application of Support Vector Machines (SVM), is a type of kernel method used to classify or regress data. it maps non-linear data into a higher dimensional space implicitly by computing the inner products between images of all pairs of data in the feature space (Theodoridis & Koutroumbas, 2009). RBF interpolation is an advanced approximation method, in which the interpolant is the weighted sum of radial basis functions, an example would be the gaussian distribution (Hardy, 1971). This method is popular due to its higher emphasis on radial distances closer to the center and it decreases as the radial distance expands.
 
 <u> Preliminary SVR model </u><br/>
-Figure @fig:SVR_initial below shows the preliminary SVR model with the training and testing data; with default hyperparameters.<br/>
+Figure @fig:SVR_initial below shows the preliminary SVR model with the training and testing data; with default hyperparameters.
+
 ![
 Initial Model using SVR, with default hyperparameters. (1) Training Data (2) Testing Data 
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_initial_2.png "Initial SVR Model"){#fig:SVR_initial width="700px"}<br/>
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_initial_2.png "Initial SVR Model"){#fig:SVR_initial width="700px"}
+
 From @fig:SVR_initial, it can be seen that the rmse of both training and testing data yielded a bad result of ~15 MPa. This is because the default hyperparameters C = 1.0, gamma = 1 / (n_features * X.var()) were used. To improve the performance of the model, the hyperparameters will be tuned.
 
 <u> Hyperparameter tuning & Optimized SVR Model </u><br/>
@@ -368,28 +371,34 @@ In Support Vector Regression using RBF kernel, there are two hyperparameters C a
 
 To tune these parameters, GridSearchCV from scikit learn will be used to perform a Grid Search. Grid Search uses different combinations of different values of the hyperparameters and evaluates the performance of a combination of these values, to find out the best value of the hyperparameter (Wainer & Fonseca, 2021).
 
-Figure @fig:SVR_Optimized below shows the optimized SVR model with the training and testing data; after tuned hyperparameters.<br/>
+Figure @fig:SVR_Optimized below shows the optimized SVR model with the training and testing data; after tuned hyperparameters.
+
 ![
 Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data 
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_2.png "Optimized SVR Model"){#fig:SVR_Optimized width="700px"}<br/>
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_2.png "Optimized SVR Model"){#fig:SVR_Optimized width="700px"}
+
 The model is trained with the focus of getting the lowest rmse, while ensuring the rmse of training and testing data is consistent. This is to prevent the case of overfitting where the model cannot generalize and fits too closely to the training dataset. From figure @fig:SVR_optimized, it can be seen that after hyperparameter tuning, the model is optimized to yield a rmse of ~8.5 MPa. The hyperparameters used for this model are C=10, gamma = 1.1e-5.
 
 <u> Optimized SVR Model (with normalized input variables) </u><br/>
 To further optimize the model, the input variables were normalized. Normalization is a technique often applied as part of data preparation for machine learning. The goal of normalization is to change input variables to use a common scale, without distorting differences in the ranges of values.
 
-Figure @fig:SVR_Normalized below shows the SVR model based on normalized input variables with the training and testing data; after hyperparameter tuning.<br/>
+Figure @fig:SVR_Normalized below shows the SVR model based on normalized input variables with the training and testing data; after hyperparameter tuning.
+
 ![
 Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_normed_2.png "Normalized SVR Model"){#fig:SVR_Normalized width="700px"}<br/>
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_normed_2.png "Normalized SVR Model"){#fig:SVR_Normalized width="700px"}
+
 From figure @fig:SVR_Normalized, it can be seen that after normalizing the input variables (with tuned hyperparameters), the model did not yield a better rmse. It has a rmse of ~8 to 8.5 MPa which his comparable to the rmse without normalization of ~8.5 MPa. 
 
 <u> Model Performance on Validation Set </u><br/>
 To ensure that the model works well in the real world, the model performance will be evaluated using the validation dataset. The validation dataset is unseen/untested by the model. Because the data is unseen, the model has not been calibrated/optimized based on the validation set. Therefore, the validation set acts like the unseen real world use cases. In this section, the model performance for the Optimized SVR model with and without normalization will be evaluated. 
 
-Figure @fig:SVR_Val below shows the comparison of the optimized SVR model without normalization and with normalization data, based on the validation set.<br/>
+Figure @fig:SVR_Val below shows the comparison of the optimized SVR model without normalization and with normalization data, based on the validation set.
+
 ![
 Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_val_2.png "Val Set SVR Performance Comparison"){#fig:SVR_Val width="700px"}<br/>
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_val_2.png "Val Set SVR Performance Comparison"){#fig:SVR_Val width="700px"}
+
 From figure @fig:SVR_Val, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 12.0 MPa 
 
 The Optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength.  However, this is not the case for the Optimized SVR model (with normalization), as it yielded a rmse of 12.0, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.
