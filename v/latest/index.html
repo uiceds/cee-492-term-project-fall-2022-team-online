@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/f0e21650b4a64b3fae54098e7b51ff82748dc71f">uiceds/cee-492-term-project-fall-2022-team-online@f0e2165</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d">uiceds/cee-492-term-project-fall-2022-team-online@ee3f53f</a>
 on November 17, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -609,6 +609,21 @@ Radial Basis Function (RBF) in its application of Support Vector Machines (SVM),
 <p>Figure <a href="#fig:Regression">17</a> shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 10.9 and 10.5 to 10.7 and 10.3 for training and testing data, respectively.</p>
 <p>In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well.</p>
 <h3 id="neural-network">Neural Network</h3>
+<p>We are now using a neural network model to predict concrete compressive strength. We started by splitting and shuffling the data. The split chosen is 60% of the initial dataset for training, 30% for testing and 10% for validation.
+Two predictions were made. The input data was normalised for the first one, and for the second, it was not. Both predictions were made using the same model with the same number of layers/nodes, the same learning rates and the same number of steps.</p>
+<div id="fig:NNV" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkVanilla.png" width="700" alt="Figure 18: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 18:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:NNV">18</a> shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 8 MPa and 9MPa. There is no sign of overfitting, as the RMSE of the training and the testing data were similar.</p>
+<div id="fig:NNVNORM" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="700" alt="Figure 19: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 19:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:NNVNORM">19</a> shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe large RMSE values ranging consistently between 19 MPa and 20MPa, indicating room for improvement. Different activation functions could be tried to optimize the model further, and the number of nodes/layers increased.
+A relu activation was applied for this model, and there might be better choices for the normalized data.</p>
 <h3 id="model-comparison">Model Comparison</h3>
 <p>Table of rmse, pros and cons of each model</p>
 <h2 class="page_break_before" id="references">References</h2>
