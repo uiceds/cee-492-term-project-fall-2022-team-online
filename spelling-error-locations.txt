@@ -139,6 +139,7 @@ content/05.preliminarymodelling.md:23:hyperparameters
 content/05.preliminarymodelling.md:23:overfitting
 content/05.preliminarymodelling.md:23:rmse
 content/05.preliminarymodelling.md:25:SVR
+content/05.preliminarymodelling.md:25:Vectore
 content/05.preliminarymodelling.md:27:GridSearchCV
 content/05.preliminarymodelling.md:27:hyperparameter
 content/05.preliminarymodelling.md:27:hyperparameters
