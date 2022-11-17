@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/221226ec702e233a910110a4c7cbdbdb90b5967b">uiceds/cee-492-term-project-fall-2022-team-online@221226e</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/6a0055a7a383dbf5b9630cb236a560776400cb56">uiceds/cee-492-term-project-fall-2022-team-online@6a0055a</a>
 on November 17, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -532,19 +532,30 @@ We can also observe that Water content and superplasticizer amount have a strong
 <p>This section covers four different models to predict the compressive strength of concrete. The root mean square error (rmse) was used to evaluate the performance of the models</p>
 <h3 id="random-forest">Random Forest</h3>
 <p>The data was split into three datasets. 60% of the dataset was used for training and 30% of the dataset was used for testing.</p>
-<p>No normalization was applied since it is a monotonic transformation that will not affect the decision trees.</p>
 <div id="fig:treefig" class="fignos">
 <figure>
 <img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random%20Forest/Tree.png" width="500" alt="Figure 10: Predictive Model using Decision Tree. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 10:</span> Predictive Model using Decision Tree. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:treefig">10</a> shows the performance of the preliminary decision tree model against the training and testing data. The preliminary model is overfitting to the testing data since the rmse for the testing data is smaller than the training data.</p>
+<p>Figure <a href="#fig:treefig">10</a> shows the performance of the preliminary decision tree model against the training and testing data. The model has a depth of 12 with 97 leaves. This implies that the features can be labeled into 97 different ways. The preliminary model is overfitting to the testing data since the rmse for the testing data is smaller than the training data.</p>
 <div id="fig:forestfig" class="fignos">
 <figure>
 <img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random%20Forest/Forest.png" width="500" alt="Figure 11: Predictive Model using Random Forest. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 11:</span> Predictive Model using Random Forest. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:forestfig">11</a> shows the performance of the preliminary random forest model against the training and testing data. Like the decision tree model, the random forest model is overfitting to the test data.</p>
+<p>Figure <a href="#fig:forestfig">11</a> shows the performance of the preliminary random forest model against the training and testing data. The model has 10 trees with an average depth of 12.3 and with 68.6 average number of leaves. This implies that the features can be labeled into 98 different ways. Like the decision tree model, the random forest model is overfitting to the test data.</p>
+<div id="fig:treevalfig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random%20Forest/TreeVal.png" width="250" alt="Figure 12: Predictive Model using Decision Tree and Normalized Data." /><figcaption aria-hidden="true"><span>Figure 12:</span> Predictive Model using Decision Tree and Normalized Data.</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:treevalfig">12</a> shows the performance of the decision tree model with normalization against the validation data. It has an rmse of 7.11. Normalization does not affect the decision tree by much since it is a monotonic transformation.</p>
+<div id="fig:forestvalfig" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random%20Forest/ForestVal.png" width="250" alt="Figure 13: Predictive Model using Random Forest and Normalized Data." /><figcaption aria-hidden="true"><span>Figure 13:</span> Predictive Model using Random Forest and Normalized Data.</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:forestvalfig">13</a> shows the performance of the random forest model with normalization against the validation data. It has an rmse of 6.89 that is better than the validation rmse of the normalized decision tree model.</p>
 <p>Although the decision tree model performs better on the testing data, the random forest model is overfitting less. The next step is to optimize hyperparameters to reduce the difference in rmse of the predicted training and predicted test data. This in turn should also improve the performance of the models on the last 10% of validation data.</p>
 <div style="page-break-after: always;">
 
@@ -584,16 +595,16 @@ From figure ??, it can be seen that based on the validation set, the Optimized S
 <p>Again, the data was split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
 <div id="fig:Regression1" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png" width="700" alt="Figure 12: Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 12:</span> Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png" width="700" alt="Figure 14: Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 14:</span> Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>As we can see from Figure <a href="#fig:Regression1">12</a>, the performance of the linear regression is relatively good. The rmse was relatively low, and it is very similar for both the training and the testing datasets. This also suggests that there was no overfitting in our model.</p>
+<p>As we can see from Figure <a href="#fig:Regression1">14</a>, the performance of the linear regression is relatively good. The rmse was relatively low, and it is very similar for both the training and the testing datasets. This also suggests that there was no overfitting in our model.</p>
 <div id="fig:Regression" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png" width="700" alt="Figure 13: The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 13:</span> The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png" width="700" alt="Figure 15: The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 15:</span> The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:Regression">13</a> shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 10.9 and 10.5 to 10.7 and 10.3 for training and testing data, respectively.</p>
+<p>Figure <a href="#fig:Regression">15</a> shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 10.9 and 10.5 to 10.7 and 10.3 for training and testing data, respectively.</p>
 <p>In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well.</p>
 <div style="page-break-after: always;">
 
@@ -603,22 +614,22 @@ From figure ??, it can be seen that based on the validation set, the Optimized S
 Two predictions were made. The input data was normalised for the first one, and for the second, it was not. Both predictions were made using the same model with the same number of layers/nodes, the same learning rates and the same number of steps.</p>
 <div id="fig:NNV" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkVanilla.png" width="700" alt="Figure 14: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 14:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkVanilla.png" width="700" alt="Figure 16: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 16:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNV">14</a> shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 8 MPa and 9MPa. There is no sign of overfitting, as the RMSE of the training and the testing data were similar.</p>
+<p>Figure <a href="#fig:NNV">16</a> shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 8 MPa and 9MPa. There is no sign of overfitting, as the RMSE of the training and the testing data were similar.</p>
 <div id="fig:NNVNORM" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="700" alt="Figure 15: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 15:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="700" alt="Figure 17: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 17:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNVNORM">15</a> shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe large RMSE values ranging consistently between 19 MPa and 20MPa, indicating room for improvement. Different activation functions could be tried to optimize the model further, and the number of nodes/layers increased.
+<p>Figure <a href="#fig:NNVNORM">17</a> shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe large RMSE values ranging consistently between 19 MPa and 20MPa, indicating room for improvement. Different activation functions could be tried to optimize the model further, and the number of nodes/layers increased.
 A relu activation was applied for this model, and there might be better choices for the normalized data.</p>
 <div style="page-break-after: always;">
 
 </div>
 <h3 id="model-comparison">Model Comparison</h3>
-<p>Table of rmse, pros and cons of each model</p>
+<p>Table of rmse, mention linear regression takes longer</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <p>Concrete manual - A water resources technical publication. (8th ed.). (1975).</p>
