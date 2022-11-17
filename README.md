@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/gh-pages) branch hosts the contents of this directory at <https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/>.
-The permalink for this webpage version is <https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/>.
+The permalink for this webpage version is <https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9de4026319f0794fa39c47164a749a4508ce5868/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`6a0055a7a383dbf5b9630cb236a560776400cb56`](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/commit/6a0055a7a383dbf5b9630cb236a560776400cb56).
+[`9de4026319f0794fa39c47164a749a4508ce5868`](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/commit/9de4026319f0794fa39c47164a749a4508ce5868).
