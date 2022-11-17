@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ef23a0787ff69789a9f65d540b9fce3125380c3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ef23a0787ff69789a9f65d540b9fce3125380c3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ef23a0787ff69789a9f65d540b9fce3125380c3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2ef23a0787ff69789a9f65d540b9fce3125380c3/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@2ef23a0](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2ef23a0787ff69789a9f65d540b9fce3125380c3)
+from [uiceds/cee-492-term-project-fall-2022-team-online@221226e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/221226ec702e233a910110a4c7cbdbdb90b5967b)
 on November 17, 2022.
 </em></small>
 
@@ -323,13 +323,13 @@ No normalization was applied since it is a monotonic transformation that will no
 
 ![
 Predictive Model using Decision Tree. (1) Training Data (2) Testing Data
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Tree.png "DecisionTree"){#fig:treefig width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Tree.png "DecisionTree"){#fig:treefig width="500px"}
 
 Figure @fig:treefig shows the performance of the preliminary decision tree model against the training and testing data. The preliminary model is overfitting to the testing data since the rmse for the testing data is smaller than the training data. 
 
 ![
 Predictive Model using Random Forest. (1) Training Data (2) Testing Data
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Forest.png "RandomForest"){#fig:forestfig width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Forest.png "RandomForest"){#fig:forestfig width="500px"}
 
 Figure @fig:forestfig shows the performance of the preliminary random forest model against the training and testing data. Like the decision tree model, the random forest model is overfitting to the test data.
 
@@ -386,6 +386,7 @@ The Optimized SVR model (w/o normalization) also showed a consistent rmse value 
 
 Therefore, the best performing model using Support Vector Regression is the Optimized SVR model (w/o normalization), as it yielded both a lower rmse and there is no signs of overfitting. 
 
+<div style="page-break-after: always;"></div>
 
 ### Linear Regression
 
@@ -405,6 +406,8 @@ Figure @fig:Regression shows the performance of the preliminary linear regressio
 
 In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well. 
 
+<div style="page-break-after: always;"></div>
+
 ### Neural Network
 
 We are now using a neural network model to predict concrete compressive strength. We started by splitting and shuffling the data. The split chosen is 60% of the initial dataset for training, 30% for testing and 10% for validation.
@@ -423,7 +426,7 @@ Predictive Model using Neural Network. (1) Training Data (2) Testing Data
 Figure @fig:NNVNORM shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe large RMSE values ranging consistently between 19 MPa and 20MPa, indicating room for improvement. Different activation functions could be tried to optimize the model further, and the number of nodes/layers increased. 
 A relu activation was applied for this model, and there might be better choices for the normalized data.
 
-
+<div style="page-break-after: always;"></div>
 
 ### Model Comparison
 
