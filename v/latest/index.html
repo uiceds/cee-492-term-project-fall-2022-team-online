@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7d92fe2efab57cfff9b68ca02c1eaff0b8235c40/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7d92fe2efab57cfff9b68ca02c1eaff0b8235c40/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7d92fe2efab57cfff9b68ca02c1eaff0b8235c40/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7d92fe2efab57cfff9b68ca02c1eaff0b8235c40/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3d1d1e603a60071db9cb33db3bbe03bc8256223c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/7d92fe2efab57cfff9b68ca02c1eaff0b8235c40">uiceds/cee-492-term-project-fall-2022-team-online@7d92fe2</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3d1d1e603a60071db9cb33db3bbe03bc8256223c">uiceds/cee-492-term-project-fall-2022-team-online@3d1d1e6</a>
 on November 17, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -553,41 +553,57 @@ We can also observe that Water content and superplasticizer amount have a strong
 <p>Support Vector Regression (SVR) is a supervised learning model that is used to predict discrete values. Support Vector Regression uses the same principle as the Support Vector Machine (SVM). The idea behind SVR is to find the best fit line. In SVR, the best fit is the hyperplane that has the maximum number of points. SVR tries to fit the best line within a threshold value. The threshold value epsilon (ε) is the distance between the hyperplane and boundary line.
 Radial Basis Function (RBF) in its application of Support Vector Machines (SVM), is a type of kernel method used to classify or regress data. it maps non-linear data into a higher dimensional space implicitly by computing the inner products between images of all pairs of data in the feature space (Theodoridis &amp; Koutroumbas, 2009). RBF interpolation is an advanced approximation method, in which the interpolant is the weighted sum of radial basis functions, an example would be the gaussian distribution (Hardy, 1971). This method is popular due to its higher emphasis on radial distances closer to the center and it decreases as the radial distance expands.</p>
 <p><u> Preliminary SVR model </u></p>
-<p>Figure ?? below shows the preliminary SVR model with the training and testing data; with default hyperparameters.</p>
-<p><img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_initial_2.png" title="Initial SVR Model" alt="Initial Model using SVR, with default hyperparameters. (1) Training Data (2) Testing Data" /> “LR”){#fig:SVR_initial width=“700px”}</p>
-<p>From ??, it can be seen that the rmse of both training and testing data yielded a bad result of ~15 MPa. This is because the default hyperparameters C = 1.0, gamma = 1 / (n_features * X.var()) were used. To improve the performance of the model, the hyperparameters will be tuned.</p>
+<p>Figure <a href="#fig:SVR_initial">12</a> below shows the preliminary SVR model with the training and testing data; with default hyperparameters.</p>
+<div id="fig:SVR_initial" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_initial_2.png" width="700" alt="Figure 12: Initial Model using SVR, with default hyperparameters. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 12:</span> Initial Model using SVR, with default hyperparameters. (1) Training Data (2) Testing Data</figcaption>
+</figure>
+</div>
+<p>From <a href="#fig:SVR_initial">12</a>, it can be seen that the rmse of both training and testing data yielded a bad result of ~15 MPa. This is because the default hyperparameters C = 1.0, gamma = 1 / (n_features * X.var()) were used. To improve the performance of the model, the hyperparameters will be tuned.</p>
 <p><u> Hyperparameter tuning &amp; Optimized SVR Model </u></p>
 <p>In Support Vector Regression using RBF kernel, there are two hyperparameters C and gamma. The parameter C is a regularization factor that controls the amount of misclassification each training data handles. A larger C will result in a smaller margin of the hyperplane, classifying all the points correctly. On the other hand, a smaller C will increase the margin for the hyperplane and increase the model’s tolerance for misclassification. For parameter gamma, it controls the influence of training data. Low values of gamma will generate a flatter decision surface which corresponds to a simpler model. A larger gamma will increase the curvature of the model, fitting it more closely to the training data. There is no rule of thumb to choose C and gamma, as such tuning is required to find the optimal value (Wainer &amp; Fonseca, 2021).</p>
 <p>To tune these parameters, GridSearchCV from scikit learn will be used to perform a Grid Search. Grid Search uses different combinations of different values of the hyperparameters and evaluates the performance of a combination of these values, to find out the best value of the hyperparameter (Wainer &amp; Fonseca, 2021).</p>
 <p>Figure ?? below shows the optimized SVR model with the training and testing data; after tuned hyperparameters.</p>
-<p><img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_2.png" title="Optimized SVR Model" alt="Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data" /> “LR”){#fig:SVR_Optimized width=“700px”}</p>
+<div id="fig:SVR_Optimized" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_2.png" width="700" alt="Figure 13: Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 13:</span> Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data</figcaption>
+</figure>
+</div>
 <p>The model is trained with the focus of getting the lowest rmse, while ensuring the rmse of training and testing data is consistent. This is to prevent the case of overfitting where the model cannot generalize and fits too closely to the training dataset. From figure ??, it can be seen that after hyperparameter tuning, the model is optimized to yield a rmse of ~8.5 MPa. The hyperparameters used for this model are C=10, gamma = 1.1e-5.</p>
 <p><u> Optimized SVR Model (with normalized input variables) </u></p>
 <p>To further optimize the model, the input variables were normalized. Normalization is a technique often applied as part of data preparation for machine learning. The goal of normalization is to change input variables to use a common scale, without distorting differences in the ranges of values.</p>
-<p>Figure ?? below shows the SVR model based on normalized input variables with the training and testing data; after hyperparameter tuning.</p>
-<p><img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_normed_2.png" title="Normalized SVR Model" alt="Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data" /> “LR”){#fig:SVR_Normalized width=“700px”}</p>
-<p>From figure ??, it can be seen that after normalizing the input variables (with tuned hyperparameters), the model did not yield a better rmse. It has a rmse of ~8 to 8.5 MPa which his comparable to the rmse without normalization of ~8.5 MPa.</p>
+<p>Figure <a href="#fig:SVR_Normalized">14</a> below shows the SVR model based on normalized input variables with the training and testing data; after hyperparameter tuning.</p>
+<div id="fig:SVR_Normalized" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_normed_2.png" width="700" alt="Figure 14: Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 14:</span> Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data</figcaption>
+</figure>
+</div>
+<p>From figure <a href="#fig:SVR_Normalized">14</a>, it can be seen that after normalizing the input variables (with tuned hyperparameters), the model did not yield a better rmse. It has a rmse of ~8 to 8.5 MPa which his comparable to the rmse without normalization of ~8.5 MPa.</p>
 <p><u> Model Performance on Validation Set </u></p>
 <p>To ensure that the model works well in the real world, the model performance will be evaluated using the validation dataset. The validation dataset is unseen/untested by the model. Because the data is unseen, the model has not been calibrated/optimized based on the validation set. Therefore, the validation set acts like the unseen real world use cases. In this section, the model performance for the Optimized SVR model with and without normalization will be evaluated.</p>
-<p>Figure ?? below shows the comparison of the optimized SVR model without normalization and with normalization data, based on the validation set.</p>
-<p><img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_val_2.png" title="Val Set SVR Performance Comparison" alt="Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization" /> “LR”){#fig:SVR_Val width=“700px”}</p>
-<p>From figure ??, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 12.0 MPa</p>
+<p>Figure <a href="#fig:SVR_Val">15</a> below shows the comparison of the optimized SVR model without normalization and with normalization data, based on the validation set.</p>
+<div id="fig:SVR_Val" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_val_2.png" width="700" alt="Figure 15: Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization" /><figcaption aria-hidden="true"><span>Figure 15:</span> Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization</figcaption>
+</figure>
+</div>
+<p>From figure <a href="#fig:SVR_Val">15</a>, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 12.0 MPa</p>
 <p>The Optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength. However, this is not the case for the Optimized SVR model (with normalization), as it yielded a rmse of 12.0, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.</p>
 <p>Therefore, the best performing model using Support Vector Regression is the Optimized SVR model (w/o normalization), as it yielded both a lower rmse and there is no signs of overfitting.</p>
 <h3 id="linear-regression">Linear Regression</h3>
 <p>Again, the data was split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
 <div id="fig:Regression1" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png" width="700" alt="Figure 12: Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 12:</span> Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png" width="700" alt="Figure 16: Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 16:</span> Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>As we can see from Figure <a href="#fig:Regression1">12</a>, the performance of the linear regression is relatively good. The rmse was relatively low, and it is very similar for both the training and the testing datasets. This also suggests that there was no overfitting in our model.</p>
+<p>As we can see from Figure <a href="#fig:Regression1">16</a>, the performance of the linear regression is relatively good. The rmse was relatively low, and it is very similar for both the training and the testing datasets. This also suggests that there was no overfitting in our model.</p>
 <div id="fig:Regression" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png" width="700" alt="Figure 13: The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 13:</span> The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png" width="700" alt="Figure 17: The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 17:</span> The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:Regression">13</a> shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 10.9 and 10.5 to 10.7 and 10.3 for training and testing data, respectively.</p>
+<p>Figure <a href="#fig:Regression">17</a> shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 10.9 and 10.5 to 10.7 and 10.3 for training and testing data, respectively.</p>
 <p>In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well.</p>
 <h3 id="neural-network">Neural Network</h3>
 <h3 id="model-comparison">Model Comparison</h3>
