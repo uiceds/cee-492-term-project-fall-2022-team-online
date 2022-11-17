@@ -62,10 +62,6 @@ function plotval(yval, y_pr_val)
     return plt2
 end
 
-function mse(ŷ::Vector{T}, y::Vector{T})::T where T<:AbstractFloat
-	mean((ŷ .- y).^2)
-end
-
 function tablehelper(pt, filename)
     io = open(joinpath(dirname(@__FILE__), filename), "w")
     write(io, pt)
