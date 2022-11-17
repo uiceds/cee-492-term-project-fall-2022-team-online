@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3f0d601c410cbdf3fb5bb509df40b57580a1228/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3f0d601c410cbdf3fb5bb509df40b57580a1228/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3f0d601c410cbdf3fb5bb509df40b57580a1228/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fad75299938c6e721f01b15a0ae4a240565c420d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fad75299938c6e721f01b15a0ae4a240565c420d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fad75299938c6e721f01b15a0ae4a240565c420d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3f0d601c410cbdf3fb5bb509df40b57580a1228/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fad75299938c6e721f01b15a0ae4a240565c420d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@a3f0d60](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a3f0d601c410cbdf3fb5bb509df40b57580a1228)
+from [uiceds/cee-492-term-project-fall-2022-team-online@fad7529](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/fad75299938c6e721f01b15a0ae4a240565c420d)
 on November 17, 2022.
 </em></small>
 
@@ -338,6 +338,22 @@ Although the decision tree model performs better on the testing data, the random
 ### SVR
 
 ### Linear Regression
+
+Again, the data was split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.
+
+![
+Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png "LR"){#fig:Regression1 width="700px"}
+
+As we can see from Figure @fig:Regression1, the performance of the linear regression is relatively good. The rmse was relatively low, and it is very similar for both the training and the testing datasets. This also suggests that there was no overfitting in our model. 
+
+![
+The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png "LR"){#fig:Regression width="700px"}
+
+Figure @fig:Regression shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 10.9 and 10.5 to 10.7 and 10.3 for training and testing data, respectively.  
+
+In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well. 
 
 ### Neural Network
 
