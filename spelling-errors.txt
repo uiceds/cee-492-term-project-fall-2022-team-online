@@ -6,13 +6,14 @@ Compressive
 corelease
 Dafar
 dafarno
-Dataset
+dataset
 datasets
 Fonseca
 forestfig
+forestvalfig
 FrenchToastty
 GridSearchCV
-Hyperparameter
+hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -51,6 +52,7 @@ SVM
 SVR
 Theodoridis
 treefig
+treevalfig
 UCI
 Urbana
 Vectore

@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/221226ec702e233a910110a4c7cbdbdb90b5967b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/6a0055a7a383dbf5b9630cb236a560776400cb56/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@221226e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/221226ec702e233a910110a4c7cbdbdb90b5967b)
+from [uiceds/cee-492-term-project-fall-2022-team-online@6a0055a](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/6a0055a7a383dbf5b9630cb236a560776400cb56)
 on November 17, 2022.
 </em></small>
 
@@ -319,19 +319,29 @@ This section covers four different models to predict the compressive strength of
 
 The data was split into three datasets. 60% of the dataset was used for training and 30% of the dataset was used for testing.
 
-No normalization was applied since it is a monotonic transformation that will not affect the decision trees.
-
 ![
 Predictive Model using Decision Tree. (1) Training Data (2) Testing Data
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Tree.png "DecisionTree"){#fig:treefig width="500px"}
 
-Figure @fig:treefig shows the performance of the preliminary decision tree model against the training and testing data. The preliminary model is overfitting to the testing data since the rmse for the testing data is smaller than the training data. 
+Figure @fig:treefig shows the performance of the preliminary decision tree model against the training and testing data. The model has a depth of 12 with 97 leaves. This implies that the features can be labeled into 97 different ways. The preliminary model is overfitting to the testing data since the rmse for the testing data is smaller than the training data.
 
 ![
 Predictive Model using Random Forest. (1) Training Data (2) Testing Data
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/Forest.png "RandomForest"){#fig:forestfig width="500px"}
 
-Figure @fig:forestfig shows the performance of the preliminary random forest model against the training and testing data. Like the decision tree model, the random forest model is overfitting to the test data.
+Figure @fig:forestfig shows the performance of the preliminary random forest model against the training and testing data. The model has 10 trees with an average depth of 12.3 and with 68.6 average number of leaves. This implies that the features can be labeled into 98 different ways. Like the decision tree model, the random forest model is overfitting to the test data.
+
+![
+Predictive Model using Decision Tree and Normalized Data.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/TreeVal.png "TreeVal"){#fig:treevalfig width="250px"}
+
+Figure @fig:treevalfig shows the performance of the decision tree model with normalization against the validation data. It has an rmse of 7.11. Normalization does not affect the decision tree by much since it is a monotonic transformation.
+
+![
+Predictive Model using Random Forest and Normalized Data.
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/ForestVal.png "ForestVal"){#fig:forestvalfig width="250px"}
+
+Figure @fig:forestvalfig shows the performance of the random forest model with normalization against the validation data. It has an rmse of 6.89 that is better than the validation rmse of the normalized decision tree model. 
 
 Although the decision tree model performs better on the testing data, the random forest model is overfitting less. The next step is to optimize hyperparameters to reduce the difference in rmse of the predicted training and predicted test data. This in turn should also improve the performance of the models on the last 10% of validation data.
 
@@ -430,7 +440,10 @@ A relu activation was applied for this model, and there might be better choices 
 
 ### Model Comparison
 
-Table of rmse, pros and cons of each model
+Table of rmse, mention linear regression takes longer
+
+
+
 
 ## References {.page_break_before}
 
