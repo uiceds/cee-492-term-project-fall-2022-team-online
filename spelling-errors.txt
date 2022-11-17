@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-Compressive
+compressive
 corelease
 Dafar
 dafarno
@@ -12,7 +12,7 @@ Fonseca
 forestfig
 FrenchToastty
 GridSearchCV
-hyperparameter
+Hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -25,6 +25,9 @@ misclassification
 modelling
 MPa
 MSE
+NNV
+NNVNORM
+normalised
 Obeidat
 OPC
 overfit
@@ -35,6 +38,7 @@ plasticizer
 quartile
 rausan
 RBF
+relu
 rmse
 scikit
 seccompobstable

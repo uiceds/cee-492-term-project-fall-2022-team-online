@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/f0e21650b4a64b3fae54098e7b51ff82748dc71f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@f0e2165](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/f0e21650b4a64b3fae54098e7b51ff82748dc71f)
+from [uiceds/cee-492-term-project-fall-2022-team-online@ee3f53f](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/ee3f53f1c0a03e4584260fff41eed3d533a1fc7d)
 on November 17, 2022.
 </em></small>
 
@@ -421,6 +421,24 @@ Figure @fig:Regression shows the performance of the preliminary linear regressio
 In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well. 
 
 ### Neural Network
+
+We are now using a neural network model to predict concrete compressive strength. We started by splitting and shuffling the data. The split chosen is 60% of the initial dataset for training, 30% for testing and 10% for validation.
+Two predictions were made. The input data was normalised for the first one, and for the second, it was not. Both predictions were made using the same model with the same number of layers/nodes, the same learning rates and the same number of steps.
+
+![
+Predictive Model using Neural Network. (1) Training Data (2) Testing Data
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetworkVanilla.png "Neural Network without Normalization"){#fig:NNV width="700px"}
+
+Figure @fig:NNV shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 8 MPa and 9MPa. There is no sign of overfitting, as the RMSE of the training and the testing data were similar. 
+
+![
+Predictive Model using Neural Network. (1) Training Data (2) Testing Data
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetworkNorm.png "Neural Network with Normalization"){#fig:NNVNORM width="700px"}
+
+Figure @fig:NNVNORM shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe large RMSE values ranging consistently between 19 MPa and 20MPa, indicating room for improvement. Different activation functions could be tried to optimize the model further, and the number of nodes/layers increased. 
+A relu activation was applied for this model, and there might be better choices for the normalized data.
+
+
 
 ### Model Comparison
 
