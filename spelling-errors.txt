@@ -2,11 +2,11 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
-Dataset
+dataset
 datasets
 Fonseca
 forestfig
@@ -41,7 +41,7 @@ quartile
 rausan
 RBF
 relu
-rmse
+RMSE
 scikit
 seccompobstable
 strenght
@@ -56,7 +56,6 @@ treefig
 treevalfig
 UCI
 Urbana
-Vectore
 Wainer
 workability
 wTOcfig

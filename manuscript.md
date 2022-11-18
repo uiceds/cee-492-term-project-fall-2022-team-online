@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-17'
+date-meta: '2022-11-18'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-11-17" />
-  <meta name="citation_publication_date" content="2022-11-17" />
+  <meta name="dc.date" content="2022-11-18" />
+  <meta name="citation_publication_date" content="2022-11-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@3e04c8f](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3)
-on November 17, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@9511ceb](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/9511cebfea7fd68b41e8627bb670fb008338b3ef)
+on November 18, 2022.
 </em></small>
 
 ## Authors
@@ -347,10 +347,8 @@ Although the decision tree model performs better on the testing data, the random
 
 <div style="page-break-after: always;"></div>
 
-### Support Vectore Regression (SVR)
-In this section, Support Vector Regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases.
-
-The data will also be split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.
+### Support Vector Regression (SVR)
+In this section, Support Vector Regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases. The data will also be split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.
 
 <u> SVR & RBF </u><br/>
 Support Vector Regression (SVR) is a supervised learning model that is used to predict discrete values. Support Vector Regression uses the same principle as the Support Vector Machine (SVM). The idea behind SVR is to find the best fit line. In SVR, the best fit is the hyperplane that has the maximum number of points. SVR tries to fit the best line within a threshold value. The threshold value epsilon (ε) is the distance between the hyperplane and boundary line. <br/>
