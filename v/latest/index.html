@@ -8,7 +8,7 @@
   <meta name="author" content="Min Win Ye" />
   <meta name="author" content="Papa Ibrahima Mbodj" />
   <meta name="author" content="Dafar Obeidat" />
-  <meta name="dcterms.date" content="2022-11-17" />
+  <meta name="dcterms.date" content="2022-11-18" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Predictive Model for Concrete Compressive Strength</title>
   <style>
@@ -50,8 +50,8 @@
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-11-17" />
-  <meta name="citation_publication_date" content="2022-11-17" />
+  <meta name="dc.date" content="2022-11-18" />
+  <meta name="citation_publication_date" content="2022-11-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,10 +88,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/9511cebfea7fd68b41e8627bb670fb008338b3ef/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3e04c8f91e384b3261ca5f5690f0f1e909d3cff3">uiceds/cee-492-term-project-fall-2022-team-online@3e04c8f</a>
-on November 17, 2022.
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/9511cebfea7fd68b41e8627bb670fb008338b3ef">uiceds/cee-492-term-project-fall-2022-team-online@9511ceb</a>
+on November 18, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -560,9 +560,8 @@ We can also observe that Water content and superplasticizer amount have a strong
 <div style="page-break-after: always;">
 
 </div>
-<h3 id="support-vectore-regression-svr">Support Vectore Regression (SVR)</h3>
-<p>In this section, Support Vector Regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases.</p>
-<p>The data will also be split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
+<h3 id="support-vector-regression-svr">Support Vector Regression (SVR)</h3>
+<p>In this section, Support Vector Regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases. The data will also be split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
 <p><u> SVR &amp; RBF </u><br/>
 Support Vector Regression (SVR) is a supervised learning model that is used to predict discrete values. Support Vector Regression uses the same principle as the Support Vector Machine (SVM). The idea behind SVR is to find the best fit line. In SVR, the best fit is the hyperplane that has the maximum number of points. SVR tries to fit the best line within a threshold value. The threshold value epsilon (ε) is the distance between the hyperplane and boundary line. <br/></p>
 <p>Radial Basis Function (RBF) in its application of Support Vector Machines (SVM), is a type of kernel method used to classify or regress data. it maps non-linear data into a higher dimensional space implicitly by computing the inner products between images of all pairs of data in the feature space (Theodoridis &amp; Koutroumbas, 2009). RBF interpolation is an advanced approximation method, in which the interpolant is the weighted sum of radial basis functions, an example would be the gaussian distribution (Hardy, 1971). This method is popular due to its higher emphasis on radial distances closer to the center and it decreases as the radial distance expands.</p>
