@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-Compressive
+compressive
 corelease
 Dafar
 dafarno
@@ -13,7 +13,7 @@ forestfig
 forestvalfig
 FrenchToastty
 GridSearchCV
-Hyperparameter
+hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -48,7 +48,7 @@ seccompobstable
 strenght
 summaryfig
 summarytable
-superplasticizer
+Superplasticizer
 Superplasticizers
 SVM
 SVR
