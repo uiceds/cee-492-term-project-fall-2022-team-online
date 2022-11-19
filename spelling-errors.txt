@@ -2,7 +2,7 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
@@ -41,7 +41,7 @@ quartile
 rausan
 RBF
 relu
-rmse
+RMSE
 scikit
 seccompobstable
 strenght
