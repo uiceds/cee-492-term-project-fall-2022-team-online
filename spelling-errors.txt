@@ -41,7 +41,7 @@ quartile
 rausan
 RBF
 relu
-RMSE
+rmse
 RMSEs
 scikit
 seccompobstable

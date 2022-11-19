@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3d083978830a5edd10567ade361a3ea7f7487a1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3d083978830a5edd10567ade361a3ea7f7487a1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3d083978830a5edd10567ade361a3ea7f7487a1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a3d083978830a5edd10567ade361a3ea7f7487a1/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@3bf562d](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3bf562d9397c0b693e675589846c6fee3c236d34)
+from [uiceds/cee-492-term-project-fall-2022-team-online@a3d0839](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a3d083978830a5edd10567ade361a3ea7f7487a1)
 on November 19, 2022.
 </em></small>
 
@@ -429,7 +429,8 @@ In the next phase, further investigation of the effect of hyperparameters (e.g. 
 
 We are now using a neural network model to predict concrete compressive strength. We started by splitting and shuffling the data. The split chosen is 60% of the initial dataset for training, 30% for testing and 10% for validation.
 Two predictions were made. The input data was normalised for the first one, and for the second, it was not. Both predictions were made using the same model with the same number of layers/nodes, the same learning rates and the same number of steps.
-All models are 2 layer neural networks. The inputs layer and deep layer have 8 neurons and the output layer has one neuron. 
+All models are 2 layers neural networks. We have 8 independent variables for 1 dependent variable.
+Therefore the inputs layer and deep layer have 8 neurons and the output layer has one neuron. 
 
 ![
 Predictive Model using Neural Network. (1) Training Data (2) Testing Data
