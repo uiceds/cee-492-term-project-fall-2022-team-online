@@ -41,7 +41,8 @@ quartile
 rausan
 RBF
 relu
-rmse
+RMSE
+RMSEs
 scikit
 seccompobstable
 strenght

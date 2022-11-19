@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/66a14d5a36a153c29cc98fbe9c4ac337fd6772f8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/66a14d5a36a153c29cc98fbe9c4ac337fd6772f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/66a14d5a36a153c29cc98fbe9c4ac337fd6772f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/66a14d5a36a153c29cc98fbe9c4ac337fd6772f8/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/3bf562d9397c0b693e675589846c6fee3c236d34/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@66a14d5](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/66a14d5a36a153c29cc98fbe9c4ac337fd6772f8)
+from [uiceds/cee-492-term-project-fall-2022-team-online@3bf562d](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/3bf562d9397c0b693e675589846c6fee3c236d34)
 on November 19, 2022.
 </em></small>
 
@@ -448,9 +448,13 @@ A relu activation was applied for this model, and there might be better choices 
 
 ### Model Comparison
 
-Table Here
+|   Random Forest   |        SVR        |   Neural Network  | Linear Regression |
+|-------------------|-------------------|-------------------|-------------------|
+|        6.94       |        8.87       |        9.89       |       10.50       |
+Table: RMSEs of the models
+{#tbl:RMSEs}
 
-We noted that the Linear Regression took a relatively long time to run compared to the other models while being less accurate.  The Random Forest model gave the best predictions for the concrete compression strength with a rmse of  6.94. Follows the SVR model with a rmse of 8.87, then the Neural Network model with a RMSE of 9.89 and finally the Linear Regression model, which has a RMSE of 10.5. 
+We noted that the Linear Regression took a relatively long time to run compared to the other models while being less accurate. From Table @tbl:RMSEs, The Random Forest model gave the best predictions for the concrete compression strength with a rmse of  6.94. Follows the SVR model with a rmse of 8.87, then the Neural Network model with a RMSE of 9.89 and finally the Linear Regression model, which has a RMSE of 10.5. 
 
 
 
