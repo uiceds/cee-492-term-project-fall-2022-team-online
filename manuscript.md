@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a1ab2ebaa63e12321869df2bb98ad2637a569dd1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a1ab2ebaa63e12321869df2bb98ad2637a569dd1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a1ab2ebaa63e12321869df2bb98ad2637a569dd1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/cb5342e816e6bb2752802fe158756ae90ded1e04/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/cb5342e816e6bb2752802fe158756ae90ded1e04/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/cb5342e816e6bb2752802fe158756ae90ded1e04/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a1ab2ebaa63e12321869df2bb98ad2637a569dd1/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/cb5342e816e6bb2752802fe158756ae90ded1e04/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@a1ab2eb](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a1ab2ebaa63e12321869df2bb98ad2637a569dd1)
+from [uiceds/cee-492-term-project-fall-2022-team-online@cb5342e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/cb5342e816e6bb2752802fe158756ae90ded1e04)
 on November 19, 2022.
 </em></small>
 
@@ -335,13 +335,13 @@ Figure @fig:forestfig shows the performance of the preliminary random forest mod
 Predictive Model using Decision Tree and Normalized Data.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/TreeVal.png "TreeVal"){#fig:treevalfig width="250px"}
 
-Figure @fig:treevalfig shows the performance of the decision tree model with normalization against the validation data. It has an rmse of 7.11. Normalization does not affect the decision tree by much since it is a monotonic transformation.
+Figure @fig:treevalfig shows the performance of the decision tree model with normalization against the validation data. It has an rmse of 8.5. Normalization does not affect the decision tree by much since it is a monotonic transformation.
 
 ![
 Predictive Model using Random Forest and Normalized Data.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/1-Random Forest/ForestVal.png "ForestVal"){#fig:forestvalfig width="250px"}
 
-Figure @fig:forestvalfig shows the performance of the random forest model with normalization against the validation data. It has an rmse of 6.89 that is better than the validation rmse of the normalized decision tree model. 
+Figure @fig:forestvalfig shows the performance of the random forest model with normalization against the validation data. It has an rmse of 6.94 that is better than the validation rmse of the normalized decision tree model. 
 
 Although the decision tree model performs better on the testing data, the random forest model is overfitting less. The next step is to optimize hyperparameters to reduce the difference in rmse of the predicted training and predicted test data. This in turn should also improve the performance of the models on the last 10% of validation data.
 
