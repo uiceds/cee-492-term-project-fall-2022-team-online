@@ -5,7 +5,7 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
@@ -32,6 +32,7 @@ MSE
 Multiquadric
 NNV
 NNVal
+NNValNorm
 NNVNORM
 normalised
 Obeidat
