@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@4b63802](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4b6380226822d886880ccccafa575c19e5ff7edc)
+from [uiceds/cee-492-term-project-fall-2022-team-online@d955717](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d955717ab63c604a606c2486414c63a23e8d2faf)
 on November 20, 2022.
 </em></small>
 
@@ -446,13 +446,13 @@ Figure @fig:NNVNORM shows the results of the preliminary Neural Network model wi
 A relu activation was applied for this model, and there might be better choices for the normalized data.
 
 ![
-Predictive Neural Network model using the validation Data.
+Predictive Neural Network model without normalization using the validation Data.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NNVal.png "NNVal"){#fig:NNVal width="250px"}
 
 Figure @fig:NNVal shows the performance of the Neural Network model without normalization using the validation data as the input. The RMSE value obtained is 7.24.
 
 ![
-Predictive Neural Network model using the validation Data.
+Predictive Neural Network model with normalization using the validation Data.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NNValNorm.png "NNVal"){#fig:NNValNorm width="250px"}
 
 Figure @fig:NNValNorm shows the performance of the Neural Network model with normalization using the validation data as the input. The RMSE value obtained is 9.83. 
