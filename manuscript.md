@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-19'
+date-meta: '2022-11-20'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-11-19" />
-  <meta name="citation_publication_date" content="2022-11-19" />
+  <meta name="dc.date" content="2022-11-20" />
+  <meta name="citation_publication_date" content="2022-11-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d25f0352f034621e71a97a1ff828c152f969d8ee/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d25f0352f034621e71a97a1ff828c152f969d8ee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d25f0352f034621e71a97a1ff828c152f969d8ee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a4edda9f89bb996ac195afffc67ddabf8a9c4dd0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a4edda9f89bb996ac195afffc67ddabf8a9c4dd0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a4edda9f89bb996ac195afffc67ddabf8a9c4dd0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d25f0352f034621e71a97a1ff828c152f969d8ee/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a4edda9f89bb996ac195afffc67ddabf8a9c4dd0/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@d25f035](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d25f0352f034621e71a97a1ff828c152f969d8ee)
-on November 19, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@a4edda9](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a4edda9f89bb996ac195afffc67ddabf8a9c4dd0)
+on November 20, 2022.
 </em></small>
 
 ## Authors
@@ -428,7 +428,7 @@ In the next phase, further investigation of the effect of hyperparameters (e.g. 
 ### Neural Network
 
 We are now using a neural network model to predict concrete compressive strength. We started by splitting and shuffling the data. The split chosen is 60% of the initial dataset for training, 30% for testing and 10% for validation.
-Two predictions were made. The input data was normalised for the first one, and for the second, it was not. Both predictions were made using the same model with the same number of layers/nodes, the same learning rates and the same number of steps.
+Two predictions were made. The input data was normalised for the first one, and for the second, it was not. Both predictions were made using the same model with the same number of layers/nodes, the same learning rates (0.000001) and the same number of steps (10000).
 All models are 2 layers neural networks. We have 8 independent variables for 1 dependent variable.
 Therefore the inputs layer and deep layer have 8 neurons and the output layer has one neuron. 
 
