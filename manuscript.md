@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a15af93fc0670b4be8ceaf04e4f6af90462e2587/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a15af93fc0670b4be8ceaf04e4f6af90462e2587/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a15af93fc0670b4be8ceaf04e4f6af90462e2587/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a15af93fc0670b4be8ceaf04e4f6af90462e2587/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4b6380226822d886880ccccafa575c19e5ff7edc/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@a15af93](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a15af93fc0670b4be8ceaf04e4f6af90462e2587)
+from [uiceds/cee-492-term-project-fall-2022-team-online@4b63802](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4b6380226822d886880ccccafa575c19e5ff7edc)
 on November 20, 2022.
 </em></small>
 
@@ -434,13 +434,13 @@ Therefore the inputs layer and deep layer have 8 neurons and the output layer ha
 
 ![
 Predictive Model using Neural Network. (1) Training Data (2) Testing Data
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetwork.png "Neural Network without Normalization"){#fig:NNV width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetwork.png "Neural Network without Normalization"){#fig:NNV width="500px"}
 
 Figure @fig:NNV shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the RMSE of the training was consistently less than the testing data accross multiple runs.
 
 ![
 Predictive Model using Neural Network. (1) Training Data (2) Testing Data
-](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetworkNorm.png "Neural Network with Normalization"){#fig:NNVNORM width="700px"}
+](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetworkNorm.png "Neural Network with Normalization"){#fig:NNVNORM width="500px"}
 
 Figure @fig:NNVNORM shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe larger RMSE values than when running the model without normalization. The RMSE values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased. 
 A relu activation was applied for this model, and there might be better choices for the normalized data.
