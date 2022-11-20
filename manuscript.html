@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d955717ab63c604a606c2486414c63a23e8d2faf/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d955717ab63c604a606c2486414c63a23e8d2faf">uiceds/cee-492-term-project-fall-2022-team-online@d955717</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/fff046bc384f3121e74ae52acbe8c2fb10f25616">uiceds/cee-492-term-project-fall-2022-team-online@fff046b</a>
 on November 20, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -610,17 +610,24 @@ To ensure that the model works well in the real world, the model performance wil
 <p>Again, the data was split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
 <div id="fig:Regression1" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png" width="700" alt="Figure 18: Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 18:</span> Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression1.png" width="500" alt="Figure 18: Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 18:</span> Predictive Model Using Linear Regression. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
 <p>As we can see from Figure <a href="#fig:Regression1">18</a>, the performance of the linear regression is relatively good. The rmse was relatively low, and it is very similar for both the training and the testing datasets. This also suggests that there was no overfitting in our model.</p>
 <div id="fig:Regression" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png" width="700" alt="Figure 19: The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 19:</span> The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/Regression.png" width="500" alt="Figure 19: The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 19:</span> The Effect of Feature Engineering on the Linear Regression Model. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
 <p>Figure <a href="#fig:Regression">19</a> shows the performance of the preliminary linear regression model after logically modifying the input data. The superplasticizer is a material that can be added to the concrete in order to increase its workability while maintaining the same strength. As a result, increasing or decreasing the amount of superplasticizer in the mixture would not affect, by itself, the compressive strength of concrete. And we have seen before from the data that there is no relationship between these two parameters.As a result, this column has been excluded from the datasets here. On the other hand, the most important parameter that affects the compressive strength of concrete is the water to cement ratio which has been included to further increase the accuracy of our linear regression model. We can see that the rmse decreased slightly from 11.9 and 11.8 to 10.3 and 10.5 for training and testing data, respectively.</p>
-<p>In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well.</p>
+<div id="fig:RegressionVal" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/3-%20Linear%20Regression/LRval.png" width="250" alt="Figure 20: Predictive Model Using Linear Regression on Validation Dataset." /><figcaption aria-hidden="true"><span>Figure 20:</span> Predictive Model Using Linear Regression on Validation Dataset.</figcaption>
+</figure>
+</div>
+<p>Figure <a href="#fig:RegressionVal">20</a> shows the performance of the linear regression model against the validation dataset. It has an rmse of 12.50. This still close from the rmse of the training and testing datasets.</p>
+<p>An important point to mention here is that the linear regression model takes significantly long time to run. It took over 500 minutes to run on the training data. This very long run time can be attributed to the very small learning rate and large number of steps needed to train the model. Without that, the model was giving NaN results.</p>
+<p>In the next phase, further investigation of the effect of hyperparameters (e.g. regularization, feature engineering, etc) on the linear regression model will be performed. The purpose of that is to increase the accuracy of this model by reducing rmse for both the training and testing datasets, and with using the validating dataset as well. Furthermore, the learning rate and number of steps will be investigated more to reduce the run time of our model and being able to do more trials.</p>
 <div style="page-break-after: always;">
 
 </div>
@@ -631,29 +638,29 @@ All models are 2 layers neural networks. We have 8 independent variables for 1 d
 Therefore the inputs layer and deep layer have 8 neurons and the output layer has one neuron.</p>
 <div id="fig:NNV" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetwork.png" width="500" alt="Figure 20: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 20:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetwork.png" width="500" alt="Figure 21: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 21:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNV">20</a> shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the RMSE of the training was consistently less than the testing data accross multiple runs.</p>
+<p>Figure <a href="#fig:NNV">21</a> shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the RMSE of the training was consistently less than the testing data accross multiple runs.</p>
 <div id="fig:NNVNORM" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="500" alt="Figure 21: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 21:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="500" alt="Figure 22: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 22:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNVNORM">21</a> shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe larger RMSE values than when running the model without normalization. The RMSE values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased.
+<p>Figure <a href="#fig:NNVNORM">22</a> shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe larger RMSE values than when running the model without normalization. The RMSE values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased.
 A relu activation was applied for this model, and there might be better choices for the normalized data.</p>
 <div id="fig:NNVal" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNVal.png" width="250" alt="Figure 22: Predictive Neural Network model without normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 22:</span> Predictive Neural Network model without normalization using the validation Data.</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNVal.png" width="250" alt="Figure 23: Predictive Neural Network model without normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 23:</span> Predictive Neural Network model without normalization using the validation Data.</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNVal">22</a> shows the performance of the Neural Network model without normalization using the validation data as the input. The RMSE value obtained is 7.24.</p>
+<p>Figure <a href="#fig:NNVal">23</a> shows the performance of the Neural Network model without normalization using the validation data as the input. The RMSE value obtained is 7.24.</p>
 <div id="fig:NNValNorm" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNValNorm.png" width="250" alt="Figure 23: Predictive Neural Network model with normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 23:</span> Predictive Neural Network model with normalization using the validation Data.</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNValNorm.png" width="250" alt="Figure 24: Predictive Neural Network model with normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 24:</span> Predictive Neural Network model with normalization using the validation Data.</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNValNorm">23</a> shows the performance of the Neural Network model with normalization using the validation data as the input. The RMSE value obtained is 9.83.</p>
+<p>Figure <a href="#fig:NNValNorm">24</a> shows the performance of the Neural Network model with normalization using the validation data as the input. The RMSE value obtained is 9.83.</p>
 <div style="page-break-after: always;">
 
 </div>
@@ -682,7 +689,7 @@ A relu activation was applied for this model, and there might be better choices 
 </table>
 </div>
 <p>After optimizing the various ML models, each model was evaluated using the validation set. The validation set is used as it is an unseen set of data by the model, as such it is used to mimic the model as if it is to be used in an actual scenario to predict concrete strength.</p>
-<p>From table <a href="#tbl:RMSEs">6</a> it can be noted Random Forest Linear Regression performed the best with an RMSE of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 10.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.</p>
+<p>From table <a href="#tbl:RMSEs">6</a> it can be noted Random Forest performed the best with an RMSE of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 10.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.</p>
 <p>A possibility of Random Forest and Neural Network performing better than SVR is due to the complexity. With the adided complexity, it might in turn lead to a better prediction. However, this is in turn a trade of with model processing time.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
