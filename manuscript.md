@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-20'
+date-meta: '2022-11-21'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-11-20" />
-  <meta name="citation_publication_date" content="2022-11-20" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/88102283ec78adaee951b76726df0df617418248/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/88102283ec78adaee951b76726df0df617418248/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/88102283ec78adaee951b76726df0df617418248/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fff046bc384f3121e74ae52acbe8c2fb10f25616/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/88102283ec78adaee951b76726df0df617418248/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@fff046b](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/fff046bc384f3121e74ae52acbe8c2fb10f25616)
-on November 20, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@8810228](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/88102283ec78adaee951b76726df0df617418248)
+on November 21, 2022.
 </em></small>
 
 ## Authors
@@ -473,13 +473,13 @@ In this section, the performance of various models will be compared amongst each
 
 |   Random Forest   |   Neural Network  |        Support Vector Regression        | Linear Regression |
 |-------------------|-------------------|-----------------------------------------|-------------------|
-|        6.94       |        7.24       |                  8.87                   |       10.50       |
+|        6.94       |        7.24       |                  8.87                   |       12.50       |
 Table: RMSEs of the models
 {#tbl:RMSEs}
 
 After optimizing the various ML models, each model was evaluated using the validation set. The validation set is used as it is an unseen set of data by the model, as such it is used to mimic the model as if it is to be used in an actual scenario to predict concrete strength.
 
-From table @tbl:RMSEs it can be noted Random Forest performed the best with an RMSE of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 10.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.
+From table @tbl:RMSEs it can be noted Random Forest performed the best with an RMSE of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 12.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.
 
 A possibility of Random Forest and Neural Network performing better than SVR is due to the complexity. With the adided complexity, it might in turn lead to a better prediction. However, this is in turn a trade of with model processing time. 
 
