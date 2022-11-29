@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@346ee3e](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/346ee3ed47dcfb4d948a201a95a32a573807982e)
+from [uiceds/cee-492-term-project-fall-2022-team-online@edaf5a2](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/edaf5a233bae5eb57803c49de9646959c9d90033)
 on November 29, 2022.
 </em></small>
 
@@ -115,7 +115,7 @@ The model aims to predict the 28<sup>th</sup> day compressive strength of concre
 
 To minimize such errors, this model predicts the 28<sup>th</sup> day compressive strength instantaneously when a batch of concrete mix is created. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model. 
 
-A dataset with 1030 different observations will be used to train and validate four different models, and the advantages and disadvantages of each option will be discussed. Finally, the accuracy and precision of these models will be assessed using different methods (such as comparing rmse and r2 values), and recommendations to improve the models' performance will be suggested. 
+A dataset with 1030 different observations will be used to train and validate four different models, and the advantages and disadvantages of each option will be discussed. Finally, the accuracy and precision of these models will be assessed using different methods (such as comparing rmse and r<sup>2</sup> values), and recommendations to improve the models' performance will be suggested. 
 
 ## Dataset
 
@@ -158,9 +158,11 @@ This column represents the age of the concrete mixture after pouring. The concre
 
 ## Exploratory Data Analysis {.page_break_before}
 
+To further understand our dataset (the concrete mixture components) and the role of each parameter on the compressive strength of concrete, and the different relationships between the different parameters themselves, a comprehensive exploratory analysis will be performed in this section. 
+
 ### Summary Statistics
 
-This section illustrates the general statistics of the dataset to show simple trends in the dataset.
+This section illustrates the general statistics of the dataset to show simple trends between the different parameters.
 
 |                   variable |    mean |     std |     min |     q25 |  median |      q75 |      max |
 |----------------------------|---------|---------|---------|---------|---------|----------|----------|
@@ -200,13 +202,13 @@ Table: Secondary Component Observation Count
 
 Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table @tbl:seccompobstable shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash. 
 
-The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting. 
+The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28<sup>th</sup> day. Some observations were measured after a year from casting. 
 
-The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
+The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed are 2.3 MPa and 82.6 MPa, respectively.
 <div style="page-break-after: always;"></div>
 
 ### Correlation
-In this section, the general correlation between various variables has been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete. 
+In this section, the general correlations between various variables have been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete. 
 
 ![
 Correlation plot of Water, Superplasticizer & Compressive Strength 
@@ -247,8 +249,7 @@ Table: Correlation coefficients of water , superplasticizer and compressive stre
 {#tbl:corr4to5}
 
 From Table @tbl:corr4to5, we see a weak positive correlation of 0.36 between the amount of superplasticizer in the mix and compressive strength. Table @tbl:corr4to5 also shows a weak negative correlation of -0.29 between Water content and compressive strength. 
-As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete.   
-We can also observe that Water content and superplasticizer amount have a strong negative correlation of -0.65. Overall the more superplasticizer we have, the less water there is in these concrete mixes. 
+As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete. We can also observe that Water content and superplasticizer amount have a strong negative correlation of -0.65. Overall the more superplasticizer we have, the less water there is in these concrete mixes. 
 
 ![
 Correlation plot of Fine Aggregates , Coarse Aggregates and compressive strength
@@ -265,7 +266,7 @@ Table: Correlation coefficients of water , superplasticizer and compressive stre
 
 In Table @tbl:corr6to7, we can see the correlations between fine aggregates, coarse aggregates and compressive strength.  We have a weak negative correlation of   -0.16 between Fine aggregates and compressive strength and a weak negative correlation coefficient of -0.16 between coarse aggregates and compressive strength. We might gain more insight by taking these two elements together and comparing them to the compressive strength.  
 
-These correlations are in line with what is expected for a concrete mix. 
+These correlations are in line with what is expected for a concrete mix. However, to further understand our dataset, more in-depth correlations using combinations of different components are investigated. 
 
 ### Specific Correlation
 
@@ -300,6 +301,8 @@ Compressive strength versus age (Merrit, 1983)
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlotRef.png   "CAPlotRef"){#fig:wTOcfig5 width="500px"}
 
 In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure @fig:wTOcfig5 shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in Figure @fig:wTOcfig4 can be seen in Figure @fig:wTOcfig5. 
+
+All these observations gathered from the general trends and the in-depth relationships will be used to improve our different models, by utilizing techniques like feature selection, that we will discuss in the following sections. 
 
 ## Predictive Modeling Plan {.page_break_before}
 
