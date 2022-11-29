@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2d91ea2c22e2bb2c42d3cc7fbe0e3e1c69b9225f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2d91ea2c22e2bb2c42d3cc7fbe0e3e1c69b9225f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2d91ea2c22e2bb2c42d3cc7fbe0e3e1c69b9225f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a503e60aff6cc52cc747cb364239eaca81fa610e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a503e60aff6cc52cc747cb364239eaca81fa610e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a503e60aff6cc52cc747cb364239eaca81fa610e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/2d91ea2c22e2bb2c42d3cc7fbe0e3e1c69b9225f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a503e60aff6cc52cc747cb364239eaca81fa610e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@2d91ea2](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/2d91ea2c22e2bb2c42d3cc7fbe0e3e1c69b9225f)
+from [uiceds/cee-492-term-project-fall-2022-team-online@a503e60](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a503e60aff6cc52cc747cb364239eaca81fa610e)
 on November 29, 2022.
 </em></small>
 
@@ -318,7 +318,7 @@ The output of the model will be able to predict the 28<sup>th</sup> day concrete
 
 ## Preliminary Models {.page_break_before}
 
-This section covers four different models to predict the compressive strength of concrete. The root mean square error (rmse) was used to evaluate the performance of the models
+This section covers four different models to predict the compressive strength of concrete. The root mean square error (rmse) was used to evaluate the performance of the models.
 
 ### Random Forest
 
