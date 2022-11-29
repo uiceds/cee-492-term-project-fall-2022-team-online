@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/346ee3ed47dcfb4d948a201a95a32a573807982e/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/edaf5a233bae5eb57803c49de9646959c9d90033/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/346ee3ed47dcfb4d948a201a95a32a573807982e">uiceds/cee-492-term-project-fall-2022-team-online@346ee3e</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/edaf5a233bae5eb57803c49de9646959c9d90033">uiceds/cee-492-term-project-fall-2022-team-online@edaf5a2</a>
 on November 29, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -124,7 +124,7 @@ Department of Civil and Environmental Engineering, University of Illinois at Urb
 <p>The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model will predict the interactions between the concrete mixture components to the compressive strength. The outputs being considered include a table of proportions for mix design and a formula for the compressive strength.</p>
 <p>The model aims to predict the 28<sup>th</sup> day compressive strength of concrete based on the dataset. Traditionally, to compare the actual compressive strength of concrete (Ca) against designed for strength (Cd), 28 days would need to be passed before a cube sample can be crushed to check the compressive strength. This is usually not a problem, if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additionally structures put in place to further enhance the strength.</p>
 <p>To minimize such errors, this model predicts the 28<sup>th</sup> day compressive strength instantaneously when a batch of concrete mix is created. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model.</p>
-<p>A dataset with 1030 different observations will be used to train and validate four different models, and the advantages and disadvantages of each option will be discussed. Finally, the accuracy and precision of these models will be assessed using different methods (such as comparing rmse and r2 values), and recommendations to improve the models’ performance will be suggested.</p>
+<p>A dataset with 1030 different observations will be used to train and validate four different models, and the advantages and disadvantages of each option will be discussed. Finally, the accuracy and precision of these models will be assessed using different methods (such as comparing rmse and r<sup>2</sup> values), and recommendations to improve the models’ performance will be suggested.</p>
 <h2 id="dataset">Dataset</h2>
 <h3 id="description">Description</h3>
 <p>The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable.</p>
@@ -151,8 +151,9 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 <h4 id="column-i-output-1-concrete-compressive-strength">Column I/ Output 1: Concrete compressive strength</h4>
 <p>It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property reported at 28 days of curing time.</p>
 <h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<p>To further understand our dataset (the concrete mixture components) and the role of each parameter on the compressive strength of concrete, and the different relationships between the different parameters themselves, a comprehensive exploratory analysis will be performed in this section.</p>
 <h3 id="summary-statistics">Summary Statistics</h3>
-<p>This section illustrates the general statistics of the dataset to show simple trends in the dataset.</p>
+<p>This section illustrates the general statistics of the dataset to show simple trends between the different parameters.</p>
 <div id="tbl:summarytable" class="tablenos">
 <table id="tbl:summarytable">
 <caption><span>Table 1:</span> Summary Statistics
@@ -339,13 +340,13 @@ The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup
 </table>
 </div>
 <p>Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table <a href="#tbl:seccompobstable">2</a> shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash.</p>
-<p>The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28th day. Some observations were measured after a year from casting.</p>
-The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed is 2.3 MPa and 82.6 MPa respectively.
+<p>The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28<sup>th</sup> day. Some observations were measured after a year from casting.</p>
+The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and maximum concrete strength observed are 2.3 MPa and 82.6 MPa, respectively.
 <div style="page-break-after: always;">
 
 </div>
 <h3 id="correlation">Correlation</h3>
-<p>In this section, the general correlation between various variables has been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete.</p>
+<p>In this section, the general correlations between various variables have been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete.</p>
 <div id="fig:Plot_1to3" class="fignos">
 <figure>
 <img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Min%20Win/plot_1to3.png" width="500" alt="Figure 2: Correlation plot of Water, Superplasticizer &amp; Compressive Strength" /><figcaption aria-hidden="true"><span>Figure 2:</span> Correlation plot of Water, Superplasticizer &amp; Compressive Strength</figcaption>
@@ -448,8 +449,7 @@ The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and m
 </table>
 </div>
 <p>From Table <a href="#tbl:corr4to5">4</a>, we see a weak positive correlation of 0.36 between the amount of superplasticizer in the mix and compressive strength. Table <a href="#tbl:corr4to5">4</a> also shows a weak negative correlation of -0.29 between Water content and compressive strength.
-As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete.<br />
-We can also observe that Water content and superplasticizer amount have a strong negative correlation of -0.65. Overall the more superplasticizer we have, the less water there is in these concrete mixes.</p>
+As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete. We can also observe that Water content and superplasticizer amount have a strong negative correlation of -0.65. Overall the more superplasticizer we have, the less water there is in these concrete mixes.</p>
 <div id="fig:plot6to7" class="fignos">
 <figure>
 <img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Pim/plot_6to7.png" width="500" alt="Figure 4: Correlation plot of Fine Aggregates , Coarse Aggregates and compressive strength" /><figcaption aria-hidden="true"><span>Figure 4:</span> Correlation plot of Fine Aggregates , Coarse Aggregates and compressive strength</figcaption>
@@ -490,7 +490,7 @@ We can also observe that Water content and superplasticizer amount have a strong
 </table>
 </div>
 <p>In Table <a href="#tbl:corr6to7">5</a>, we can see the correlations between fine aggregates, coarse aggregates and compressive strength. We have a weak negative correlation of -0.16 between Fine aggregates and compressive strength and a weak negative correlation coefficient of -0.16 between coarse aggregates and compressive strength. We might gain more insight by taking these two elements together and comparing them to the compressive strength.</p>
-<p>These correlations are in line with what is expected for a concrete mix.</p>
+<p>These correlations are in line with what is expected for a concrete mix. However, to further understand our dataset, more in-depth correlations using combinations of different components are investigated.</p>
 <h3 id="specific-correlation">Specific Correlation</h3>
 <p>In this section, the specific interactions between variables will be further discussed.</p>
 <div id="fig:wTOcfig1" class="fignos">
@@ -523,6 +523,7 @@ We can also observe that Water content and superplasticizer amount have a strong
 </figure>
 </div>
 <p>In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure <a href="#fig:wTOcfig5">9</a> shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in Figure <a href="#fig:wTOcfig4">8</a> can be seen in Figure <a href="#fig:wTOcfig5">9</a>.</p>
+<p>All these observations gathered from the general trends and the in-depth relationships will be used to improve our different models, by utilizing techniques like feature selection, that we will discuss in the following sections.</p>
 <h2 class="page_break_before" id="predictive-modeling-plan">Predictive Modeling Plan</h2>
 <p>The predictive model for this project will be a supervised regression predictive model. The goal is to predict the 28th day concrete compressive strength, given cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate.</p>
 <p>The dataset is a labelled dataset as such supervised learning method will be used train the model. The dataset will be split into training, testing and validation set using cross validation method. The training set will be used to train the model, the testing set will be used to optimize the model, and the validation set will be used to evaluate the performance of the model based on unseen data. The dataset will also be standardized to ensure there is no mismatch of the different scales for the variables.</p>
