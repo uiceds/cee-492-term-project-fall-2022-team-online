@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e22a4bc56a9896818d35c1201c7af44d2c379cf8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e22a4bc56a9896818d35c1201c7af44d2c379cf8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e22a4bc56a9896818d35c1201c7af44d2c379cf8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/73bed15fc58c0621cef4ce25c74100f47bec58e3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/73bed15fc58c0621cef4ce25c74100f47bec58e3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/73bed15fc58c0621cef4ce25c74100f47bec58e3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e22a4bc56a9896818d35c1201c7af44d2c379cf8/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/73bed15fc58c0621cef4ce25c74100f47bec58e3/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@e22a4bc](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/e22a4bc56a9896818d35c1201c7af44d2c379cf8)
+from [uiceds/cee-492-term-project-fall-2022-team-online@73bed15](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/73bed15fc58c0621cef4ce25c74100f47bec58e3)
 on November 30, 2022.
 </em></small>
 
@@ -129,10 +129,10 @@ Cement is an adhesive substance that acts as a binder for all the components in 
 Blast furnace Ash is a nonmetallic co-product obtained in the production of iron, iron ore, iron scrap and fluxed. It is commonly used in cement production as a substitute for clinker and in concrete production as a substitute for aggregates. The use of slag cement improves performance and durability of concrete.
 The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
-#### Column C/ Component 3: Fly Ash
+#### Column C/ Component 3: Fly Ash {.page_break_before}
 Fly Ash is byproduct of burning pulverized coal in electric generation.
 It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration. 
-The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+The unit used is kg of flay ash per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column D/ Component 4: Water {.page_break_before}
 Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete. 

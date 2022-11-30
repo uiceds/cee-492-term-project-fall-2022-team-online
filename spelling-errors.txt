@@ -5,11 +5,11 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
-dataset
+Dataset
 datasets
 Fonseca
 forestfig
