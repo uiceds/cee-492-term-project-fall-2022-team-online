@@ -16,7 +16,7 @@ forestfig
 forestvalfig
 FrenchToastty
 GridSearchCV
-hyperparameter
+Hyperparameter
 hyperparameters
 Ibrahima
 interpolant
