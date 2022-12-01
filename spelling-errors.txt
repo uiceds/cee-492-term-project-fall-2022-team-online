@@ -9,7 +9,7 @@ compressive
 corelease
 Dafar
 dafarno
-dataset
+Dataset
 datasets
 Fonseca
 forestfig
@@ -17,7 +17,7 @@ forestvalfig
 FrenchToastty
 GridSearchCV
 Hoang
-hyperparameter
+Hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -55,7 +55,7 @@ seccompobstable
 strenght
 summaryfig
 summarytable
-Superplasticizer
+superplasticizer
 Superplasticizers
 SVM
 SVR

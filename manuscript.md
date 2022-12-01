@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c6cdcffb145a0cef917e9cc402e3ee9d3fc4dd1/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c6cdcffb145a0cef917e9cc402e3ee9d3fc4dd1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c6cdcffb145a0cef917e9cc402e3ee9d3fc4dd1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7c6cdcffb145a0cef917e9cc402e3ee9d3fc4dd1/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@7394137](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/739413753e155f5f9c0dc4ded78a0f75f4096bd8)
+from [uiceds/cee-492-term-project-fall-2022-team-online@7c6cdcf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/7c6cdcffb145a0cef917e9cc402e3ee9d3fc4dd1)
 on December 1, 2022.
 </em></small>
 
@@ -402,7 +402,7 @@ Model performance of Optimized SVR Model based on Validation Set (1) without Nor
 
 From figure @fig:SVR_Val, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 11.3 MPa 
 
-The Optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength.  However, this is not the case for the Optimized SVR model (with normalization), as it yielded a rmse of 12.0, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.
+The Optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength.  However, this is not the case for the Optimized SVR model (with normalization), as it yielded a rmse of 11.3, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.
 
 Therefore, the best performing model using Support Vector Regression is the Optimized SVR model (w/o normalization), as it yielded both a lower rmse and there is no signs of overfitting. 
 
