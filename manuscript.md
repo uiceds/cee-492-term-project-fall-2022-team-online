@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/739413753e155f5f9c0dc4ded78a0f75f4096bd8/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@7e2c7db](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2)
+from [uiceds/cee-492-term-project-fall-2022-team-online@7394137](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/739413753e155f5f9c0dc4ded78a0f75f4096bd8)
 on December 1, 2022.
 </em></small>
 
@@ -400,7 +400,7 @@ Figure @fig:SVR_Val below shows the comparison of the optimized SVR model withou
 Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_val_2.png "Val Set SVR Performance Comparison"){#fig:SVR_Val width="500px"}
 
-From figure @fig:SVR_Val, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 12.0 MPa 
+From figure @fig:SVR_Val, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 11.3 MPa 
 
 The Optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength.  However, this is not the case for the Optimized SVR model (with normalization), as it yielded a rmse of 12.0, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.
 
@@ -489,6 +489,32 @@ A possibility of Random Forest and Neural Network performing better than SVR is 
 
 
 
+## Discussion {.page_break_before}
+
+In this project, four different models have been utilized to predict the compressive strength of a concrete mixture. In all models, the independent variables were the concrete mixture components (Cement, Blast Furnace Slag, Fly Ash, Water, Superplasticizer, Coarse Aggregate, Fine Aggregate) and Concrete Age, whereas the dependent variable was the Compressive Strength. The four models were able to predict the concrete compressive strength in a good way, but with relatively different degrees of success.  
+
+### Random Forest
+
+A regression decision tree is a learning method that uses nested rules to make a decision. Although the decision tree has a simple algorithm, it yields a complex model characterized by the tree depth and number of leaves. This model is unaffected by normalization. Optimizing for minimum samples per leaf and pruning purity threshold yields a better rmse. However, the decision tree exhibits overfitting.  
+
+A regression random forest is a learning method that takes the mean prediction of a collection of decision trees.  According to Yiu (2019), the random forest classifier is an ensemble of decision trees that protect each other from errors. Minimally correlated ensemble decision trees perform better. Individual inaccurate trees, if uncorrelated, do not spoil the prediction. This model is unaffected by normalization and marginally improved by hyperparameter optimization. The regression random forest performed better than a regression decision tree. It also exhibits overfitting to the test data. 
+
+### Support Vector Regression
+
+The support vector regression (SVR) model uses the same principle as the support vector machine (SVM) to find the best fit line. However, in SVR, the best fit is the hyperplane that has the maximum number of points. The results on the validation set showed that a rmse of 8.87 MPa. This is a reasonable result as in regression analysis, the case in which the actual and predicted outcomes are the same hardly exist, for predicting concrete strength (Pham et al., 2016).  The advantage of SVR is that the decision model can be easily updated, requires lower computation compared to other regression techniques and it is easy to implement. The disadvantage of SVR is that it is hard to interpret the model after training it. Another disadvantage is that the hyperparameters need to be optimized well to obtain a good result, in contrast to random forest. As such, due to its sensitivity to hyperparameters tunning which cannot be done through gradient descent, it is difficult to implement the most optimized model.  Further improvements such as trying different kernels with different hyperparameters should be explored to yield a better result. 
+
+### Linear Model
+
+Highest rmse values: not complicated enough, the compressive strength of the concrete mixture depends on a large number of variables (all different components, and the concrete age), the percentage of each of these components in the mixture, and the relationship between these components themselves and between the components with the concrete compressive strength are not a simple linear relationship. This model was the slowest (computationally the least efficient), a large number of steps with very small learning rates were needed to train the model to be able to get it to work and give reasonable predictions. Again, this might be due to using a very simple model to solve a relatively more complicated problem. 
+
+### Neural Network
+
+The Neural Network model used to predict the concrete compressive strength is a 2 layers neural network. There are 8 independent variables for 1 dependent variable. The input data was shuffled and split. 60% of the data was used for training the model, 30% was used for testing the data and 10% was used for validation. A Neural Network model is more suited than linear regression for problems of this type.  Indeed, Neural Network models are more suited if with data have some non- linear dependencies which can be the case with complex concrete mixes. High level of confidence should be attainable. The results are satisfying but there is room for improvement for this model to reduce the RMSE. The next steps would be to optimize by adjusting the number of layers and by trying different activation functions. 
+
+### Further Improvements
+
+Currently, the model predicts the general strength of a concrete given its input parameters. Although it can predict the 28th day strength, the model is not trained to accurately optimize the 28th day compressive strength. As such, the next steps to improve the different models would be to explore compare specifically the 28th day strength and focus on the accuracy regarding this aspect. Cross-validation could also be implemented to ensure that there is consistency in the model and that it is not biased towards a certain training, test and validation split. 
+
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
@@ -497,6 +523,8 @@ Concrete manual - A water resources technical publication. (8th ed.). (1975).
 Hardy, R. (1971). Multiquadric equations of topography and other irregular surfaces. Journal Of Geophysical Research, 76(8), 1905-1915. https://doi.org/10.1029/jb076i008p01905
 
 Merritt, F. S. (1983). Standard Handbook for Civil Engineers, 3 Ed. McGraw-Hill.
+
+Pham, A.-D., Hoang, N.-D. and Nguyen, Q.-T. (2016) “Predicting compressive strength of high-performance concrete using metaheuristic-optimized least squares support vector regression,” Journal of Computing in Civil Engineering, 30(3). Available at: https://doi.org/10.1061/(asce)cp.1943-5487.0000506. 
 
 Theodoridis, S., & Koutroumbas, K. (2009). Pattern Recognition, 4th Edition. Academic Press.
 
