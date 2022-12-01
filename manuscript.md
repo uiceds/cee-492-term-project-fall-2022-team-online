@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a2c5f06778c99cdbca2558a6460a1e986fe1ca26/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a2c5f06778c99cdbca2558a6460a1e986fe1ca26/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a2c5f06778c99cdbca2558a6460a1e986fe1ca26/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/a2c5f06778c99cdbca2558a6460a1e986fe1ca26/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@d673585](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d673585df72951d1739837cff986aedbda1c4960)
+from [uiceds/cee-492-term-project-fall-2022-team-online@a2c5f06](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/a2c5f06778c99cdbca2558a6460a1e986fe1ca26)
 on December 1, 2022.
 </em></small>
 
@@ -306,15 +306,13 @@ All these observations gathered from the general trends and the in-depth relatio
 
 ## Predictive Modeling Plan {.page_break_before}
 
-The predictive model for this project will be a supervised regression predictive model. The goal is to predict the 28<sup>th</sup> day concrete compressive strength, given cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate. 
+In this project, multiple predictive models that have different characteristics will be developed to estimate the 28<sup>th</sup> day concrete compressive strength.  The input parameters for each of these models are the concrete mixture components (water, cement, aggregate, and additives). 
 
-The dataset is a labelled dataset as such supervised learning method will be used train the model. The dataset will be split into training, testing and validation set using cross validation method. The training set will be used to train the model, the testing set will be used to optimize the model, and the validation set will be used to evaluate the performance of the model based on unseen data. The dataset will also be standardized to ensure there is no mismatch of the different scales for the variables.
+The dataset is a labelled data as such supervised learning method will be used to train the models. The data will be split into training, testing and validation datasets using cross validation method. The training dataset will be used to train the model, the testing dataset will be used to optimize the model, whereas the validation dataset will be used to evaluate the performance of these models as they are considered unseen observations. The data will also be standardized to ensure there is no mismatch of the different scales for the variables.
 
-The preliminary model will be a linear or polynomial model, using gradient descent and an error function such as MSE to train model. To ensure that the model does not overfit the training model, a regularization term either L1 or L2 will be used to optimize the model. L1 in the case of feature selection by reducing non-essential variables to zero, and L2 for the case of lowering the influence of non- essential variables.
+The models that will be investigated in this project are 1. Random Forest, 2. Support Vector Regression (SVR), 3. Linear Regression, and 4. Neural Network. These models have been selected based on our understanding of the characteristics of the data that we have and the correlations between the different input parameters that we have discussed in the exploratory analyses in the previous section. To ensure that these models do not overfit the training model, a regularization term either L1 or L2 will be used to optimize them. L1 in the case of feature selection by reducing non-essential variables to zero, and L2 in the case of lowering the influence of non-essential variables. 
 
-Another preliminary predictive model is to use PCA for regression. By transforming the standardized training data into PCA coordinate systems, key variables can be selected while retraining confounding variables.
-
-The output of the model will be able to predict the 28<sup>th</sup> day concrete compressive strength.  The purpose is to use the model to achieve the instantaneous 28<sup>th</sup> day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28<sup>th</sup> day strength, a cube sample will be crushed on the 28<sup>th</sup> day to find out the strength. By having instantaneous 28<sup>th</sup> day strength, faulty batches that do not meet the 28<sup>th</sup> day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.
+The output of these models will be able to predict the 28<sup>th</sup> day concrete compressive strength.  The purpose is to use these models to achieve the instantaneous 28<sup>th</sup> day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28<sup>th</sup> day strength, a cube sample will be crushed on the 28<sup>th</sup> day to find out the strength. By having instantaneous 28<sup>th</sup> day strength, faulty batches that do not meet the 28<sup>th</sup> day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.
 
 ## Preliminary Models {.page_break_before}
 

@@ -9,7 +9,7 @@ compressive
 corelease
 Dafar
 dafarno
-dataset
+Dataset
 datasets
 Fonseca
 forestfig
@@ -28,7 +28,6 @@ Merrit
 misclassification
 modelling
 MPa
-MSE
 Multiquadric
 NNV
 NNVal
@@ -39,7 +38,6 @@ Obeidat
 OPC
 overfit
 overfitting
-PCA
 pimbooo
 plasticizer
 quartile
