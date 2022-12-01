@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e72e23ac3cf8589b95f65aa3ce98b00d7d8d133b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e72e23ac3cf8589b95f65aa3ce98b00d7d8d133b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e72e23ac3cf8589b95f65aa3ce98b00d7d8d133b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/e72e23ac3cf8589b95f65aa3ce98b00d7d8d133b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@e72e23a](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/e72e23ac3cf8589b95f65aa3ce98b00d7d8d133b)
+from [uiceds/cee-492-term-project-fall-2022-team-online@7e2c7db](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/7e2c7dbaec7ef6f24b43d287e3e0ac0abe42fbd2)
 on December 1, 2022.
 </em></small>
 
@@ -503,4 +503,6 @@ Theodoridis, S., & Koutroumbas, K. (2009). Pattern Recognition, 4th Edition. Aca
 Wainer, J., & Fonseca, P. (2021). How to tune the RBF SVM hyperparameters? An empirical evaluation of 18 search algorithms. Artificial Intelligence Review, 54(6), 4771-4797. https://doi.org/10.1007/s10462-021-10011-5
 
 Yeh, I.-C. (2007). UCI Machine Learning Repository: Concrete Compressive Strength Data Set. Retrieved September 19, 2022, from https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength. 
+
+Yiu, T. (2021) Understanding random forest, Medium. Towards Data Science. Available at: https://towardsdatascience.com/understanding-random-forest-58381e0602d2 (Accessed: December 1, 2022). 
 <div id="refs"></div>
