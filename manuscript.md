@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-30'
+date-meta: '2022-12-01'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-11-30" />
-  <meta name="citation_publication_date" content="2022-11-30" />
+  <meta name="dc.date" content="2022-12-01" />
+  <meta name="citation_publication_date" content="2022-12-01" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05990d6c54e0fdf86b0811e19969f1d26e7f95b0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05990d6c54e0fdf86b0811e19969f1d26e7f95b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05990d6c54e0fdf86b0811e19969f1d26e7f95b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/05990d6c54e0fdf86b0811e19969f1d26e7f95b0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@05990d6](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/05990d6c54e0fdf86b0811e19969f1d26e7f95b0)
-on November 30, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@4c12b01](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed)
+on December 1, 2022.
 </em></small>
 
 ## Authors
@@ -109,9 +109,9 @@ on November 30, 2022.
 
 ## Proposal {.page_break_before}
 
-The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model will predict the interactions between the concrete mixture components to the compressive strength. The outputs being considered include a table of proportions for mix design and a formula for the compressive strength. 
+The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model will predict the interactions between the concrete mixture components to the compressive strength. 
 
-The model aims to predict the 28<sup>th</sup> day compressive strength of concrete based on the dataset. Traditionally, to compare the actual compressive strength of concrete (Ca) against designed for strength (Cd), 28 days would need to be passed before a cube sample can be crushed to check the compressive strength. This is usually not a problem, if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additionally structures put in place to further enhance the strength. 
+The model aims to predict the 28<sup>th</sup> day compressive strength of concrete based on the dataset. Traditionally, to compare the actual compressive strength of concrete (q'<sup>c</sup>) against designed for strength (q'<sup>cd</sup>), 28 days would need to be passed before a cube sample can be crushed to check the compressive strength. This is usually not a problem, if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additionally structures put in place to further enhance the strength.
 
 To minimize such errors, this model predicts the 28<sup>th</sup> day compressive strength instantaneously when a batch of concrete mix is created. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model. 
 
