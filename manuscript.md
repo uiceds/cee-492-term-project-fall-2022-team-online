@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/d673585df72951d1739837cff986aedbda1c4960/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@4c12b01](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/4c12b01a6d0ec28e2ae7759b0e5101f379a4c0ed)
+from [uiceds/cee-492-term-project-fall-2022-team-online@d673585](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/d673585df72951d1739837cff986aedbda1c4960)
 on December 1, 2022.
 </em></small>
 
@@ -380,7 +380,7 @@ Figure @fig:SVR_Optimized below shows the optimized SVR model with the training 
 Optimized Model using SVR, with tuned hyperparameters C = 10, gamma = 1.1e-5. (1) Training Data (2) Testing Data 
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support Vector Regression/SVR_2.png "Optimized SVR Model"){#fig:SVR_Optimized width="500px"}
 
-The model is trained with the focus of getting the lowest rmse, while ensuring the rmse of training and testing data is consistent. This is to prevent the case of overfitting where the model cannot generalize and fits too closely to the training dataset. From figure @fig:SVR_optimized, it can be seen that after hyperparameter tuning, the model is optimized to yield a rmse of ~8.5 MPa. The hyperparameters used for this model are C=10, gamma = 1.1e-5.
+The model is trained with the focus of getting the lowest rmse, while ensuring the rmse of training and testing data is consistent. This is to prevent the case of overfitting where the model cannot generalize and fits too closely to the training dataset. From Figure @fig:SVR_Optimized, it can be seen that after hyperparameter tuning, the model is optimized to yield a rmse of ~8.5 MPa. The hyperparameters used for this model are C=10, gamma = 1.1e-5.
 
 <u> Optimized SVR Model (with normalized input variables) </u><br/>
 To further optimize the model, the input variables were normalized. Normalization is a technique often applied as part of data preparation for machine learning. The goal of normalization is to change input variables to use a common scale, without distorting differences in the ranges of values.
@@ -449,26 +449,26 @@ Therefore the inputs layer and deep layer have 8 neurons and the output layer ha
 Predictive Model using Neural Network. (1) Training Data (2) Testing Data
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetwork.png "Neural Network without Normalization"){#fig:NNV width="500px"}
 
-Figure @fig:NNV shows the results of the preliminary Neural Network model without normalization against the training and testing data. The RMSE values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the RMSE of the training was consistently less than the testing data accross multiple runs.
+Figure @fig:NNV shows the results of the preliminary Neural Network model without normalization against the training and testing data. The rmse values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the rmse of the training was consistently less than the testing data accross multiple runs.
 
 ![
 Predictive Model using Neural Network. (1) Training Data (2) Testing Data
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NeuralNetworkNorm.png "Neural Network with Normalization"){#fig:NNVNORM width="500px"}
 
-Figure @fig:NNVNORM shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe larger RMSE values than when running the model without normalization. The RMSE values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased. 
+Figure @fig:NNVNORM shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe larger rmse values than when running the model without normalization. The rmse values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased. 
 A relu activation was applied for this model, and there might be better choices for the normalized data.
 
 ![
 Predictive Neural Network model without normalization using the validation Data.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NNVal.png "NNVal"){#fig:NNVal width="250px"}
 
-Figure @fig:NNVal shows the performance of the Neural Network model without normalization using the validation data as the input. The RMSE value obtained is 7.24.
+Figure @fig:NNVal shows the performance of the Neural Network model without normalization using the validation data as the input. The rmse value obtained is 7.24.
 
 ![
 Predictive Neural Network model with normalization using the validation Data.
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural Networks/NNValNorm.png "NNVal"){#fig:NNValNorm width="250px"}
 
-Figure @fig:NNValNorm shows the performance of the Neural Network model with normalization using the validation data as the input. The RMSE value obtained is 9.83. 
+Figure @fig:NNValNorm shows the performance of the Neural Network model with normalization using the validation data as the input. The rmse value obtained is 9.83. 
 
 <div style="page-break-after: always;"></div>
 
@@ -479,12 +479,12 @@ In this section, the performance of various models will be compared amongst each
 |   Random Forest   |   Neural Network  |        Support Vector Regression        | Linear Regression |
 |-------------------|-------------------|-----------------------------------------|-------------------|
 |        6.94       |        7.24       |                  8.87                   |       12.50       |
-Table: RMSEs of the models
+Table: rmse of the models
 {#tbl:RMSEs}
 
 After optimizing the various ML models, each model was evaluated using the validation set. The validation set is used as it is an unseen set of data by the model, as such it is used to mimic the model as if it is to be used in an actual scenario to predict concrete strength.
 
-From Table @tbl:RMSEs it can be noted Random Forest performed the best with an RMSE of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 12.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.
+From Table @tbl:RMSEs it can be noted Random Forest performed the best with an rmse of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 12.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.
 
 A possibility of Random Forest and Neural Network performing better than SVR is due to the complexity. With the adided complexity, it might in turn lead to a better prediction. However, this is in turn a trade of with model processing time. 
 
