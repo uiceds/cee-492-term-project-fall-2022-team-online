@@ -17,7 +17,7 @@ forestvalfig
 FrenchToastty
 GridSearchCV
 Hoang
-Hyperparameter
+hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -48,14 +48,14 @@ rausan
 RBF
 RegressionVal
 relu
-rmse
+RMSE
 RMSEs
 scikit
 seccompobstable
 strenght
 summaryfig
 summarytable
-superplasticizer
+Superplasticizer
 Superplasticizers
 SVM
 SVR
