@@ -5,11 +5,11 @@ ASTM
 Ausan
 Champaign
 clays
-compressive
+Compressive
 corelease
 Dafar
 dafarno
-Dataset
+dataset
 datasets
 Fonseca
 forestfig
@@ -17,7 +17,7 @@ forestvalfig
 FrenchToastty
 GridSearchCV
 Hoang
-hyperparameter
+Hyperparameter
 hyperparameters
 Ibrahima
 interpolant

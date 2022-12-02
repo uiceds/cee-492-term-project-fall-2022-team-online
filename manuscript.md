@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1c3cdbfefc1f4e849a8cd54ba3e361f964a2cf9c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1c3cdbfefc1f4e849a8cd54ba3e361f964a2cf9c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1c3cdbfefc1f4e849a8cd54ba3e361f964a2cf9c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/41049130b65d670ea459b4451e66e264746b94d3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/41049130b65d670ea459b4451e66e264746b94d3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/41049130b65d670ea459b4451e66e264746b94d3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/1c3cdbfefc1f4e849a8cd54ba3e361f964a2cf9c/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/41049130b65d670ea459b4451e66e264746b94d3/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@1c3cdbf](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/1c3cdbfefc1f4e849a8cd54ba3e361f964a2cf9c)
+from [uiceds/cee-492-term-project-fall-2022-team-online@4104913](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/41049130b65d670ea459b4451e66e264746b94d3)
 on December 2, 2022.
 </em></small>
 
@@ -505,7 +505,7 @@ The support vector regression (SVR) model uses the same principle as the support
 
 ### Linear Model
 
-Highest rmse values: not complicated enough, the compressive strength of the concrete mixture depends on a large number of variables (all different components, and the concrete age), the percentage of each of these components in the mixture, and the relationship between these components themselves and between the components with the concrete compressive strength are not a simple linear relationship. This model was the slowest (computationally the least efficient), a large number of steps with very small learning rates were needed to train the model to be able to get it to work and give reasonable predictions. Again, this might be due to using a very simple model to solve a relatively more complicated problem. 
+The linear regression model gives the highest rmse values. This might be due to multiple reasons like the model is not complicated enough, the compressive strength of the concrete mixture depends on a large number of variables (all different components, and the concrete age), the percentage of each of these components in the mixture, and the relationship between these components themselves and between the components with the concrete compressive strength are not a simple linear relationship. Moreover, this model was the slowest (computationally the least efficient). Large number of steps with very small learning rates were needed to train the model to be able to get it to work and give reasonable predictions. Again, this might be due to using a very simple model to solve a relatively more complicated problem. 
 
 ### Neural Network
 
