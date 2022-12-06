@@ -9,7 +9,7 @@ Compressive
 corelease
 Dafar
 dafarno
-dataset
+Dataset
 datasets
 Fonseca
 forestfig
@@ -48,7 +48,7 @@ rausan
 RBF
 RegressionVal
 relu
-RMSE
+rmse
 RMSEs
 scikit
 seccompobstable
