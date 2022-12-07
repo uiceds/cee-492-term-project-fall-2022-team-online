@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-12-06'
+date-meta: '2022-12-07'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-12-06" />
-  <meta name="citation_publication_date" content="2022-12-06" />
+  <meta name="dc.date" content="2022-12-07" />
+  <meta name="citation_publication_date" content="2022-12-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fef2037a279889096b9f074acba6ca9bfc881178/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fef2037a279889096b9f074acba6ca9bfc881178/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fef2037a279889096b9f074acba6ca9bfc881178/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/fef2037a279889096b9f074acba6ca9bfc881178/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@fef2037](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/fef2037a279889096b9f074acba6ca9bfc881178)
-on December 6, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@97b21cd](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/97b21cd51ce30929b60ac7b0fed195e93e204360)
+on December 7, 2022.
 </em></small>
 
 ## Authors
@@ -109,11 +109,14 @@ on December 6, 2022.
 
 ## Proposal {.page_break_before}
 
-The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model will predict the interactions between the concrete mixture components to the compressive strength. 
+The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model predicts the interactions between the concrete mixture components and the compressive strength. 
 
-The model aims to predict the 28<sup>th</sup> day compressive strength of concrete based on the dataset. Traditionally, to compare the actual compressive strength of concrete (q'<sup>c</sup>) against designed for strength (q'<sup>cd</sup>), 28 days would need to be passed before a cube sample can be crushed to check the compressive strength. This is usually not a problem, if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additionally structures put in place to further enhance the strength.
+High-standard quality control of concrete can be a challenge to producers.
+The error rate of concrete compressive strength, the most important quality indicator in the concrete industry, can be exaggerated. Developing accurate and reliable compressive strength prediction models could save costs and time. Therefore, much research has been conducted to predict concrete compressive strength.
 
-To minimize such errors, this model predicts the 28<sup>th</sup> day compressive strength instantaneously when a batch of concrete mix is created. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model. 
+Based on the dataset, these models aim to predict concrete's 28<sup>th</sup> day compressive strength. Traditionally, to compare the actual compressive strength of concrete (q'<sup>c</sup>) against the desired strength (q'<sup>cd</sup>), 28 days need to pass. Then a cube sample can is crushed to check the compressive strength. That is usually not a problem if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additional structures put in place to enhance the strength further.
+
+These models instantaneously predict the 28<sup>th</sup> day compressive strength when a batch of concrete mix is made to minimize such errors. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model. 
 
 A dataset with 1030 different observations will be used to train and validate four different models, and the advantages and disadvantages of each option will be discussed. Finally, the accuracy and precision of these models will be assessed using different methods (such as comparing rmse and r<sup>2</sup> values), and recommendations to improve the models' performance will be suggested. 
 
@@ -123,42 +126,42 @@ A dataset with 1030 different observations will be used to train and validate fo
 The dataset was retrieved from UCI Machine Learning Repository (Yeh, 2007). It has 1030 observations, 8 quantitative input variables, and 1 quantitative output variable. 
 
 #### Column A/ Component 1: Cement 
-Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore; and it is most commonly used. According to the ASTM standard, there are five types of cement, the difference due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+Cement is an adhesive substance that acts as a binder for all the components in a concrete mix. Ordinary Portland Cement (OPC) is made up of limestone, clay, and iron ore and is most commonly used. According to the ASTM standard, there are five types of cement. The difference is due to the chemical composition, altering the properties. In this dataset, Type 1 Ordinary Portland Cement will be used. The unit used is kg of cement per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column B/ Component 2: Blast Furnace Slag
-Blast furnace Ash is a nonmetallic co-product obtained in the production of iron, iron ore, iron scrap and fluxed. It is commonly used in cement production as a substitute for clinker and in concrete production as a substitute for aggregates. The use of slag cement improves performance and durability of concrete.
-The unit used is kg of per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+Blast furnace ash is a nonmetallic co-product obtained in producing iron, iron ore, iron scrap and flux. It is commonly used in cement production as a substitute for clinker and concrete production as a substitute for aggregates. The use of slag cement improves the performance and durability of concrete.
+The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column C/ Component 3: Fly Ash {.page_break_before}
-Fly Ash is byproduct of burning pulverized coal in electric generation.
-It is a fine powder used to improve the workability, the strength and the durability of Portland Cement Concrete. It also decreases the water demand of the concrete mix and reduces heat of hydration. 
-The unit used is kg of flay ash per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+Fly ash is a byproduct of burning pulverized coal in electric generation.
+It is a fine powder used to improve the workability, strength and durability of Portland Cement Concrete. It also decreases the concrete mix's water demand and reduces hydration heat. 
+The unit used is kg of fly ash per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column D/ Component 4: Water
-Water content is the most important factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability but the lower the strenght of the concrete. 
+Water content is the most crucial factor affecting the consistency of fresh concrete. The higher the water content, the higher the workability, but the lower the strength of the concrete. 
 The unit used is kg per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column E/ Component 5: Superplasticizer
-Superplasticizers are chemical compounds used to reduce the amount of water content in the concrete mixture to produce high-strength concrete while maintaining enough workability. The used unit is kg of the superplasticizer to 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+Superplasticizers are chemical compounds used to reduce the water content in the concrete mixture to produce high-strength concrete while maintaining enough workability. The used unit is kg of the superplasticizer to 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column F/ Component 6: Coarse Aggregate
-Coarse Aggregates are inert, granular, and inorganic material. Coarse Aggregates are aggregates that are larger or equal to the ASTM sieve size 4.75mm. Typical coarse aggregates are gravel, crushed stone or previously used concrete etc. They occupy a large volume in a concrete mix (~65-75%), as it acts as an economic filler for cement. The unit used is kg of coarse aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+Coarse Aggregates are inert, granular, and inorganic materials. Coarse aggregates are larger or equal to the ASTM sieve size of 4.75mm. Typical coarse aggregates are gravel, crushed stone or previously used concrete etc. They occupy a large volume in a concrete mix (~65-75%), as it acts as an economical filler for cement. The unit used is kg of coarse aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
 
 #### Column G/ Component 7: Fine Aggregate
-Fine Aggregates are inert, granular, and inorganic material. Fine Aggregates are aggregates that are smaller than the ASTM sieve size 4.75mm. Typical fine aggregates are sand, crushed stone or burnt clays etc. The fine aggregates fill in the voids between coarse aggregates. It also provides resistance against shrinking and cracking. The unit used is kg of fine aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
+Fine Aggregates are inert, granular, and inorganic materials. Fine aggregates are smaller than the ASTM sieve size of 4.75mm. Typical fine aggregates are sand, crushed stone or burnt clays etc. They fill in the voids between coarse aggregates. It also provides resistance against shrinking and cracking. The unit used is kg of fine aggregate per 1 m<sup>3</sup> of the concrete mixture (kg/m<sup>3</sup> of mixture).
  
 #### Column H/ Component 8: Age
-This column represents the age of the concrete mixture after pouring. The concrete gains its strength gradually with time, and according to the ASTM, it reaches to 99% of the target compressive strength after 28 days. The strength will continue to increase after years and it can become larger than the target compressive strength (strength percent > 100%). The unit of this column data is in days. 
+This column represents the age of the concrete mixture after pouring. The concrete gains its strength gradually with time, and according to the ASTM, it reaches 99% of the target compressive strength after 28 days. The strength will continue to increase after years and can become more significant than the target compressive strength (strength percent > 100%). The unit of this column data is in days. 
  
 #### Column I/ Output 1: Concrete compressive strength
- It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property reported at 28 days of curing time.
+ It is the capacity of concrete to withstand compression load before failure. Again, based on the ASTM standards, this property is reported at 28 days of curing time.
 
 
 
 
 ## Exploratory Data Analysis {.page_break_before}
 
-To further understand our dataset (the concrete mixture components) and the role of each parameter on the compressive strength of concrete, and the different relationships between the different parameters themselves, a comprehensive exploratory analysis will be performed in this section. 
+A comprehensive exploratory analysis will be performed in this section to understand further our dataset (the concrete mixture components), each parameter's role in the compressive strength of concrete, and the relationships between the different parameters. 
 
 ### Summary Statistics
 
@@ -185,7 +188,7 @@ Violin, Box, and Dot Plots of Dataset. (1) Mass Axis (2) Days Axis (3) Strength 
 
 Table @tbl:summarytable shows the mean, standard deviation, minimum & maximum, first quartile, median, and third quartile. Figure @fig:summaryfig shows a visual form of Table @tbl:summarytable.
 
-The main components, cement, water, and aggregates are present in all concrete mixes. The aggregates make a major portion of the concrete mix. The portion of water in the observations do not vary as much as the other main components. 
+The main components, cement, water, and aggregates, are present in all concrete mixes. The aggregates make a major portion of the concrete mix. The portion of water in the observations does not vary as much as the other main components. 
 
 | With Blast Furnace Slag | With Fly Ash | With Superplasticizer | Observations |
 |-------------------------|--------------|-----------------------|--------------|
@@ -200,7 +203,7 @@ The main components, cement, water, and aggregates are present in all concrete m
 Table: Secondary Component Observation Count
 {#tbl:seccompobstable}
 
-Blast furnace slag, fly ash, and super plasticizer are not present in all observations. Table @tbl:seccompobstable shows that there are 209 observations without secondary components. Out of the secondary components, superplasticizer is the most prevalent with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash. 
+Blast furnace slag, fly ash, and superplasticizer are not present in all observations. Table @tbl:seccompobstable shows that there are 209 observations without secondary components. The superplasticizer is the most prevalent of the secondary components, with 651 total observations. However, superplasticizer has the least average mass in the concrete mix. There are no observations with both blast furnace slag and fly ash. 
 
 The median age of concrete strength measurement is at 28 days. Typical concrete testing in the industry is made on the 28<sup>th</sup> day. Some observations were measured after a year from casting. 
 
@@ -208,10 +211,10 @@ The mean age of concrete strength for the dataset is 35.8 MPa. The minimum and m
 <div style="page-break-after: always;"></div>
 
 ### Correlation
-In this section, the general correlations between various variables have been examined. The purpose is to understand the how each variable affects each other and as well as to understand how each variable affects the compressive strength of concrete. 
+In this section, the general correlations between various variables have been examined. The purpose is to understand how variables affect each other and how each variable affects the compressive strength of concrete. 
 
 ![
-Correlation plot of Water, Superplasticizer & Compressive Strength 
+Correlation plot of water, superplasticizer & compressive strength 
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Min Win/plot_1to3.png "Plot_1to3"){#fig:Plot_1to3 width="500px"}
 
 |                            | Cement (kg/m3) | Blast Furnace Slag (kg/m3) | Fly Ash (kg/m3) | Compressive strength (MPa) |
@@ -220,18 +223,18 @@ Correlation plot of Water, Superplasticizer & Compressive Strength
 | Blast Furnace Slag (kg/m3) |          -0.28 |                       1.00 |           -0.32 |                       0.13 |
 |            Fly Ash (kg/m3) |          -0.40 |                      -0.32 |            1.00 |                      -0.11 |
 | Compressive strength (MPa) |           0.50 |                       0.13 |           -0.11 |                       1.00 |
-Table: Correlation table of Cement, Blast Furnace Slag, Fly Ash, Compressive Strength
+Table: Correlation table of cement, blast furnace slag, fly ash, compressive strength
 {#tbl:corr13}
 
-From Figure @fig:Plot_1to3 and Table @tbl:corr13, is can be seen that apart from the positive correlation of compressive strength to cement, most other correlations have a neutral to negative correlation.  
+Figure @fig:Plot_1to3 and Table @tbl:corr13 show that apart from the positive correlation of compressive strength to cement, most other correlations have a neutral to negative correlation.  
 
-For the comparison of Compressive Strength against Cement, it is seen to have a moderate positive correlation of 0.50.  This tells us that as cement content increases, the compressive strength of concrete also increases. 
+Comparing compressive strength against cement content, we observe a moderate positive correlation of 0.50. It shows that as cement content increases, the compressive strength of the concrete also increases. 
 
-For Compressive Strength against Blast Furnace Slag and Fly Ash, which are commonly used as fillers for cement, it can be seen that they have a very weak correlation of 0.13 and -0.11. As such, it can be taken that Blast Furnace Slag and Fly Ash does not affect Compressive Strength when used as fillers for Cement. 
+For compressive strength against blast furnace slag and fly ash, which are commonly used as fillers for cement, it can be seen that they have a very weak correlation of 0.13 and -0.11. As such, we conclude that blast furnace slag and fly ash do not affect compressive strength when used as fillers for cement. 
 
-For the correlation plots comparing Fly Ash against Cement, Fly Ash against Blast Furnace Slag, and Blast Furnace Slag against Cement, it can be seen that they have a weak correlation of -0.40, -0.32, -0.28. The negative correlations corelease with existing domain knowledge that Blast Furnace Slag and Fly Ash are substitutes of Cement. As when either the content of Blast Furnace Slag or Fly Ash goes up, the Cement content goes down.  
+For the correlation plots comparing fly ash against cement, fly ash against blast furnace slag, and blast furnace slag against cement, it can be seen that they have a weak correlation of -0.40, -0.32, and -0.28. The negative correlations correlate with existing knowledge that blast furnace slag and fly ash are cement substitutes. When the content of blast furnace slag or fly ash goes up, the cement content goes down.  
 
-From the histogram plots, it can be seen that Blast Furnace Slag and Fly Ash there is a high count of zero, showing that not all concrete mix designs require them. As such, it might be important to take into consideration the effects of the large amounts of zeros during preliminary modelling.  
+From the histogram plots, it can be seen that Blast Furnace Slag and Fly Ash have a high count of zero, showing that not all concrete mix designs require them. As such, it might be essential to consider the effects of the large amounts of zeros during preliminary modelling.  
 
 
 ![
@@ -252,7 +255,7 @@ From Table @tbl:corr4to5, we see a weak positive correlation of 0.36 between the
 As expected, the more water we have in the mix, the weaker the concrete and the more superplasticizer we have, the stronger the concrete. We can also observe that Water content and superplasticizer amount have a strong negative correlation of -0.65. Overall the more superplasticizer we have, the less water there is in these concrete mixes. 
 
 ![
-Correlation plot of Fine Aggregates , Coarse Aggregates and compressive strength
+Correlation plot of fine aggregates , coarse aggregates and compressive strength
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Pim/plot_6to7.png "plot_6to7"){#fig:plot6to7 width="500px"}
 
 |                            | Coarse Aggregate (kg/m3) | Fine Aggregate (kg/m3) | Compressive strength (MPa) |
@@ -264,27 +267,27 @@ Correlation plot of Fine Aggregates , Coarse Aggregates and compressive strength
 Table: Correlation coefficients of water , superplasticizer and compressive strength
 {#tbl:corr6to7}
 
-In Table @tbl:corr6to7, we can see the correlations between fine aggregates, coarse aggregates and compressive strength.  We have a weak negative correlation of   -0.16 between Fine aggregates and compressive strength and a weak negative correlation coefficient of -0.16 between coarse aggregates and compressive strength. We might gain more insight by taking these two elements together and comparing them to the compressive strength.  
+In Table @tbl:corr6to7, we can see the correlations between fine aggregates, coarse aggregates and compressive strength. We have a weak negative correlation of   -0.16 between Fine aggregates and compressive strength and a weak negative correlation coefficient of -0.16 between coarse aggregates and compressive strength. We might gain more insight by taking these two elements together and comparing them to the compressive strength.  
 
-These correlations are in line with what is expected for a concrete mix. However, to further understand our dataset, more in-depth correlations using combinations of different components are investigated. 
+These correlations are in line with what is expected for a concrete mix. However, more in-depth correlations using combinations of different components are investigated to understand our dataset further. 
 
 ### Specific Correlation
 
 In this section, the specific interactions between variables will be further discussed.
 
 ![
-Correlation plot of Water/cement ratio against the concrete compressive strength
+Correlation plot of water/cement ratio against the concrete compressive strength
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5.png "Plot_5"){#fig:wTOcfig1 width="500px"}
 
-Figure @fig:wTOcfig1 shows the relationship between the water to cement ratio (w/c) and concrete compressive strength. This ratio is considered the most significant influence on the final compressive strength of the concrete mixture. As we can see from Figure @fig:wTOcfig1, the strength of concrete increases as the w/c decreases.  The reason for that is as the amount of water increases in the mixture (for a specific amount of cement), the distance between the cement particles increases which leads to a more diluted and weaker paste. In practice, the w/c ranges from about 0.3 to over 0.8, which is the range where have the largest number of data as seen in the histogram in Figure @fig:wTOcfig1. It is noticeable that there are significant amount of scatter in this relationship which can be attributed to two main reasons. First, this figure includes all the available concrete compressive strength data that have been measured at different concrete ages. The second, there are other factors that play a role in the final concrete compressive strength like the amount of fine and coarse aggregates, and these factors are not filtered within the data used to plot this figure.   
+Figure @fig:wTOcfig1 shows the relationship between the water-to-cement ratio (w/c) and concrete compressive strength. This ratio is considered the most significant influence on the final compressive strength of the concrete mixture. As we can see from Figure @fig:wTOcfig1, the strength of concrete increases as the w/c decreases. The reason for that is as the amount of water increases in the mixture (for a specific amount of cement), the distance between the cement particles increases, which leads to a more diluted and weaker paste. In practice, the w/c ranges from about 0.3 to over 0.8, which is the range with the largest number of data, as seen in the histogram in Figure @fig:wTOcfig1. It is noticeable that there is a significant amount of scatter in this relationship which can be attributed to two main reasons. First, this figure includes all the available concrete compressive strength data measured at different ages. Second, other factors play a role in the final concrete compressive strength, like the amount of fine and coarse aggregates, and these factors are not filtered within the data used to plot this figure. 
 
 ![
-Correlation plot of Water/cement ratio against the concrete compressive strength at 28 days
+Correlation plot of water/cement ratio against the concrete compressive strength at 28 days
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Dafar/plot_5b.png "Plot_5b"){#fig:wTOcfig2 width="500px"}
 
-To see how better the relationship can be, the factor of the concrete age was eliminated. In Figure @fig:wTOcfig2, we are plotting the same relationship as in Figure @fig:wTOcfig1 but just using the concrete compressive strength data at 28 days. It is clear that the scatter has been reduced and the effect of the w/c became more apparent.  
+To see how much better the relationship can be, the factor of the concrete age was eliminated. In Figure @fig:wTOcfig2, we plot the same relationship as in Figure @fig:wTOcfig1 but use the concrete compressive strength data at 28 days. It is clear that the scatter has been reduced, and the effect of the w/c became more apparent.  
 
-The same trend can also be observed in the work that has been done by US Bureau of Reclamation (1975) as shown in Figure @fig:wTOcfig3 below.  
+The same trend can also be observed in work done by the US Bureau of Reclamation (1975), as shown in Figure @fig:wTOcfig3 below. 
 
 ![
 Compressive strength versus w/c (US Bureau of Reclamation, 1975)
@@ -300,19 +303,19 @@ Figure @fig:wTOcfig4 shows averaged compressive strength from observations with 
 Compressive strength versus age (Merrit, 1983)
 ](https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/Ray/CAPlotRef.png   "CAPlotRef"){#fig:wTOcfig5 width="500px"}
 
-In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure @fig:wTOcfig5 shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually thereafter. The same trend illustrated in Figure @fig:wTOcfig4 can be seen in Figure @fig:wTOcfig5. 
+In addition to the w/c, the compressive strength against age can also be referenced to established standards. Figure @fig:wTOcfig5 shows that concrete compressive strength increases significantly in the first four weeks from casting and increases gradually after that. The same trend illustrated in Figure @fig:wTOcfig4 can be seen in Figure @fig:wTOcfig5. 
 
-All these observations gathered from the general trends and the in-depth relationships will be used to improve our different models, by utilizing techniques like feature selection, that we will discuss in the following sections. 
+All these observations gathered from the general trends and the in-depth relationships will be used to improve our different models by utilizing techniques like feature selection, which we will discuss in the following sections. 
 
 ## Predictive Modeling Plan {.page_break_before}
 
-In this project, multiple predictive models that have different characteristics will be developed to estimate the 28<sup>th</sup> day concrete compressive strength.  The input parameters for each of these models are the concrete mixture components (water, cement, aggregate, and additives). 
+In this project, multiple predictive models that have different characteristics will be developed to estimate the 28<sup>th</sup> day concrete compressive strength. The input parameters for each model are the concrete mixture components (water, cement, aggregate, and additives). 
 
-The dataset is a labelled data as such supervised learning method will be used to train the models. The data will be split into training, testing and validation datasets using cross validation method. The training dataset will be used to train the model, the testing dataset will be used to optimize the model, whereas the validation dataset will be used to evaluate the performance of these models as they are considered unseen observations. The data will also be standardized to ensure there is no mismatch of the different scales for the variables.
+The dataset is labelled data; as such supervised learning method will be used to train the models. The data will be split into training, testing and validation datasets using cross-validation method. The training dataset will be used to train the model; the testing dataset will be used to optimize the model. The validation dataset will be used to evaluate the performance of these models as they are considered unseen observations. The data will also be standardized to ensure there is no mismatch of the different scales for the variables.
 
 The models that will be investigated in this project are 1. Random Forest, 2. Support Vector Regression (SVR), 3. Linear Regression, and 4. Neural Network. These models have been selected based on our understanding of the characteristics of the data that we have and the correlations between the different input parameters that we have discussed in the exploratory analyses in the previous section. To ensure that these models do not overfit the training model, a regularization term either L1 or L2 will be used to optimize them. L1 in the case of feature selection by reducing non-essential variables to zero, and L2 in the case of lowering the influence of non-essential variables. 
 
-The output of these models will be able to predict the 28<sup>th</sup> day concrete compressive strength.  The purpose is to use these models to achieve the instantaneous 28<sup>th</sup> day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28<sup>th</sup> day strength, a cube sample will be crushed on the 28<sup>th</sup> day to find out the strength. By having instantaneous 28<sup>th</sup> day strength, faulty batches that do not meet the 28<sup>th</sup> day design strength requirements can be rectified immediately. Preventing additional cost from hacking or additional supporting structures.
+The output of these models will be able to predict the 28<sup>th</sup> day concrete compressive strength. The purpose is to use these models to achieve the instantaneous 28<sup>th</sup> day strength the moment a batch of concrete is mixed, as traditionally to achieve the 28<sup>th</sup> day strength, a cube sample will be crushed on the 28<sup>th</sup> day to find out the strength. By having instantaneous 28<sup>th</sup> day strength, faulty batches that do not meet the 28<sup>th</sup> day design strength requirements can be rectified immediately, preventing additional costs from hacking or additional supporting structures.
 
 ## Preliminary Models {.page_break_before}
 
@@ -491,29 +494,29 @@ A possibility of Random Forest and Neural Network performing better than SVR is 
 
 ## Discussion {.page_break_before}
 
-In this project, four different models have been utilized to predict the compressive strength of a concrete mixture. In all models, the independent variables were the concrete mixture components (Cement, Blast Furnace Slag, Fly Ash, Water, Superplasticizer, Coarse Aggregate, Fine Aggregate) and Concrete Age, whereas the dependent variable was the Compressive Strength. The four models were able to predict the concrete compressive strength in a good way, but with relatively different degrees of success.  
+In this project, four different models have been utilized to predict the compressive strength of a concrete mixture. In all models, the independent variables were the concrete mixture components (Cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate) and concrete age, whereas the dependent variable was the Compressive Strength. The four models were able to predict the concrete compressive strength in a good way but with relatively different degrees of success.  
 
 ### Random Forest
 
-A regression decision tree is a learning method that uses nested rules to make a decision. Although the decision tree has a simple algorithm, it yields a complex model characterized by the tree depth and number of leaves. This model is unaffected by normalization. Optimizing for minimum samples per leaf and pruning purity threshold yields a better rmse. However, the decision tree exhibits overfitting.  
+A regression decision tree is a learning method that uses nested rules to make a decision. Although the decision tree has a simple algorithm, it yields a complex model characterized by the tree's depth and the number of leaves. This model is unaffected by normalization. Optimizing for minimum samples per leaf and pruning purity threshold yields a better rmse. However, the decision tree exhibits overfitting.  
 
-A regression random forest is a learning method that takes the mean prediction of a collection of decision trees.  According to Yiu (2019), the random forest classifier is an ensemble of decision trees that protect each other from errors. Minimally correlated ensemble decision trees perform better. Individual inaccurate trees, if uncorrelated, do not spoil the prediction. This model is unaffected by normalization and marginally improved by hyperparameter optimization. The regression random forest performed better than a regression decision tree. It also exhibits overfitting to the test data. 
+A regression random forest is a learning method that takes the mean prediction of a collection of decision trees. According to Yiu (2019), the random forest classifier is an ensemble of decision trees that protect each other from errors. Minimally correlated ensemble decision trees perform better. Individual inaccurate trees, if uncorrelated, do not spoil the prediction. This model is unaffected by normalization and marginally improved by hyperparameter optimization. The regression random forest performed better than a regression decision tree. It also exhibits overfitting to the test data. 
 
 ### Support Vector Regression
 
-The support vector regression (SVR) model uses the same principle as the support vector machine (SVM) to find the best fit line. However, in SVR, the best fit is the hyperplane that has the maximum number of points. The results on the validation set showed that a rmse of 8.87 MPa. This is a reasonable result as in regression analysis, the case in which the actual and predicted outcomes are the same hardly exist, for predicting concrete strength (Pham et al., 2016).  The advantage of SVR is that the decision model can be easily updated, requires lower computation compared to other regression techniques and it is easy to implement. The disadvantage of SVR is that it is hard to interpret the model after training it. Another disadvantage is that the hyperparameters need to be optimized well to obtain a good result, in contrast to random forest. As such, due to its sensitivity to hyperparameters tunning which cannot be done through gradient descent, it is difficult to implement the most optimized model.  Further improvements such as trying different kernels with different hyperparameters should be explored to yield a better result. 
+The support vector regression (SVR) model uses the same principle as the support vector machine (SVM) to find the best fit line. However, in SVR, the best fit is the hyperplane that has the maximum number of points. The results on the validation set showed a rmse of 8.87 MPa. This is a reasonable result as in regression analysis, the case in which the actual and predicted outcomes are the same hardly exists for predicting concrete strength (Pham et al., 2016). The advantage of SVR is that the decision model can be easily updated, requires lower computation compared to other regression techniques, and is easy to implement. The disadvantage of SVR is that it is hard to interpret the model after training it. Another disadvantage is that the hyperparameters need to be optimized well to obtain a good result, in contrast to random forest. As such, due to its sensitivity to hyperparameter tuning, which cannot be done through gradient descent, it is challenging to implement the most optimized model. Further improvements should be explored, such as trying different kernels with different hyperparameters, to yield a better result. 
 
 ### Linear Model
 
-The linear regression model gives the highest rmse values. This might be due to multiple reasons like the model is not complicated enough, the compressive strength of the concrete mixture depends on a large number of variables (all different components, and the concrete age), the percentage of each of these components in the mixture, and the relationship between these components themselves and between the components with the concrete compressive strength are not a simple linear relationship. Moreover, this model was the slowest (computationally the least efficient). Large number of steps with very small learning rates were needed to train the model to be able to get it to work and give reasonable predictions. Again, this might be due to using a very simple model to solve a relatively more complicated problem. 
+The linear regression model gives the highest rmse values. This might be due to multiple reasons like the model is not complicated enough, the compressive strength of the concrete mixture depends on a large number of variables (all different components and the concrete age), the percentage of each of these components in the mixture, and the relationship between these components themselves and between the components with the concrete compressive strength are not a simple linear relationship. Moreover, this model was the slowest (computationally the least efficient). A large number of steps with minimal learning rates were needed to train the model and to get it to work, and give reasonable predictions. Again, this might be due to using a simple model to solve a relatively more complicated problem. 
 
 ### Neural Network
 
-The Neural Network model used to predict the concrete compressive strength is a 2 layers neural network. There are 8 independent variables for 1 dependent variable. The input data was shuffled and split. 60% of the data was used for training the model, 30% was used for testing the data and 10% was used for validation. A Neural Network model is more suited than linear regression for problems of this type.  Indeed, Neural Network models are more suited if with data have some non- linear dependencies which can be the case with complex concrete mixes. High level of confidence should be attainable. The results are satisfying but there is room for improvement for this model to reduce the RMSE. The next steps would be to optimize by adjusting the number of layers and by trying different activation functions. 
+The Neural Network model used to predict the concrete compressive strength is a 2 layers neural network. There are 8 independent variables for 1 dependent variable. The input data was shuffled and split. 60% of the data was used for training the model, 30% for testing the data, and 10% for validation. A Neural Network model is more suited than linear regression for problems of this type. Indeed, Neural Network models are more suited if with data have some non-linear dependencies, which can be the case with complex concrete mixes. A high level of confidence should be attainable. The results are satisfying, but this model has room for improvement to reduce the rmse. The following steps would be optimizing the model by adjusting the number of layers and trying different activation functions. 
 
 ### Further Improvements
 
-Currently, the model predicts the general strength of a concrete given its input parameters. Although it can predict the 28th day strength, the model is not trained to accurately optimize the 28th day compressive strength. As such, the next steps to improve the different models would be to explore compare specifically the 28th day strength and focus on the accuracy regarding this aspect. Cross-validation could also be implemented to ensure that there is consistency in the model and that it is not biased towards a certain training, test and validation split. 
+Currently, the model predicts the general strength of concrete given its input parameters. Although it can predict the 28th day strength, the model is not trained to optimize the 28th day compressive strength accurately. As such, the following steps to improve the different models would be to compare specifically the 28th day strength and focus on the accuracy regarding this aspect. Cross-validation could also be implemented to ensure consistency in the model and that it is not biased towards a specific training, test and validation split. 
 
 ## References {.page_break_before}
 
