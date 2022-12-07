@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8aa42f1eb18c7af6a8d09d276f67735a1860c101/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8aa42f1eb18c7af6a8d09d276f67735a1860c101/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8aa42f1eb18c7af6a8d09d276f67735a1860c101/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/97b21cd51ce30929b60ac7b0fed195e93e204360/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/8aa42f1eb18c7af6a8d09d276f67735a1860c101/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/97b21cd51ce30929b60ac7b0fed195e93e204360">uiceds/cee-492-term-project-fall-2022-team-online@97b21cd</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/8aa42f1eb18c7af6a8d09d276f67735a1860c101">uiceds/cee-492-term-project-fall-2022-team-online@8aa42f1</a>
 on December 7, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -564,10 +564,10 @@ As expected, the more water we have in the mix, the weaker the concrete and the 
 
 </div>
 <h3 id="support-vector-regression-svr">Support Vector Regression (SVR)</h3>
-<p>In this section, Support Vector Regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases. The data will also be split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
+<p>In this section, support vector regression (SVR) with Radial Basis Function (RBF) kernel will be used to predict the concrete compression strength. This section will first cover the basics of SVR and RBF, followed by the model performance based on default hyperparameters. After which, the optimized model performance based on hyperparameter tuning using GridSearchCV will be evaluated. To further optimize the model, normalized will be introduced to the input variables, and the results of that will be discussed. Lastly, the model will be evaluated based on the performance using the validation set, which best mimics real world cases. The data will also be split into three datasets. 60% of the data was used for training and 30% and 10 % of the data were used for testing and validating, respectively.</p>
 <p><u> SVR &amp; RBF </u><br/>
-Support Vector Regression (SVR) is a supervised learning model that is used to predict discrete values. Support Vector Regression uses the same principle as the Support Vector Machine (SVM). The idea behind SVR is to find the best fit line. In SVR, the best fit is the hyperplane that has the maximum number of points. SVR tries to fit the best line within a threshold value. The threshold value epsilon (ε) is the distance between the hyperplane and boundary line. <br/></p>
-<p>Radial Basis Function (RBF) in its application of Support Vector Machines (SVM), is a type of kernel method used to classify or regress data. it maps non-linear data into a higher dimensional space implicitly by computing the inner products between images of all pairs of data in the feature space (Theodoridis &amp; Koutroumbas, 2009). RBF interpolation is an advanced approximation method, in which the interpolant is the weighted sum of radial basis functions, an example would be the gaussian distribution (Hardy, 1971). This method is popular due to its higher emphasis on radial distances closer to the center and it decreases as the radial distance expands.</p>
+Support vector regression (SVR) is a supervised learning model that is used to predict discrete values. Support vector regression uses the same principle as the Support Vector Machine (SVM). The idea behind SVR is to find the best fit line. In SVR, the best fit is the hyperplane that has the maximum number of points. SVR tries to fit the best line within a threshold value. The threshold value epsilon (ε) is the distance between the hyperplane and boundary line. <br/></p>
+<p>Radial basis function (RBF) in its application of support vector machines (SVM), is a type of kernel method used to classify or regress data. it maps non-linear data into a higher dimensional space implicitly by computing the inner products between images of all pairs of data in the feature space (Theodoridis &amp; Koutroumbas, 2009). RBF interpolation is an advanced approximation method, in which the interpolant is the weighted sum of radial basis functions, an example would be the gaussian distribution (Hardy, 1971). This method is popular due to its higher emphasis on radial distances closer to the center and it decreases as the radial distance expands.</p>
 <p><u> Preliminary SVR model </u><br/>
 Figure <a href="#fig:SVR_initial">14</a> below shows the preliminary SVR model with the training and testing data; with default hyperparameters.</p>
 <div id="fig:SVR_initial" class="fignos">
@@ -591,7 +591,7 @@ To further optimize the model, the input variables were normalized. Normalizatio
 <p>Figure <a href="#fig:SVR_Normalized">16</a> below shows the SVR model based on normalized input variables with the training and testing data; after hyperparameter tuning.</p>
 <div id="fig:SVR_Normalized" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_normed_2.png" width="500" alt="Figure 16: Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 16:</span> Normalized input variable Model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_normed_2.png" width="500" alt="Figure 16: Normalized input variable model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 16:</span> Normalized input variable model using SVR, with tuned hyperparameters C = 50, gamma = 0.02. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
 <p>From figure <a href="#fig:SVR_Normalized">16</a>, it can be seen that after normalizing the input variables (with tuned hyperparameters), the model did not yield a better rmse. It has a rmse of ~8 to 8.5 MPa which his comparable to the rmse without normalization of ~8.5 MPa.</p>
@@ -600,12 +600,12 @@ To ensure that the model works well in the real world, the model performance wil
 <p>Figure <a href="#fig:SVR_Val">17</a> below shows the comparison of the optimized SVR model without normalization and with normalization data, based on the validation set.</p>
 <div id="fig:SVR_Val" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_val_2.png" width="500" alt="Figure 17: Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization" /><figcaption aria-hidden="true"><span>Figure 17:</span> Model performance of Optimized SVR Model based on Validation Set (1) without Normalization (2) with Normalization</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/2-Support%20Vector%20Regression/SVR_val_2.png" width="500" alt="Figure 17: Model performance of optimized SVR Model based on Validation Set (1) without normalization (2) with normalization" /><figcaption aria-hidden="true"><span>Figure 17:</span> Model performance of optimized SVR Model based on Validation Set (1) without normalization (2) with normalization</figcaption>
 </figure>
 </div>
-<p>From figure <a href="#fig:SVR_Val">17</a>, it can be seen that based on the validation set, the Optimized SVR model without Normalization performed better than the Model with Normalization with a lower rmse of 8.87 MPa compared to 11.3 MPa</p>
-<p>The Optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength. However, this is not the case for the Optimized SVR model (with normalization), as it yielded a rmse of 11.3, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.</p>
-<p>Therefore, the best performing model using Support Vector Regression is the Optimized SVR model (w/o normalization), as it yielded both a lower rmse and there is no signs of overfitting.</p>
+<p>From figure <a href="#fig:SVR_Val">17</a>, it can be seen that based on the validation set, the optimized SVR model without normalization performed better than the model with normalization with a lower rmse of 8.87 MPa compared to 11.3 MPa</p>
+<p>The optimized SVR model (w/o normalization) also showed a consistent rmse value of ~8.5 to 8.9 MPa, which suggests that there is no overfitting. Without the evidence of overfitting, it shows that the model has a good indication of its performance to accurately predict real world concrete strength. However, this is not the case for the optimized SVR model (with normalization), as it yielded a rmse of 11.3, it indicates that there might be overfitting and inaccurate predictions when exposed to real world cases. Although this was not seen in both the training and testing cases, it showed up in the validation case.</p>
+<p>Therefore, the best performing model using support vector regression is the optimized SVR model (w/o normalization), as it yielded both a lower rmse and there is no signs of overfitting.</p>
 <div style="page-break-after: always;">
 
 </div>
@@ -641,29 +641,29 @@ All models are 2 layers neural networks. We have 8 independent variables for 1 d
 Therefore the inputs layer and deep layer have 8 neurons and the output layer has one neuron.</p>
 <div id="fig:NNV" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetwork.png" width="500" alt="Figure 21: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 21:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetwork.png" width="500" alt="Figure 21: Predictive model using neural network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 21:</span> Predictive model using neural network. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNV">21</a> shows the results of the preliminary Neural Network model without normalization against the training and testing data. The rmse values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the rmse of the training was consistently less than the testing data accross multiple runs.</p>
+<p>Figure <a href="#fig:NNV">21</a> shows the results of the preliminary neural network model without normalization against the training and testing data. The rmse values observed consistently ranged between 7 MPa and 9 MPa. There is sign of overfitting, as the rmse of the training was consistently less than the testing data accross multiple runs.</p>
 <div id="fig:NNVNORM" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="500" alt="Figure 22: Predictive Model using Neural Network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 22:</span> Predictive Model using Neural Network. (1) Training Data (2) Testing Data</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NeuralNetworkNorm.png" width="500" alt="Figure 22: Predictive model using neural network. (1) Training Data (2) Testing Data" /><figcaption aria-hidden="true"><span>Figure 22:</span> Predictive model using neural network. (1) Training Data (2) Testing Data</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNVNORM">22</a> shows the results of the preliminary Neural Network model with normalization against the training and testing data. We observe larger rmse values than when running the model without normalization. The rmse values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased.
+<p>Figure <a href="#fig:NNVNORM">22</a> shows the results of the preliminary neural network model with normalization against the training and testing data. We observe larger rmse values than when running the model without normalization. The rmse values ranged consistently between 9 MPa and 11MPa. Different activation functions could be tried to optimize the model with normalization, and the number of nodes/layers increased.
 A relu activation was applied for this model, and there might be better choices for the normalized data.</p>
 <div id="fig:NNVal" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNVal.png" width="250" alt="Figure 23: Predictive Neural Network model without normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 23:</span> Predictive Neural Network model without normalization using the validation Data.</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNVal.png" width="250" alt="Figure 23: Predictive neural network model without normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 23:</span> Predictive neural network model without normalization using the validation Data.</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNVal">23</a> shows the performance of the Neural Network model without normalization using the validation data as the input. The rmse value obtained is 7.24.</p>
+<p>Figure <a href="#fig:NNVal">23</a> shows the performance of the neural network model without normalization using the validation data as the input. The rmse value obtained is 7.24.</p>
 <div id="fig:NNValNorm" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNValNorm.png" width="250" alt="Figure 24: Predictive Neural Network model with normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 24:</span> Predictive Neural Network model with normalization using the validation Data.</figcaption>
+<img src="https://raw.githubusercontent.com/uiceds/cee-492-term-project-fall-2022-team-online/main/reference/4-Neural%20Networks/NNValNorm.png" width="250" alt="Figure 24: Predictive neural Network model with normalization using the validation Data." /><figcaption aria-hidden="true"><span>Figure 24:</span> Predictive neural Network model with normalization using the validation Data.</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:NNValNorm">24</a> shows the performance of the Neural Network model with normalization using the validation data as the input. The rmse value obtained is 9.83.</p>
+<p>Figure <a href="#fig:NNValNorm">24</a> shows the performance of the neural network model with normalization using the validation data as the input. The rmse value obtained is 9.83.</p>
 <div style="page-break-after: always;">
 
 </div>
@@ -692,8 +692,8 @@ A relu activation was applied for this model, and there might be better choices 
 </table>
 </div>
 <p>After optimizing the various ML models, each model was evaluated using the validation set. The validation set is used as it is an unseen set of data by the model, as such it is used to mimic the model as if it is to be used in an actual scenario to predict concrete strength.</p>
-<p>From Table <a href="#tbl:RMSEs">6</a> it can be noted Random Forest performed the best with an rmse of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and Linear Regression of 12.50 MPa. The Linear Regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.</p>
-<p>A possibility of Random Forest and Neural Network performing better than SVR is due to the complexity. With the adided complexity, it might in turn lead to a better prediction. However, this is in turn a trade of with model processing time.</p>
+<p>From Table <a href="#tbl:RMSEs">6</a> it can be noted Random Forest performed the best with an rmse of 6.94 MPa, followed by Neural Network of 7.24 MPa, SVR of 8.87 MPa, and linear regression of 12.50 MPa. The linear regression formed the worst, the main issue with linear regression is the long processing time due to the requirement of using small learning rate and high number of steps, coupled with the fact that the simple linear regression might give a relatively simple/bad fit to the dataset, it yield the worst result.</p>
+<p>A possibility of random Forest and neural network performing better than SVR is due to the complexity. With the adided complexity, it might in turn lead to a better prediction. However, this is in turn a trade of with model processing time.</p>
 <h2 class="page_break_before" id="discussion">Discussion</h2>
 <p>In this project, four different models have been utilized to predict the compressive strength of a concrete mixture. In all models, the independent variables were the concrete mixture components (Cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate) and concrete age, whereas the dependent variable was the Compressive Strength. The four models were able to predict the concrete compressive strength in a good way but with relatively different degrees of success.</p>
 <h3 id="random-forest-1">Random Forest</h3>
