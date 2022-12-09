@@ -1,26 +1,34 @@
 ---
-title: "Manuscript Title"
+title: "Predictive Model for Concrete Compressive Strength"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: rausan3
+    name: Ray Ausan
+    initials: RA
+    email: rausan2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+  - github: FrenchToastty
+    name: Min Win Ye
+    initials: MW
+    email: mwye2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+  - github: pimbooo
+    name: Papa Ibrahima Mbodj
+    initials: PIM
+    email: pmbodj2@illinois.edu
+    affiliations:
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+  - github: dafarno2
+    name: Dafar Obeidat
+    initials: DO
+    email: dafarno2@illinois.edu
+    affiliations:
+      - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+
+      
