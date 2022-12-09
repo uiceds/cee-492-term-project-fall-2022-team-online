@@ -8,7 +8,7 @@ clays
 Compressive
 Dafar
 dafarno
-dataset
+Dataset
 datasets
 Fonseca
 forestfig
@@ -16,7 +16,7 @@ forestvalfig
 FrenchToastty
 GridSearchCV
 Hoang
-Hyperparameter
+hyperparameter
 hyperparameters
 Ibrahima
 interpolant

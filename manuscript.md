@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/890179fc7b3641e6b57e499f030c5f727b633ef5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/890179fc7b3641e6b57e499f030c5f727b633ef5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/890179fc7b3641e6b57e499f030c5f727b633ef5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/890179fc7b3641e6b57e499f030c5f727b633ef5/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@5e5552b](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/5e5552ba8168984f2c5d014f1d488cd8faf29f82)
+from [uiceds/cee-492-term-project-fall-2022-team-online@890179f](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/890179fc7b3641e6b57e499f030c5f727b633ef5)
 on December 9, 2022.
 </em></small>
 
@@ -110,17 +110,15 @@ on December 9, 2022.
 ## Introduction {.page_break_before}
 
 High-standard quality control of concrete can be a challenge to producers.
-The error rate of concrete compressive strength, the most important quality indicator in the concrete industry, can be exaggerated. Developing accurate and reliable compressive strength prediction models could save costs and time. Therefore, much research has been conducted to predict concrete compressive strength.
-
+The error rate of concrete compressive strength, the most important quality indicator in the concrete industry, can be high in some cases. Developing accurate and reliable compressive strength prediction models could save costs and time. 
 A predictive model for concrete strength could be helpful for several reasons. In the construction industry, for example, a predictive model for concrete strength could help engineers and contractors to determine the appropriate mix ratios and curing conditions for different types of concrete based on factors such as the intended use and the local climate. This could help ensure that the concrete used in a given project has the desired strength and durability while reducing the risk of costly failures or defects.
 In terms of research, a significant amount of work has been done on developing predictive models for concrete strength. This research has typically focused on developing and testing various mathematical and statistical models that can predict the strength of concrete based on factors such as the mix ratios, the curing conditions, and the aggregate used. In many cases, these models have been trained and validated using large datasets of concrete strength measurements collected from various sources, including laboratory experiments and real-world construction projects.
 Overall, developing predictive models for concrete strength is an active area of research. Ongoing work is being done to improve the accuracy and reliability of these models and develop new approaches and techniques for predicting concrete strength.
 
-Our team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model predicts the interactions between the concrete mixture components and the compressive strength. 
+Our team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset used has 8 input parameters and 1 output parameter. 
+Based on the dataset, our models aim to predict concrete's 28<sup>th</sup> day compressive strength. Traditionally, to compare the actual compressive strength of concrete (q'<sup>c</sup>) against the desired strength (q'<sup>cd</sup>), 28 days need to pass. Then a cube sample can is crushed to check the compressive strength. That is usually not a problem if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additional structures put in place to enhance the strength further.
 
-Based on the dataset, these models aim to predict concrete's 28<sup>th</sup> day compressive strength. Traditionally, to compare the actual compressive strength of concrete (q'<sup>c</sup>) against the desired strength (q'<sup>cd</sup>), 28 days need to pass. Then a cube sample can is crushed to check the compressive strength. That is usually not a problem if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additional structures put in place to enhance the strength further.
-
-These models instantaneously predict the 28<sup>th</sup> day compressive strength when a batch of concrete mix is made to minimize such errors. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using this predictive model. 
+These models instantaneously predict the 28<sup>th</sup> day compressive strength when a batch of concrete mix is made to minimize such errors. Eventually, with enough confidence, it aims to change the default measurement of 28<sup>th</sup> day compressive strength from cube crushing to using these predictive model. 
 
 A dataset with 1030 different observations will be used to train and validate four different models, and the advantages and disadvantages of each option will be discussed. Finally, the accuracy and precision of these models will be assessed using different methods (such as comparing rmse and r<sup>2</sup> values), and recommendations to improve the models' performance will be suggested. 
 
