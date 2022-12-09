@@ -8,7 +8,7 @@ clays
 Compressive
 Dafar
 dafarno
-Dataset
+dataset
 datasets
 Fonseca
 forestfig
@@ -16,7 +16,7 @@ forestvalfig
 FrenchToastty
 GridSearchCV
 Hoang
-hyperparameter
+Hyperparameter
 hyperparameters
 Ibrahima
 interpolant
@@ -52,7 +52,7 @@ scikit
 seccompobstable
 summaryfig
 summarytable
-Superplasticizer
+superplasticizer
 Superplasticizers
 SVM
 SVR

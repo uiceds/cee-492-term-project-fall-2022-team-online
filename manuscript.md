@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-12-07'
+date-meta: '2022-12-09'
 author-meta:
 - Ray Ausan
 - Min Win Ye
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="og:title" content="Predictive Model for Concrete Compressive Strength" />
   <meta property="twitter:title" content="Predictive Model for Concrete Compressive Strength" />
-  <meta name="dc.date" content="2022-12-07" />
-  <meta name="citation_publication_date" content="2022-12-07" />
+  <meta name="dc.date" content="2022-12-09" />
+  <meta name="citation_publication_date" content="2022-12-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -43,9 +43,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/dd6a4aea49b331bca144b49a7d04c4b5709702de/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/dd6a4aea49b331bca144b49a7d04c4b5709702de/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/dd6a4aea49b331bca144b49a7d04c4b5709702de/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/dd6a4aea49b331bca144b49a7d04c4b5709702de/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-team-online/v/5e5552ba8168984f2c5d014f1d488cd8faf29f82/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-team-online@dd6a4ae](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/dd6a4aea49b331bca144b49a7d04c4b5709702de)
-on December 7, 2022.
+from [uiceds/cee-492-term-project-fall-2022-team-online@5e5552b](https://github.com/uiceds/cee-492-term-project-fall-2022-team-online/tree/5e5552ba8168984f2c5d014f1d488cd8faf29f82)
+on December 9, 2022.
 </em></small>
 
 ## Authors
@@ -112,7 +112,11 @@ on December 7, 2022.
 High-standard quality control of concrete can be a challenge to producers.
 The error rate of concrete compressive strength, the most important quality indicator in the concrete industry, can be exaggerated. Developing accurate and reliable compressive strength prediction models could save costs and time. Therefore, much research has been conducted to predict concrete compressive strength.
 
-The team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model predicts the interactions between the concrete mixture components and the compressive strength. 
+A predictive model for concrete strength could be helpful for several reasons. In the construction industry, for example, a predictive model for concrete strength could help engineers and contractors to determine the appropriate mix ratios and curing conditions for different types of concrete based on factors such as the intended use and the local climate. This could help ensure that the concrete used in a given project has the desired strength and durability while reducing the risk of costly failures or defects.
+In terms of research, a significant amount of work has been done on developing predictive models for concrete strength. This research has typically focused on developing and testing various mathematical and statistical models that can predict the strength of concrete based on factors such as the mix ratios, the curing conditions, and the aggregate used. In many cases, these models have been trained and validated using large datasets of concrete strength measurements collected from various sources, including laboratory experiments and real-world construction projects.
+Overall, developing predictive models for concrete strength is an active area of research. Ongoing work is being done to improve the accuracy and reliability of these models and develop new approaches and techniques for predicting concrete strength.
+
+Our team plans to predict the 28<sup>th</sup> day compressive strength of the concrete given a proportion of water, cement, aggregates, and percentage of additives. The dataset has 8 input parameters and 1 output parameter. The model predicts the interactions between the concrete mixture components and the compressive strength. 
 
 Based on the dataset, these models aim to predict concrete's 28<sup>th</sup> day compressive strength. Traditionally, to compare the actual compressive strength of concrete (q'<sup>c</sup>) against the desired strength (q'<sup>cd</sup>), 28 days need to pass. Then a cube sample can is crushed to check the compressive strength. That is usually not a problem if the 28<sup>th</sup> day Ca matches the Cd. However, if there is a mismatch in Ca and Cd, there could be massive hacking of concrete or additional structures put in place to enhance the strength further.
 
